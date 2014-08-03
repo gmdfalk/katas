@@ -29,4 +29,11 @@ public class Warmup1 {
 		else
 			return Math.abs(i - 21);
 	}
+
+	public static boolean parrotTrouble(boolean b, int i) {
+		if (b && (i < 7 || i > 20))
+			return true;
+		else
+			return false;
+	}
 }
