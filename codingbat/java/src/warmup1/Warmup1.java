@@ -22,4 +22,11 @@ public class Warmup1 {
 		else
 			return (i + j) * 2;
 	}
+
+	public static int diff21(int i) {
+		if (i > 21)
+			return 2 * Math.abs(i - 21);
+		else
+			return Math.abs(i - 21);
+	}
 }

@@ -32,10 +32,17 @@ public class Warmup1Test {
 	}
 
 	@Test
-	public void testsumDouble() {
+	public void testSumDouble() {
 		assertEquals(3, Warmup1.sumDouble(1, 2));
 		assertEquals(5, Warmup1.sumDouble(3, 2));
 		assertEquals(8, Warmup1.sumDouble(2, 2));
+	}
+
+	@Test
+	public void testDiff21() {
+		assertEquals(2, Warmup1.diff21(19));
+		assertEquals(11, Warmup1.diff21(10));
+		assertEquals(0, Warmup1.diff21(21));
 	}
 
 }
