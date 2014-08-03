@@ -15,4 +15,11 @@ public class Warmup1 {
 		else
 			return false;
 	}
+
+	public static int sumDouble(int i, int j) {
+		if (i != j)
+			return i + j;
+		else
+			return (i + j) * 2;
+	}
 }

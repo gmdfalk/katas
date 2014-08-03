@@ -31,4 +31,11 @@ public class Warmup1Test {
 		assertFalse(Warmup1.monkeyTrouble(true, false));
 	}
 
+	@Test
+	public void testsumDouble() {
+		assertEquals(3, Warmup1.sumDouble(1, 2));
+		assertEquals(5, Warmup1.sumDouble(3, 2));
+		assertEquals(8, Warmup1.sumDouble(2, 2));
+	}
+
 }
