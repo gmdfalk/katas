@@ -45,4 +45,11 @@ public class Warmup1Test {
 		assertEquals(0, Warmup1.diff21(21));
 	}
 
+	@Test
+	public void testParrotTrouble() {
+		assertTrue(Warmup1.parrotTrouble(true, 6));
+		assertFalse(Warmup1.parrotTrouble(true, 7));
+		assertFalse(Warmup1.parrotTrouble(false, 6));
+	}
+
 }
