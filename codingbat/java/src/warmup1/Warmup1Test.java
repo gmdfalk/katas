@@ -52,4 +52,10 @@ public class Warmup1Test {
 		assertFalse(Warmup1.parrotTrouble(false, 6));
 	}
 
+	@Test
+	public void testMakes10() {
+		assertTrue(Warmup1.makes10(9, 10));
+		assertFalse(Warmup1.makes10(9, 9));
+		assertTrue(Warmup1.makes10(1, 9));
+	}
 }
