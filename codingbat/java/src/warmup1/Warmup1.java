@@ -36,4 +36,11 @@ public class Warmup1 {
 		else
 			return false;
 	}
+
+	public static boolean makes10(int i, int j) {
+		if (i + j == 10 || i == 10 || j == 10)
+			return true;
+		else
+			return false;
+	}
 }
