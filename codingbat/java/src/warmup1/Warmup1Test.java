@@ -58,4 +58,11 @@ public class Warmup1Test {
 		assertFalse(Warmup1.makes10(9, 9));
 		assertTrue(Warmup1.makes10(1, 9));
 	}
+
+	@Test
+	public void testNearHundred() {
+		assertTrue(Warmup1.nearHundred(93));
+		assertTrue(Warmup1.nearHundred(90));
+		assertFalse(Warmup1.nearHundred(89));
+	}
 }

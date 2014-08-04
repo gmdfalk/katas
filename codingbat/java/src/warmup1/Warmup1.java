@@ -43,4 +43,11 @@ public class Warmup1 {
 		else
 			return false;
 	}
+
+	public static boolean nearHundred(int i) {
+		if ((i < 111 && i > 89) || (i < 211 && i > 189))
+			return true;
+		else
+			return false;
+	}
 }
