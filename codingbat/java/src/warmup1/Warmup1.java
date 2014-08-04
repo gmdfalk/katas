@@ -49,5 +49,14 @@ public class Warmup1 {
 			return true;
 		else
 			return false;
+		// return ((Math.abs(100 - i) <= 10) ||
+		// (Math.abs(200 - i) <= 10));
+	}
+
+	public static boolean posNeg(int i, int j, boolean b) {
+		if (b)
+			return true ? (i < 0 && j < 0) : false;
+		else
+			return true ? ((i < 0 && j >= 0) || (j < 0 && i >= 0)) : false;
 	}
 }

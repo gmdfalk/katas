@@ -65,4 +65,11 @@ public class Warmup1Test {
 		assertTrue(Warmup1.nearHundred(90));
 		assertFalse(Warmup1.nearHundred(89));
 	}
+
+	@Test
+	public void testPosNeg() {
+		assertTrue(Warmup1.posNeg(1, -1, false));
+		assertTrue(Warmup1.posNeg(-1, 1, false));
+		assertTrue(Warmup1.posNeg(-4, -5, true));
+	}
 }
