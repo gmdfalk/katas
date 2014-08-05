@@ -79,4 +79,11 @@ public class Warmup1Test {
 		assertEquals("not x", Warmup1.notString("x"));
 		assertEquals("not bad", Warmup1.notString("bad"));
 	}
+
+	@Test
+	public void testMissingChar() {
+		assertEquals("ktten", Warmup1.missingChar("kitten", 1));
+		assertEquals("itten", Warmup1.missingChar("kitten", 0));
+		assertEquals("kittn", Warmup1.missingChar("kitten", 4));
+	}
 }

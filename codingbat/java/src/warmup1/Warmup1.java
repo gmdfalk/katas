@@ -68,4 +68,14 @@ public class Warmup1 {
 	public static String notString(String string) {
 		return "not " + string;
 	}
+
+	public static String missingChar(String str, int n) {
+		String result = "";
+		for (int i = 0; i < str.length(); i++) {
+			if (i == n)
+				continue;
+			result += str.charAt(i);
+		}
+		return result;
+	}
 }
