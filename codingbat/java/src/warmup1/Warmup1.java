@@ -58,5 +58,14 @@ public class Warmup1 {
 			return true ? (i < 0 && j < 0) : false;
 		else
 			return true ? ((i < 0 && j >= 0) || (j < 0 && i >= 0)) : false;
+		// if (b) {
+		// return (i < 0 && j < 0);
+		// } else {
+		// return ((i < 0 && j > 0) || (i > 0 && j < 0));
+		// }
+	}
+
+	public static String notString(String string) {
+		return "not " + string;
 	}
 }

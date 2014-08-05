@@ -72,4 +72,11 @@ public class Warmup1Test {
 		assertTrue(Warmup1.posNeg(-1, 1, false));
 		assertTrue(Warmup1.posNeg(-4, -5, true));
 	}
+
+	@Test
+	public void testNotString() {
+		assertEquals("not candy", Warmup1.notString("candy"));
+		assertEquals("not x", Warmup1.notString("x"));
+		assertEquals("not bad", Warmup1.notString("bad"));
+	}
 }
