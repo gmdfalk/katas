@@ -77,11 +77,14 @@ public class Warmup1 {
 			result += str.charAt(i);
 		}
 		return result;
+		// String front = str.substring(0, n);
+		// String back = str.substring(n+1, str.length());
 	}
 
 	public static String frontBack(String str) {
 		if (str.length() < 2)
 			return str;
-		return "" + str.charAt(str.length()-1) + str.subSequence(1, str.length()-1) + str.charAt(0);
+		return "" + str.charAt(str.length() - 1)
+				+ str.subSequence(1, str.length() - 1) + str.charAt(0);
 	}
 }
