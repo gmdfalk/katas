@@ -75,4 +75,11 @@ public class Warmup1Test {
 		assertEquals("itten", Warmup1.missingChar("kitten", 0));
 		assertEquals("kittn", Warmup1.missingChar("kitten", 4));
 	}
+	
+	@Test
+	public void testFrontBack() {
+		assertEquals("eodc", Warmup1.frontBack("code"));
+		assertEquals("a", Warmup1.frontBack("a"));
+		assertEquals("ba", Warmup1.frontBack("ab"));
+	}
 }
