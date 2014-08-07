@@ -87,4 +87,13 @@ public class Warmup1 {
 		return "" + str.charAt(str.length() - 1)
 				+ str.subSequence(1, str.length() - 1) + str.charAt(0);
 	}
+
+	public static String front3(String str) {
+		String front;
+		if (str.length() < 3)
+			front = str;
+		else
+			front = str.subSequence(0, 3).toString();
+		return front+front+front;
+	}
 }
