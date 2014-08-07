@@ -89,4 +89,11 @@ public class Warmup1Test {
 		assertEquals("ChoChoCho", Warmup1.front3("Chocolate"));
 		assertEquals("abcabcabc", Warmup1.front3("abc"));
 	}
+	
+	@Test
+	public void testBackAround() {
+		assertEquals("tcatt", Warmup1.backAround("cat"));
+		assertEquals("oHelloo", Warmup1.backAround("Hello"));
+		assertEquals("aaa", Warmup1.backAround("a"));
+	}
 }

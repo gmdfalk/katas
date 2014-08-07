@@ -96,4 +96,9 @@ public class Warmup1 {
 			front = str.subSequence(0, 3).toString();
 		return front+front+front;
 	}
+
+	public static String backAround(String str) {
+		char lastChar = str.charAt(str.length()-1);
+		return  lastChar + str + lastChar;
+	}
 }
