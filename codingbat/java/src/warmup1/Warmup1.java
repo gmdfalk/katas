@@ -1,6 +1,8 @@
 package warmup1;
 
 public class Warmup1 {
+	
+	private Warmup1() {};
 
 	public static boolean sleepIn(boolean weekday, boolean vacation) {
 		if (!weekday || vacation)
@@ -77,8 +79,6 @@ public class Warmup1 {
 			result += str.charAt(i);
 		}
 		return result;
-		// String front = str.substring(0, n);
-		// String back = str.substring(n+1, str.length());
 	}
 
 	public static String frontBack(String str) {
@@ -86,6 +86,8 @@ public class Warmup1 {
 			return str;
 		return "" + str.charAt(str.length() - 1)
 				+ str.subSequence(1, str.length() - 1) + str.charAt(0);
+		// String front = str.substring(0, n);
+		// String back = str.substring(n+1, str.length());
 	}
 
 	public static String front3(String str) {
@@ -102,5 +104,9 @@ public class Warmup1 {
 		return  lastChar + str + lastChar;
 //		String last = str.substring(str.length() - 1);
 //		return last + str + last;
+	}
+
+	public static boolean or35(int i) {
+		return (i % 3 == 0) || (i % 5 == 0);
 	}
 }

@@ -96,4 +96,11 @@ public class Warmup1Test {
 		assertEquals("oHelloo", Warmup1.backAround("Hello"));
 		assertEquals("aaa", Warmup1.backAround("a"));
 	}
+	
+	@Test
+	public void testOr35() {
+		assertTrue(Warmup1.or35(3));
+		assertTrue(Warmup1.or35(10));
+		assertFalse(Warmup1.or35(8));
+	}
 }
