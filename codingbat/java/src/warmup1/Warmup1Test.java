@@ -103,4 +103,11 @@ public class Warmup1Test {
 		assertTrue(Warmup1.or35(10));
 		assertFalse(Warmup1.or35(8));
 	}
+	
+	@Test
+	public void testfront22() {
+		assertEquals("kikittenki", Warmup1.front22("kitten"));
+		assertEquals("HaHaHa", Warmup1.front22("Ha"));
+		assertEquals("ababcab", Warmup1.front22("abc"));
+	}
 }

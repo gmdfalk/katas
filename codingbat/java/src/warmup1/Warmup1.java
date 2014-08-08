@@ -109,4 +109,13 @@ public class Warmup1 {
 	public static boolean or35(int i) {
 		return (i % 3 == 0) || (i % 5 == 0);
 	}
+
+	public static String front22(String str) {
+		String part;
+		if (str.length() < 2)
+			part = str;
+		else
+			part = str.substring(0,  2);
+		return part + str + part;
+	}
 }
