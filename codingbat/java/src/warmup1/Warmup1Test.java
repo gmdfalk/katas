@@ -75,39 +75,46 @@ public class Warmup1Test {
 		assertEquals("itten", Warmup1.missingChar("kitten", 0));
 		assertEquals("kittn", Warmup1.missingChar("kitten", 4));
 	}
-	
+
 	@Test
 	public void testFrontBack() {
 		assertEquals("eodc", Warmup1.frontBack("code"));
 		assertEquals("a", Warmup1.frontBack("a"));
 		assertEquals("ba", Warmup1.frontBack("ab"));
 	}
-	
+
 	@Test
 	public void testFront3() {
 		assertEquals("JavJavJav", Warmup1.front3("Java"));
 		assertEquals("ChoChoCho", Warmup1.front3("Chocolate"));
 		assertEquals("abcabcabc", Warmup1.front3("abc"));
 	}
-	
+
 	@Test
 	public void testBackAround() {
 		assertEquals("tcatt", Warmup1.backAround("cat"));
 		assertEquals("oHelloo", Warmup1.backAround("Hello"));
 		assertEquals("aaa", Warmup1.backAround("a"));
 	}
-	
+
 	@Test
 	public void testOr35() {
 		assertTrue(Warmup1.or35(3));
 		assertTrue(Warmup1.or35(10));
 		assertFalse(Warmup1.or35(8));
 	}
-	
+
 	@Test
 	public void testfront22() {
 		assertEquals("kikittenki", Warmup1.front22("kitten"));
 		assertEquals("HaHaHa", Warmup1.front22("Ha"));
 		assertEquals("ababcab", Warmup1.front22("abc"));
+	}
+
+	@Test
+	public void testStartHi() {
+		assertTrue(Warmup1.startHi("hi there"));
+		assertTrue(Warmup1.startHi("hi"));
+		assertFalse(Warmup1.startHi("hello hi"));
 	}
 }
