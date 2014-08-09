@@ -117,4 +117,11 @@ public class Warmup1Test {
 		assertTrue(Warmup1.startHi("hi"));
 		assertFalse(Warmup1.startHi("hello hi"));
 	}
+	
+	@Test
+	public void testIcyHot() {
+		assertTrue(Warmup1.icyHot(120, -1));
+		assertTrue(Warmup1.icyHot(-1, 120));
+		assertFalse(Warmup1.icyHot(2, 120));
+	}
 }

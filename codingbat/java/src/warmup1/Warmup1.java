@@ -1,5 +1,6 @@
 package warmup1;
 
+// CodingBat Warump1 "Challenge"
 public class Warmup1 {
 
 	private Warmup1() {
@@ -122,5 +123,9 @@ public class Warmup1 {
 
 	public static boolean startHi(String string) {
 		return string.startsWith("hi");
+	}
+
+	public static boolean icyHot(int i, int j) {
+		return (i < 0 && j > 0 || j < 0 && i > 0);
 	}
 }
