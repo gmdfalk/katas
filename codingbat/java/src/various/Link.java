@@ -11,7 +11,7 @@ public class Link {
 
 	public static void main(String[] args) {
 		RecursiveLink a = new RecursiveLink();
-		a.rückwärtsausgeben();
+		a.rueckwaertsausgeben();
 	}
 
 }
@@ -23,14 +23,14 @@ class RecursiveLink {
 		anfang = null;
 	}
 
-	public void rückwärtsausgeben() {
-		rückwärtsausgebenR(this.anfang);
+	public void rueckwaertsausgeben() {
+		rueckwaertsausgebenR(this.anfang);
 	}
 
-	public Link rückwärtsausgebenR(Link element) {
+	public Link rueckwaertsausgebenR(Link element) {
 		// In dieser Methode soll die rekurisve Methode enstehen
 		if (element.naechster == null)
 			return element;
-		return rückwärtsausgebenR(element.naechster);
+		return rueckwaertsausgebenR(element.naechster);
 	}
 }
