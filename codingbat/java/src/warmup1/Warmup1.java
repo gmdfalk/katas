@@ -1,7 +1,7 @@
 package warmup1;
 
 // CodingBat Warump1 "Challenge"
-public class Warmup1 {
+public final class Warmup1 {
 
 	private Warmup1() {
 	};
@@ -131,5 +131,13 @@ public class Warmup1 {
 
 	public static boolean in1020(int i, int j) {
 		return (i >= 10 && i <= 20) || (j >= 10  && j <= 20);
+	}
+	
+	private static boolean isTeen(int n) {
+		return (n >= 13 && n <= 20);
+	}
+	
+	public static boolean hasTeen(int i, int j, int k) {
+		return isTeen(i) || isTeen(j) || isTeen(k);
 	}
 }

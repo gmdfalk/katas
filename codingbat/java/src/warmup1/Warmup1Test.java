@@ -131,4 +131,13 @@ public class Warmup1Test {
 		assertTrue(Warmup1.in1020(21, 12));
 		assertFalse(Warmup1.in1020(8, 99));
 	}
+	
+	@Test
+	public void testHasTeen() {
+		assertTrue(Warmup1.hasTeen(13, 20, 10));
+		assertTrue(Warmup1.hasTeen(20, 19, 10));
+		assertTrue(Warmup1.hasTeen(20, 10, 13));
+		assertFalse(Warmup1.hasTeen(21, 10, 12));
+	}
+	
 }
