@@ -124,4 +124,11 @@ public class Warmup1Test {
 		assertTrue(Warmup1.icyHot(-1, 120));
 		assertFalse(Warmup1.icyHot(2, 120));
 	}
+	
+	@Test
+	public void testIn1020() {
+		assertTrue(Warmup1.in1020(12, 99));
+		assertTrue(Warmup1.in1020(21, 12));
+		assertFalse(Warmup1.in1020(8, 99));
+	}
 }

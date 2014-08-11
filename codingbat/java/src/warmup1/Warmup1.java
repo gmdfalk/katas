@@ -128,4 +128,8 @@ public class Warmup1 {
 	public static boolean icyHot(int i, int j) {
 		return (i < 0 && j > 0 || j < 0 && i > 0);
 	}
+
+	public static boolean in1020(int i, int j) {
+		return (i >= 10 && i <= 20) || (j >= 10  && j <= 20);
+	}
 }
