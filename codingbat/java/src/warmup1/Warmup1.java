@@ -134,10 +134,18 @@ public final class Warmup1 {
 	}
 	
 	private static boolean isTeen(int n) {
-		return (n >= 13 && n <= 20);
+		return (n >= 13 && n <= 19);
 	}
 	
 	public static boolean hasTeen(int i, int j, int k) {
 		return isTeen(i) || isTeen(j) || isTeen(k);
+	}
+
+	public static boolean loneTeen(int i, int j) {
+		return isTeen(i) ^ isTeen(j);
+	}
+
+	public static String delDel(String string) {
+		return string.substring(1,4).equals("del") ? string.substring(0, 1) + string.substring(4, string.length()) : string;
 	}
 }

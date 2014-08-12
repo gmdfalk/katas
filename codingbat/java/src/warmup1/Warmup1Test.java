@@ -2,6 +2,8 @@ package warmup1;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
+import static org.hamcrest.Matchers.is;
+
 
 public class Warmup1Test {
 
@@ -137,7 +139,21 @@ public class Warmup1Test {
 		assertTrue(Warmup1.hasTeen(13, 20, 10));
 		assertTrue(Warmup1.hasTeen(20, 19, 10));
 		assertTrue(Warmup1.hasTeen(20, 10, 13));
-		assertFalse(Warmup1.hasTeen(21, 10, 12));
+		assertFalse(Warmup1.hasTeen(20, 10, 12));
+	}
+	
+	@Test
+	public void testLoneTeen() {
+		assertTrue(Warmup1.loneTeen(13,99));
+		assertTrue(Warmup1.loneTeen(21, 19));
+		assertFalse(Warmup1.loneTeen(13, 13));
+	}
+	
+	@Test
+	public void testDelDel() {
+		assertThat(Warmup1.delDel("adelbc"), is("abc"));
+		assertThat(Warmup1.delDel("adelHello"), is("aHello"));
+		assertThat(Warmup1.delDel("adedbc"), is("adedbc"));
 	}
 	
 }
