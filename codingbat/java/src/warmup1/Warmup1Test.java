@@ -156,4 +156,11 @@ public class Warmup1Test {
 		assertThat(Warmup1.delDel("adedbc"), is("adedbc"));
 	}
 	
+	@Test
+	public void testMixStart() {
+		assertThat(Warmup1.mixStart("mix snacks"), is(true));
+		assertThat(Warmup1.mixStart("pix snacks"), is(true));
+		assertThat(Warmup1.mixStart("piz snacks"), is(false));
+	}
+	
 }
