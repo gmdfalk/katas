@@ -161,6 +161,14 @@ public class Warmup1Test {
 		assertThat(Warmup1.mixStart("mix snacks"), is(true));
 		assertThat(Warmup1.mixStart("pix snacks"), is(true));
 		assertThat(Warmup1.mixStart("piz snacks"), is(false));
+	}	
+	
+	@Test
+	public void testStartOz() {
+		assertThat(Warmup1.startOz("ozymandias"), is("oz"));
+		assertThat(Warmup1.startOz("bzoo"), is("z"));
+		assertThat(Warmup1.startOz("oxx"), is("o"));
 	}
+
 	
 }

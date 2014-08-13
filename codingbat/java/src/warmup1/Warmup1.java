@@ -152,4 +152,18 @@ public final class Warmup1 {
 	public static Boolean mixStart(String string) {
 		return string.matches(".ix .*");
 	}
+
+	public static String startOz(String string) {
+		String result = "";
+		  
+		  if (string.length() >= 1 && string.charAt(0)=='o') {
+		    result = result + string.charAt(0);
+		  }
+		  
+		  if (string.length() >= 2 && string.charAt(1)=='z') {
+		    result = result + string.charAt(1);
+		  }
+		  
+		  return result;
+	}
 }
