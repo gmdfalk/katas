@@ -166,4 +166,8 @@ public final class Warmup1 {
 		  
 		  return result;
 	}
+
+	public static int intMax(int i, int j, int k) {
+		return Math.max(Math.max(i, j), k);
+	}
 }

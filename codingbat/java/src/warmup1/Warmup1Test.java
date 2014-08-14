@@ -169,6 +169,13 @@ public class Warmup1Test {
 		assertThat(Warmup1.startOz("bzoo"), is("z"));
 		assertThat(Warmup1.startOz("oxx"), is("o"));
 	}
+	
+	@Test
+	public void testIntMax() {
+		assertThat(Warmup1.intMax(1,2,3), is(3));
+		assertThat(Warmup1.intMax(1,3,2), is(3));
+		assertThat(Warmup1.intMax(3,2,1), is(3));
+	}
 
 	
 }
