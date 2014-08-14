@@ -170,4 +170,15 @@ public final class Warmup1 {
 	public static int intMax(int i, int j, int k) {
 		return Math.max(Math.max(i, j), k);
 	}
+
+	public static int close10(int a, int b) {
+		int aDiff, bDiff;
+		aDiff = Math.abs(10-a);
+		bDiff = Math.abs(10-b);
+		if (aDiff < bDiff)
+			return a;
+		else if (bDiff < aDiff)
+			return b;
+		return 0;
+	}
 }

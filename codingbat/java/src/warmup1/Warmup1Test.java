@@ -176,6 +176,11 @@ public class Warmup1Test {
 		assertThat(Warmup1.intMax(1,3,2), is(3));
 		assertThat(Warmup1.intMax(3,2,1), is(3));
 	}
-
 	
+	@Test
+	public void testClose10() {
+		assertThat(Warmup1.close10(8, 13), is(8));
+		assertThat(Warmup1.close10(13, 8), is(8));
+		assertThat(Warmup1.close10(13, 7), is(0));
+	}
 }
