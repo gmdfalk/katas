@@ -130,13 +130,13 @@ public final class Warmup1 {
 	}
 
 	public static boolean in1020(int i, int j) {
-		return (i >= 10 && i <= 20) || (j >= 10  && j <= 20);
+		return (i >= 10 && i <= 20) || (j >= 10 && j <= 20);
 	}
-	
+
 	private static boolean isTeen(int n) {
 		return (n >= 13 && n <= 19);
 	}
-	
+
 	public static boolean hasTeen(int i, int j, int k) {
 		return isTeen(i) || isTeen(j) || isTeen(k);
 	}
@@ -146,7 +146,8 @@ public final class Warmup1 {
 	}
 
 	public static String delDel(String string) {
-		return string.substring(1,4).equals("del") ? string.substring(0, 1) + string.substring(4, string.length()) : string;
+		return string.substring(1, 4).equals("del") ? string.substring(0, 1)
+				+ string.substring(4, string.length()) : string;
 	}
 
 	public static Boolean mixStart(String string) {
@@ -155,16 +156,16 @@ public final class Warmup1 {
 
 	public static String startOz(String string) {
 		String result = "";
-		  
-		  if (string.length() >= 1 && string.charAt(0)=='o') {
-		    result = result + string.charAt(0);
-		  }
-		  
-		  if (string.length() >= 2 && string.charAt(1)=='z') {
-		    result = result + string.charAt(1);
-		  }
-		  
-		  return result;
+
+		if (string.length() >= 1 && string.charAt(0) == 'o') {
+			result = result + string.charAt(0);
+		}
+
+		if (string.length() >= 2 && string.charAt(1) == 'z') {
+			result = result + string.charAt(1);
+		}
+
+		return result;
 	}
 
 	public static int intMax(int i, int j, int k) {
@@ -173,12 +174,17 @@ public final class Warmup1 {
 
 	public static int close10(int a, int b) {
 		int aDiff, bDiff;
-		aDiff = Math.abs(10-a);
-		bDiff = Math.abs(10-b);
+		aDiff = Math.abs(10 - a);
+		bDiff = Math.abs(10 - b);
 		if (aDiff < bDiff)
 			return a;
 		else if (bDiff < aDiff)
 			return b;
 		return 0;
+	}
+
+	public static boolean in3050(int i, int j) {
+		return (i >= 30 && i <= 40) && (j >= 30 && j <= 40)
+				|| (i >= 40 && i <= 50) && (j >= 40 && j <= 50);
 	}
 }

@@ -4,7 +4,6 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 import static org.hamcrest.Matchers.is;
 
-
 public class Warmup1Test {
 
 	@Test
@@ -119,21 +118,21 @@ public class Warmup1Test {
 		assertTrue(Warmup1.startHi("hi"));
 		assertFalse(Warmup1.startHi("hello hi"));
 	}
-	
+
 	@Test
 	public void testIcyHot() {
 		assertTrue(Warmup1.icyHot(120, -1));
 		assertTrue(Warmup1.icyHot(-1, 120));
 		assertFalse(Warmup1.icyHot(2, 120));
 	}
-	
+
 	@Test
 	public void testIn1020() {
 		assertTrue(Warmup1.in1020(12, 99));
 		assertTrue(Warmup1.in1020(21, 12));
 		assertFalse(Warmup1.in1020(8, 99));
 	}
-	
+
 	@Test
 	public void testHasTeen() {
 		assertTrue(Warmup1.hasTeen(13, 20, 10));
@@ -141,46 +140,53 @@ public class Warmup1Test {
 		assertTrue(Warmup1.hasTeen(20, 10, 13));
 		assertFalse(Warmup1.hasTeen(20, 10, 12));
 	}
-	
+
 	@Test
 	public void testLoneTeen() {
-		assertTrue(Warmup1.loneTeen(13,99));
+		assertTrue(Warmup1.loneTeen(13, 99));
 		assertTrue(Warmup1.loneTeen(21, 19));
 		assertFalse(Warmup1.loneTeen(13, 13));
 	}
-	
+
 	@Test
 	public void testDelDel() {
 		assertThat(Warmup1.delDel("adelbc"), is("abc"));
 		assertThat(Warmup1.delDel("adelHello"), is("aHello"));
 		assertThat(Warmup1.delDel("adedbc"), is("adedbc"));
 	}
-	
+
 	@Test
 	public void testMixStart() {
 		assertThat(Warmup1.mixStart("mix snacks"), is(true));
 		assertThat(Warmup1.mixStart("pix snacks"), is(true));
 		assertThat(Warmup1.mixStart("piz snacks"), is(false));
-	}	
-	
+	}
+
 	@Test
 	public void testStartOz() {
 		assertThat(Warmup1.startOz("ozymandias"), is("oz"));
 		assertThat(Warmup1.startOz("bzoo"), is("z"));
 		assertThat(Warmup1.startOz("oxx"), is("o"));
 	}
-	
+
 	@Test
 	public void testIntMax() {
-		assertThat(Warmup1.intMax(1,2,3), is(3));
-		assertThat(Warmup1.intMax(1,3,2), is(3));
-		assertThat(Warmup1.intMax(3,2,1), is(3));
+		assertThat(Warmup1.intMax(1, 2, 3), is(3));
+		assertThat(Warmup1.intMax(1, 3, 2), is(3));
+		assertThat(Warmup1.intMax(3, 2, 1), is(3));
 	}
-	
+
 	@Test
 	public void testClose10() {
 		assertThat(Warmup1.close10(8, 13), is(8));
 		assertThat(Warmup1.close10(13, 8), is(8));
 		assertThat(Warmup1.close10(13, 7), is(0));
+	}
+
+	@Test
+	public void testIn3050() {
+		assertThat(Warmup1.in3050(30, 41), is(false));
+		assertThat(Warmup1.in3050(30, 31), is(true));
+		assertThat(Warmup1.in3050(40, 50), is(true));
 	}
 }
