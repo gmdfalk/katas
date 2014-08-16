@@ -187,4 +187,9 @@ public final class Warmup1 {
 		return (i >= 30 && i <= 40) && (j >= 30 && j <= 40)
 				|| (i >= 40 && i <= 50) && (j >= 40 && j <= 50);
 	}
+
+	public static int max1020(int i, int j) {
+		int max = Math.max(i, j);
+		return max >= 10 && max <= 20 ? max : 0;
+	}
 }

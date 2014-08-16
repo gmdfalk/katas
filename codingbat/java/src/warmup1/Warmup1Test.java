@@ -189,4 +189,11 @@ public class Warmup1Test {
 		assertThat(Warmup1.in3050(30, 31), is(true));
 		assertThat(Warmup1.in3050(40, 50), is(true));
 	}
+
+	@Test
+	public void testMax1020() {
+		assertThat(Warmup1.max1020(11, 19), is(19));
+		assertThat(Warmup1.max1020(19, 11), is(19));
+		assertThat(Warmup1.max1020(11, 9), is(11));
+	}
 }
