@@ -192,4 +192,9 @@ public final class Warmup1 {
 		int max = Math.max(i, j);
 		return max >= 10 && max <= 20 ? max : 0;
 	}
+
+	public static boolean stringE(String string) {
+		int count = string.length() - string.replace("e",  "").length();
+		return count > 0 && count < 4;
+	}
 }
