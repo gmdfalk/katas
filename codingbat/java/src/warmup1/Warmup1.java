@@ -182,7 +182,7 @@ public final class Warmup1 {
 			return b;
 		return 0;
 	}
-
+	
 	public static boolean in3050(int i, int j) {
 		return (i >= 30 && i <= 40) && (j >= 30 && j <= 40)
 				|| (i >= 40 && i <= 50) && (j >= 40 && j <= 50);
@@ -196,5 +196,9 @@ public final class Warmup1 {
 	public static boolean stringE(String string) {
 		int count = string.length() - string.replace("e",  "").length();
 		return count > 0 && count < 4;
+	}
+
+	public static boolean lastDigit(int i, int j) {
+		return j%10 == i%10;
 	}
 }
