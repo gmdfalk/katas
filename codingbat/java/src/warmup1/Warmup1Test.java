@@ -217,4 +217,11 @@ public class Warmup1Test {
 		assertThat(Warmup1.endUp("hi there"), is("hi thERE"));
 		assertThat(Warmup1.endUp("hi"), is("HI"));
 	}
+	
+	@Test
+	public void testEveryNth() {
+		assertThat(Warmup1.everyNth("Miracle", 2), is("Mrce"));
+		assertThat(Warmup1.everyNth("abcdefg", 2), is("aceg"));
+		assertThat(Warmup1.everyNth("abcdefg", 3), is("adg"));
+	}
 }

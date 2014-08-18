@@ -207,4 +207,13 @@ public final class Warmup1 {
 		int stopIndex = string.length()-3;
 		return string.substring(0, stopIndex) + string.substring(stopIndex).toUpperCase();
 	}
+
+	public static String everyNth(String string, int n) {
+		String result = "";
+		for (int i=0; i<string.length(); i++) {
+			if (i %n == 0)
+				result += string.charAt(i);
+		}
+		return result;
+	}
 }
