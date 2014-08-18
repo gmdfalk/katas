@@ -201,4 +201,15 @@ public final class Warmup1 {
 	public static boolean lastDigit(int i, int j) {
 		return j%10 == i%10;
 	}
+
+	public static String endUp(String string) {
+		String result;
+		if (string.length() < 4)
+			result =  string.toUpperCase();
+		else {
+			int stopIndex = string.length()-3;
+			result = string.substring(0, stopIndex) + string.substring(stopIndex, string.length()).toUpperCase();
+		}
+		return result;
+	}
 }

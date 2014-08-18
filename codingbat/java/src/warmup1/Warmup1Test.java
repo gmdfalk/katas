@@ -209,6 +209,12 @@ public class Warmup1Test {
 		assertThat(Warmup1.lastDigit(7, 17), is(true));
 		assertThat(Warmup1.lastDigit(6, 17), is(false));
 		assertThat(Warmup1.lastDigit(3, 113), is(true));
-		
+	}
+	
+	@Test
+	public void testEndUp() {
+		assertThat(Warmup1.endUp("Hello"), is("HeLLO"));
+		assertThat(Warmup1.endUp("hi there"), is("hi thERE"));
+		assertThat(Warmup1.endUp("hi"), is("HI"));
 	}
 }
