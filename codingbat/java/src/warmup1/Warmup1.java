@@ -59,14 +59,9 @@ public final class Warmup1 {
 
 	public static boolean posNeg(int i, int j, boolean b) {
 		if (b)
-			return true ? (i < 0 && j < 0) : false;
+			return i < 0 && j < 0;
 		else
-			return true ? ((i < 0 && j >= 0) || (j < 0 && i >= 0)) : false;
-		// if (b) {
-		// return (i < 0 && j < 0);
-		// } else {
-		// return ((i < 0 && j > 0) || (i > 0 && j < 0));
-		// }
+			return (i < 0 && j >= 0) || (j < 0 && i >= 0);
 	}
 
 	public static String notString(String string) {
@@ -182,7 +177,7 @@ public final class Warmup1 {
 			return b;
 		return 0;
 	}
-	
+
 	public static boolean in3050(int i, int j) {
 		return (i >= 30 && i <= 40) && (j >= 30 && j <= 40)
 				|| (i >= 40 && i <= 50) && (j >= 40 && j <= 50);
@@ -194,26 +189,31 @@ public final class Warmup1 {
 	}
 
 	public static boolean stringE(String string) {
-		int count = string.length() - string.replace("e",  "").length();
+		int count = string.length() - string.replace("e", "").length();
 		return count > 0 && count < 4;
 	}
 
 	public static boolean lastDigit(int i, int j) {
-		return j%10 == i%10;
+		return j % 10 == i % 10;
 	}
 
 	public static String endUp(String string) {
-		if (string.length() < 4) return string.toUpperCase();
-		int stopIndex = string.length()-3;
-		return string.substring(0, stopIndex) + string.substring(stopIndex).toUpperCase();
+		if (string.length() < 4)
+			return string.toUpperCase();
+		int stopIndex = string.length() - 3;
+		return string.substring(0, stopIndex)
+				+ string.substring(stopIndex).toUpperCase();
 	}
 
 	public static String everyNth(String string, int n) {
 		String result = "";
-		for (int i=0; i<string.length(); i++) {
-			if (i %n == 0)
-				result += string.charAt(i);
-		}
+		// for (int i=0; i<string.length(); i++) {
+		// if (i %n == 0)
+		// result += string.charAt(i);
+		// }
+		// OR:
+		for (int i = 0; i < string.length(); i += n)
+			result += string.charAt(i);
 		return result;
 	}
 }
