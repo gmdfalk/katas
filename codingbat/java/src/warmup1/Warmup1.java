@@ -4,7 +4,8 @@ package warmup1;
 public final class Warmup1 {
 
 	private Warmup1() {
-	};
+		// Do not instantiate since this is a utility class.
+	}
 
 	public static boolean sleepIn(boolean weekday, boolean vacation) {
 		if (!weekday || vacation)
