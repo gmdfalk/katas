@@ -12,6 +12,15 @@ public final class Warmup2 {
 			result += str;
 		return result;
 	}
+
+	public static String frontTimes(String str, int n) {
+		if (str.length() < 3)
+			return str;
+		String result = "";
+		for (int i=0; i < n; i++)
+			result += str.substring(0, 3);
+		return result;
+	}
 	
 	
 }
