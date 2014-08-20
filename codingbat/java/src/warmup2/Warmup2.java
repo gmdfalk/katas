@@ -21,6 +21,19 @@ public final class Warmup2 {
 			result += str.substring(0, 3);
 		return result;
 	}
-	
+
+	public static int countXx(String string) {
+		int count = 0;
+		for (int i=0; i < string.length(); i++) {
+			try {
+				if (string.substring(i, i+2).equals("xx"))
+					count++;
+			} catch (StringIndexOutOfBoundsException e) {
+				
+			}
+		}
+		
+		return count;
+	}
 	
 }

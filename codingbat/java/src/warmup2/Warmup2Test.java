@@ -26,5 +26,12 @@ public class Warmup2Test {
 		assertThat(Warmup2.frontTimes("Chocolate", 3), is("ChoChoCho"));
 		assertThat(Warmup2.frontTimes("Abc", 3), is("AbcAbcAbc"));
 	}
+	
+	@Test
+	public void testCountXx() {
+		assertThat(Warmup2.countXx("abcxx"), is(1));
+		assertThat(Warmup2.countXx("xxx"), is(2));
+		assertThat(Warmup2.countXx("xxxx"), is(3));
+	}
 
 }
