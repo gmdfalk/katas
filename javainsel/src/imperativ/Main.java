@@ -22,8 +22,11 @@ public class Main {
 		// forSchleifen();
 		// geschachtelteSchleifen();
 		// denkenStattRechnen();
-		einWuerfelspiel();
-//		testDistribution();
+		// einWuerfelspiel();
+		// testDistribution();
+		// linie(5);
+		// average(10, 53);
+		printFirstPrimes(100);
 	}
 
 	public static void wertebereiche() {
@@ -218,63 +221,117 @@ public class Main {
 	}
 
 	private static void einWuerfelspiel() {
-	    int sum = 0;
+		int sum = 0;
 
-	    for ( int i = 0; i < 100000; i++ ) {
-	      int number = rollDice();
+		for (int i = 0; i < 100000; i++) {
+			int number = rollDice();
 
-	      switch ( number ) {
-	        case 12:
-	          sum += 150;
-	          break;
-	        case 11:
-	          sum += 100;
-	          break;
-	        case 10:
-	          sum += 50;
-	          break;
-	        case 9:
-	        case 8:
-	        case 7:
-	          break;
-	        default:
-	          sum -= 50;
-	      }
-	    }
+			switch (number) {
+			case 12:
+				sum += 150;
+				break;
+			case 11:
+				sum += 100;
+				break;
+			case 10:
+				sum += 50;
+				break;
+			case 9:
+			case 8:
+			case 7:
+				break;
+			default:
+				sum -= 50;
+			}
+		}
 
-	    System.out.println( "Gewinn: " + sum );
-//	    testDistribution();
+		System.out.println("Gewinn: " + sum);
+		// testDistribution();
 	}
-	
-	  static void testDistribution() {
-		  
-		  	int[] sums = {0,0,0,0,0,0,0,0,0,0,0};
-		    
-		    for ( int i = 0; i < 10000000; i++ ) {
-		      switch ( rollDice() ) {
-		        case 2: sums[0]++; break;
-		        case 3: sums[1]++; break;
-		        case 4: sums[2]++; break;
-		        case 5: sums[3]++; break;
-		        case 6: sums[4]++; break;
-		        case 7: sums[5]++; break;
-		        case 8: sums[6]++; break;
-		        case 9: sums[7]++; break;
-		        case 10: sums[8]++; break;
-		        case 11: sums[9]++; break;
-		        case 12: sums[10]++; break;
-		      }
-		    }
-		    System.out.println( "Augenzahl 2: " + sums[0]++ );
-		    System.out.println( "Augenzahl 3: " + sums[1]++ );
-		    System.out.println( "Augenzahl 4: " + sums[2]++ );
-		    System.out.println( "Augenzahl 5: " + sums[3]++ );
-		    System.out.println( "Augenzahl 6: " + sums[4]++ );
-		    System.out.println( "Augenzahl 7: " + sums[5]++ );
-		    System.out.println( "Augenzahl 8: " + sums[6]++ );
-		    System.out.println( "Augenzahl 9: " + sums[7]++ );
-		    System.out.println( "Augenzahl 10: " + sums[8]++ );
-		    System.out.println( "Augenzahl 11: " + sums[9]++ );
-		    System.out.println( "Augenzahl 12: " + sums[10]++ );
-	  }
+
+	static void testDistribution() {
+
+		int[] sums = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+
+		for (int i = 0; i < 10000000; i++) {
+			switch (rollDice()) {
+			case 2:
+				sums[0]++;
+				break;
+			case 3:
+				sums[1]++;
+				break;
+			case 4:
+				sums[2]++;
+				break;
+			case 5:
+				sums[3]++;
+				break;
+			case 6:
+				sums[4]++;
+				break;
+			case 7:
+				sums[5]++;
+				break;
+			case 8:
+				sums[6]++;
+				break;
+			case 9:
+				sums[7]++;
+				break;
+			case 10:
+				sums[8]++;
+				break;
+			case 11:
+				sums[9]++;
+				break;
+			case 12:
+				sums[10]++;
+				break;
+			}
+		}
+		System.out.println("Augenzahl 2: " + sums[0]++);
+		System.out.println("Augenzahl 3: " + sums[1]++);
+		System.out.println("Augenzahl 4: " + sums[2]++);
+		System.out.println("Augenzahl 5: " + sums[3]++);
+		System.out.println("Augenzahl 6: " + sums[4]++);
+		System.out.println("Augenzahl 7: " + sums[5]++);
+		System.out.println("Augenzahl 8: " + sums[6]++);
+		System.out.println("Augenzahl 9: " + sums[7]++);
+		System.out.println("Augenzahl 10: " + sums[8]++);
+		System.out.println("Augenzahl 11: " + sums[9]++);
+		System.out.println("Augenzahl 12: " + sums[10]++);
+	}
+
+	static void linie(int n) {
+		StringBuffer sb = new StringBuffer();
+		for (int i = 0; i < n; i++)
+			sb.append("-");
+
+		System.out.println(sb.toString());
+	}
+
+	static void average(int a, int b) {
+		System.out.println((double) (a + b) / 2);
+	}
+
+	static boolean isPrime(int n) {
+		for (int i = 2; i < n; i++) {
+			if (n % i == 0)
+				return false;
+		}
+		return true;
+	}
+
+	static void printFirstPrimes(int noOfPrimes) {
+		for (int j = 2, i = 0; i < noOfPrimes; j++) {
+			if (isPrime(j)) {
+				System.out.print(j + " ");
+				i++;
+			}
+		
+			if (j % 60 == 0)
+				System.out.println();
+		}
+	}
 }
