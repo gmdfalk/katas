@@ -24,16 +24,17 @@ public final class Warmup2 {
 
 	public static int countXx(String string) {
 		int count = 0;
-		for (int i=0; i < string.length(); i++) {
-			try {
+		for (int i=0; i < string.length() -1; i++) {
 				if (string.substring(i, i+2).equals("xx"))
 					count++;
-			} catch (StringIndexOutOfBoundsException e) {
-				
-			}
 		}
 		
 		return count;
+	}
+
+	public static boolean doubleX(String string) {
+		int idx = string.indexOf("x");
+		return ("" + string.charAt(idx) + string.charAt(idx+1)).equals("xx");
 	}
 	
 }

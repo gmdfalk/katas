@@ -33,5 +33,14 @@ public class Warmup2Test {
 		assertThat(Warmup2.countXx("xxx"), is(2));
 		assertThat(Warmup2.countXx("xxxx"), is(3));
 	}
+	
+	@Test
+	public void testDoubleX() {
+		assertThat(Warmup2.doubleX("axxbb"), is(true));
+		assertThat(Warmup2.doubleX("axaxax"), is(false));
+		assertThat(Warmup2.doubleX("xxxxx"), is(true));
+	}
+	
+	
 
 }

@@ -21,7 +21,8 @@ public class Main {
 		// mathematischesPhaenomen();
 		// forSchleifen();
 		// geschachtelteSchleifen();
-		denkenStattRechnen();
+		// denkenStattRechnen();
+		einWuerfelspiel();
 	}
 
 	public static void wertebereiche() {
@@ -209,5 +210,41 @@ public class Main {
 				}
 			}
 		}
+	}
+
+	private static int rollDice() {
+		return (int) (2 + (11 * Math.random()));
+	}
+
+	private static int gamble(int bet) {
+		int roll = rollDice();
+		if (roll == 12)
+			bet *= 4;
+		else if (roll == 11)
+			bet *= 3;
+		else if (roll == 10)
+			bet *= 2;
+		else if (roll < 7)
+			bet -= bet;
+
+		return bet;
+	}
+
+	private static void einWuerfelspiel() {
+		int konto = 50;
+		int geborgt = 0;
+
+		int gewinn = 0;
+		for (int i = 0; i < 100000; i++) {
+			gewinn = gamble(konto);
+			if (gewinn > 0) {
+				konto += gewinn;
+			} else {
+				konto -= gewinn;
+				konto += 50;
+				geborgt -= 50;
+			}
+		}
+		System.out.println(konto - geborgt);
 	}
 }
