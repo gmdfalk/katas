@@ -41,6 +41,13 @@ public class Warmup2Test {
 		assertThat(Warmup2.doubleX("xxxxx"), is(true));
 	}
 	
+	@Test
+	public void testStringBits() {
+		assertThat(Warmup2.stringBits("Hello"), is("Hlo"));
+		assertThat(Warmup2.stringBits("Hi"), is("H"));
+		assertThat(Warmup2.stringBits("Heeololeo"), is("Hello"));
+	}
+	
 	
 
 }

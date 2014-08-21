@@ -1,5 +1,7 @@
 package warmup2;
 
+import java.util.ArrayList;
+
 public final class Warmup2 {
 	
 	private Warmup2() {
@@ -36,5 +38,15 @@ public final class Warmup2 {
 		int idx = string.indexOf("x");
 		return ("" + string.charAt(idx) + string.charAt(idx+1)).equals("xx");
 	}
+
+	public static String stringBits(String string) {
+		String result = "";
+		
+		for (int i=0; i < string.length(); i += 2)
+			result += string.charAt(i);
+		
+		return result;
+	}
+	
 	
 }
