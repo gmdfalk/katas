@@ -48,6 +48,11 @@ public class Warmup2Test {
 		assertThat(Warmup2.stringBits("Heeololeo"), is("Hello"));
 	}
 	
-	
+	@Test
+	public void testStringSplosion() {
+		assertThat(Warmup2.stringSplosion("ab"), is("aab"));
+		assertThat(Warmup2.stringSplosion("abc"), is("aababc"));
+		assertThat(Warmup2.stringSplosion("Code"), is("CCoCodCode"));
+	}
 
 }

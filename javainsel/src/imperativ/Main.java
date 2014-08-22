@@ -26,7 +26,8 @@ public class Main {
 		// testDistribution();
 		// linie(5);
 		// average(10, 53);
-		printFirstPrimes(100);
+		// printFirstPrimes(100);
+		TagDesJahres.main(args);
 	}
 
 	public static void wertebereiche() {
@@ -329,9 +330,10 @@ public class Main {
 				System.out.print(j + " ");
 				i++;
 			}
-		
+
 			if (j % 60 == 0)
 				System.out.println();
 		}
 	}
+
 }

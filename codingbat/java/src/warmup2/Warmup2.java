@@ -47,6 +47,15 @@ public final class Warmup2 {
 		
 		return result;
 	}
+
+	public static String stringSplosion(String string) {
+		String result = "";
+		int j = 1;
+		while (j <= string.length()) {
+			result += string.substring(0, j++);
+		}
+		return result;
+	}
 	
 	
 }
