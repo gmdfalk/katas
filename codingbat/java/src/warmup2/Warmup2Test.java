@@ -54,5 +54,12 @@ public class Warmup2Test {
 		assertThat(Warmup2.stringSplosion("abc"), is("aababc"));
 		assertThat(Warmup2.stringSplosion("Code"), is("CCoCodCode"));
 	}
+	
+	@Test
+	public void testLast2() {
+		assertThat(Warmup2.last2("hixxhi"), is(1));
+		assertThat(Warmup2.last2("xaxxaxaxx"), is(1));
+		assertThat(Warmup2.last2("axxxaaxx"), is(2));
+	}
 
 }

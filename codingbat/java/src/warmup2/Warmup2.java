@@ -50,11 +50,23 @@ public final class Warmup2 {
 
 	public static String stringSplosion(String string) {
 		String result = "";
-		int j = 1;
-		while (j <= string.length()) {
-			result += string.substring(0, j++);
-		}
+		
+		for (int i=0; i < string.length(); i++)
+			result += string.substring(0, i+1);
+		
 		return result;
+	}
+
+	public static int last2(String string) {
+		String target = string.substring(string.length()-2, string.length());
+		int count = 0;
+
+		for (int i=0; i < string.length()-2; i++) {
+			if (string.substring(i, i+2).equals(target))
+				count++;
+		}
+		
+		return count;
 	}
 	
 	
