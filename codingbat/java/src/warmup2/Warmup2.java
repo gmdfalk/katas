@@ -78,6 +78,13 @@ public final class Warmup2 {
 		
 		return count;
 	}
+
+	public static boolean arrayFront9(int[] is) {
+		for (int i=0; i < is.length && i < 4; i++)
+			if (is[i] == 9)
+				return true;
+		return false;
+	}
 	
 	
 }
