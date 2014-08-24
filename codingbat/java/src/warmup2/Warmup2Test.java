@@ -61,5 +61,12 @@ public class Warmup2Test {
 		assertThat(Warmup2.last2("xaxxaxaxx"), is(1));
 		assertThat(Warmup2.last2("axxxaaxx"), is(2));
 	}
+	
+	@Test
+	public void testArrayCount9() {
+		assertThat(Warmup2.arrayCount9(new int[] {1,2,9}), is(1));
+		assertThat(Warmup2.arrayCount9(new int[] {1,9,9}), is(2));
+		assertThat(Warmup2.arrayCount9(new int[] {1,9, 9, 3, 9}), is(3));
+	}
 
 }

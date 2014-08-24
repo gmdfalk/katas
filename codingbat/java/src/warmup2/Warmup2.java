@@ -68,6 +68,16 @@ public final class Warmup2 {
 		
 		return count;
 	}
+
+	public static int arrayCount9(int[] array) {
+		int count = 0;
+		
+		for (int i : array)
+			if (i == 9)
+				count ++;
+		
+		return count;
+	}
 	
 	
 }
