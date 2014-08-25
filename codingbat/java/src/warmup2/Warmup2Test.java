@@ -82,5 +82,12 @@ public class Warmup2Test {
 		assertThat(Warmup2.array123(new int[] { 1, 1, 2, 4, 1 }), is(false));
 		assertThat(Warmup2.array123(new int[] { 1, 1, 2, 1, 2, 3 }), is(true));
 	}
+	
 
+	@Test
+	public void testStringMatch() {
+		assertThat(Warmup2.stringMatch("xxcaazz", "xxbaaz"), is(3));
+		assertThat(Warmup2.stringMatch("abc", "abc"), is(2));
+		assertThat(Warmup2.stringMatch("abc", "axc"), is(0));
+	}
 }
