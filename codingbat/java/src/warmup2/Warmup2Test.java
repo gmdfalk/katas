@@ -75,5 +75,12 @@ public class Warmup2Test {
 		assertThat(Warmup2.arrayFront9(new int[] { 1, 2, 3, 4, 5 }), is(false));
 		assertThat(Warmup2.arrayFront9(new int[] { 1, 9, 3 }), is(true));
 	}
+	
+	@Test
+	public void testArray123() {
+		assertThat(Warmup2.array123(new int[] { 1, 1, 2, 3, 1 }), is(true));
+		assertThat(Warmup2.array123(new int[] { 1, 1, 2, 4, 1 }), is(false));
+		assertThat(Warmup2.array123(new int[] { 1, 1, 2, 1, 2, 3 }), is(true));
+	}
 
 }
