@@ -97,4 +97,11 @@ public class Warmup2Test {
 		assertThat(Warmup2.stringX("abxxxcd"), is("abcd"));
 		assertThat(Warmup2.stringX("xabxxxcdx"), is("xabcdx"));
 	}
+	
+	@Test
+	public void testAltPairs() {
+		assertThat(Warmup2.altPairs("kitten"), is("kien"));
+		assertThat(Warmup2.altPairs("Chocolate"), is("Chole"));
+		assertThat(Warmup2.altPairs("CodingHorror"), is("Congrr"));
+	}
 }

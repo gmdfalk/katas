@@ -107,23 +107,41 @@ public final class Warmup2 {
 	}
 
 	public static String stringX(String str) {
-		String result = "";
-		boolean end = false, start = false;
+//		String result = "";
+//		boolean end = false, start = false;
+//		
+//		if (str.charAt(0) == 'x')
+//			start = true;
+//		if (str.charAt(str.length()-1) == 'x')
+//			end = true;
+//		
+//		result = str.replaceAll("x", "");
+//		
+//		if (end)
+//			result += "x";
+//		if (start)
+//			result = "x" + result;
+//		
+//		return result;
 		
-		if (str.charAt(0) == 'x')
-			start = true;
-		if (str.charAt(str.length()-1) == 'x')
-			end = true;
-		
-		result = str.replaceAll("x", "");
-		
-		if (end)
-			result += "x";
-		if (start)
-			result = "x" + result;
-		
+		//Shorter (better?):
+		String substr, result = "";
+		for (int i=0; i < str.length(); i++) {
+			substr = str.substring(i, i+1);
+			if (!(i > 0 && i < (str.length()-1) && substr.equals("x")))
+				result += substr;
+		}
 		return result;
-		
 	}
 
+	public static String altPairs(String str) {
+		String result = "";
+		for (int i=0; i < str.length(); i +=4)
+			if (i+1 == str.length())
+				result += str.charAt(i);
+			else
+				result += str.substring(i, i+2);
+			
+		return result;
+	}
 }
