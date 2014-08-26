@@ -90,4 +90,11 @@ public class Warmup2Test {
 		assertThat(Warmup2.stringMatch("abc", "abc"), is(2));
 		assertThat(Warmup2.stringMatch("abc", "axc"), is(0));
 	}
+	
+	@Test
+	public void testStringX() {
+		assertThat(Warmup2.stringX("xxHxix"), is("xHix"));
+		assertThat(Warmup2.stringX("abxxxcd"), is("abcd"));
+		assertThat(Warmup2.stringX("xabxxxcdx"), is("xabcdx"));
+	}
 }

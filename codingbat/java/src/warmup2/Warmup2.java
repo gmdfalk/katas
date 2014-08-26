@@ -106,4 +106,24 @@ public final class Warmup2 {
 		return count;
 	}
 
+	public static String stringX(String str) {
+		String result = "";
+		boolean end = false, start = false;
+		
+		if (str.charAt(0) == 'x')
+			start = true;
+		if (str.charAt(str.length()-1) == 'x')
+			end = true;
+		
+		result = str.replaceAll("x", "");
+		
+		if (end)
+			result += "x";
+		if (start)
+			result = "x" + result;
+		
+		return result;
+		
+	}
+
 }
