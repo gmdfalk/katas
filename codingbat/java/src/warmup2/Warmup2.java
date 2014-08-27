@@ -107,28 +107,28 @@ public final class Warmup2 {
 	}
 
 	public static String stringX(String str) {
-//		String result = "";
-//		boolean end = false, start = false;
-//		
-//		if (str.charAt(0) == 'x')
-//			start = true;
-//		if (str.charAt(str.length()-1) == 'x')
-//			end = true;
-//		
-//		result = str.replaceAll("x", "");
-//		
-//		if (end)
-//			result += "x";
-//		if (start)
-//			result = "x" + result;
-//		
-//		return result;
-		
-		//Shorter (better?):
+		// String result = "";
+		// boolean end = false, start = false;
+		//
+		// if (str.charAt(0) == 'x')
+		// start = true;
+		// if (str.charAt(str.length()-1) == 'x')
+		// end = true;
+		//
+		// result = str.replaceAll("x", "");
+		//
+		// if (end)
+		// result += "x";
+		// if (start)
+		// result = "x" + result;
+		//
+		// return result;
+
+		// Shorter (better?):
 		String substr, result = "";
-		for (int i=0; i < str.length(); i++) {
-			substr = str.substring(i, i+1);
-			if (!(i > 0 && i < (str.length()-1) && substr.equals("x")))
+		for (int i = 0; i < str.length(); i++) {
+			substr = str.substring(i, i + 1);
+			if (!(i > 0 && i < (str.length() - 1) && substr.equals("x")))
 				result += substr;
 		}
 		return result;
@@ -136,22 +136,32 @@ public final class Warmup2 {
 
 	public static String altPairs(String str) {
 		String result = "";
-		for (int i=0; i < str.length(); i +=4)
-			if (i+1 == str.length())
+		for (int i = 0; i < str.length(); i += 4)
+			if (i + 1 == str.length())
 				result += str.charAt(i);
 			else
-				result += str.substring(i, i+2);
-			
+				result += str.substring(i, i + 2);
+
 		return result;
 	}
 
 	public static String stringYak(String str) {
 		String result = "";
-		
+
 		int yakIdx = str.indexOf("yak");
-		
-		result += str.substring(0, yakIdx) + str.substring(yakIdx+3, str.length());
-		
+
+		result += str.substring(0, yakIdx)
+				+ str.substring(yakIdx + 3, str.length());
+
 		return result;
+	}
+
+	public static int array667(int[] is) {
+		int count = 0;
+		for (int i = 0; i < is.length - 1; i++) {
+			if (is[i] == 6 && (is[i + 1] == 6 || is[i + 1] == 7))
+				count++;
+		}
+		return count;
 	}
 }

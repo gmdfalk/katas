@@ -111,4 +111,11 @@ public class Warmup2Test {
 		assertThat(Warmup2.stringYak("pakyak"), is("pak"));
 		assertThat(Warmup2.stringYak("yak123ya"), is("123ya"));
 	}
+	
+	@Test
+	public void testArray667() {
+		assertThat(Warmup2.array667(new int[] {6,6,2}), is(1));
+		assertThat(Warmup2.array667(new int[] {6,6,2,6}), is(1));
+		assertThat(Warmup2.array667(new int[] {6,7,2,6}), is(1));
+	}
 }
