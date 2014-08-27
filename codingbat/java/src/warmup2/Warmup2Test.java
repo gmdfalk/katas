@@ -75,14 +75,13 @@ public class Warmup2Test {
 		assertThat(Warmup2.arrayFront9(new int[] { 1, 2, 3, 4, 5 }), is(false));
 		assertThat(Warmup2.arrayFront9(new int[] { 1, 9, 3 }), is(true));
 	}
-	
+
 	@Test
 	public void testArray123() {
 		assertThat(Warmup2.array123(new int[] { 1, 1, 2, 3, 1 }), is(true));
 		assertThat(Warmup2.array123(new int[] { 1, 1, 2, 4, 1 }), is(false));
 		assertThat(Warmup2.array123(new int[] { 1, 1, 2, 1, 2, 3 }), is(true));
 	}
-	
 
 	@Test
 	public void testStringMatch() {
@@ -90,32 +89,34 @@ public class Warmup2Test {
 		assertThat(Warmup2.stringMatch("abc", "abc"), is(2));
 		assertThat(Warmup2.stringMatch("abc", "axc"), is(0));
 	}
-	
+
 	@Test
 	public void testStringX() {
 		assertThat(Warmup2.stringX("xxHxix"), is("xHix"));
 		assertThat(Warmup2.stringX("abxxxcd"), is("abcd"));
 		assertThat(Warmup2.stringX("xabxxxcdx"), is("xabcdx"));
 	}
-	
+
 	@Test
 	public void testAltPairs() {
 		assertThat(Warmup2.altPairs("kitten"), is("kien"));
 		assertThat(Warmup2.altPairs("Chocolate"), is("Chole"));
 		assertThat(Warmup2.altPairs("CodingHorror"), is("Congrr"));
 	}
-	
+
 	@Test
 	public void testStringYak() {
 		assertThat(Warmup2.stringYak("yakpak"), is("pak"));
 		assertThat(Warmup2.stringYak("pakyak"), is("pak"));
 		assertThat(Warmup2.stringYak("yak123ya"), is("123ya"));
 	}
-	
+
 	@Test
 	public void testArray667() {
-		assertThat(Warmup2.array667(new int[] {6,6,2}), is(1));
-		assertThat(Warmup2.array667(new int[] {6,6,2,6}), is(1));
-		assertThat(Warmup2.array667(new int[] {6,7,2,6}), is(1));
+		assertThat(Warmup2.array667(new int[] { 6, 6, 2 }), is(1));
+		assertThat(Warmup2.array667(new int[] { 6, 6, 2, 6 }), is(1));
+		assertThat(Warmup2.array667(new int[] { 6, 7, 2, 6 }), is(1));
+		assertThat(Warmup2.array667(new int[] { 6, 7, 2, 6, 6, 5, 3, 6, 7 }),
+				is(3));
 	}
 }
