@@ -104,4 +104,11 @@ public class Warmup2Test {
 		assertThat(Warmup2.altPairs("Chocolate"), is("Chole"));
 		assertThat(Warmup2.altPairs("CodingHorror"), is("Congrr"));
 	}
+	
+	@Test
+	public void testStringYak() {
+		assertThat(Warmup2.stringYak("yakpak"), is("pak"));
+		assertThat(Warmup2.stringYak("pakyak"), is("pak"));
+		assertThat(Warmup2.stringYak("yak123ya"), is("123ya"));
+	}
 }

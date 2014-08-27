@@ -144,4 +144,14 @@ public final class Warmup2 {
 			
 		return result;
 	}
+
+	public static String stringYak(String str) {
+		String result = "";
+		
+		int yakIdx = str.indexOf("yak");
+		
+		result += str.substring(0, yakIdx) + str.substring(yakIdx+3, str.length());
+		
+		return result;
+	}
 }
