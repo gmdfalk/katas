@@ -126,4 +126,11 @@ public class Warmup2Test {
 		assertThat(Warmup2.noTriples(new int[] { 1,1,2,2,2,1 }), is(false));
 		assertThat(Warmup2.noTriples(new int[] { 1,1,1,2,2,2,1 }), is(false));
 	}
+	
+	@Test
+	public void testHas271() {
+		assertThat(Warmup2.has271(new int[] { 1,2,7,1 }), is(true));
+		assertThat(Warmup2.has271(new int[] { 1,2,8,1 }), is(false));
+		assertThat(Warmup2.has271(new int[] { 2,7,1 }), is(true));
+	}
 }

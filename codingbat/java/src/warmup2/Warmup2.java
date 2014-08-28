@@ -172,4 +172,12 @@ public final class Warmup2 {
 		}
 		return true;
 	}
+
+	public static Boolean has271(int[] is) {
+		for (int i=0; i < is.length -2; i++) {
+			if (is[i]+5 == is[i+1] && is[i]-1 == is[i+2])
+				return true;
+		}
+		return false;
+	}
 }
