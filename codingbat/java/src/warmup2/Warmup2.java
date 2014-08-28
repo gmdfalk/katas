@@ -164,4 +164,12 @@ public final class Warmup2 {
 		}
 		return count;
 	}
+
+	public static Boolean noTriples(int[] is) {
+		for (int i = 0; i < is.length - 2; i++) {
+			if (is[i] == is[i + 1] && is[i] == is[i + 2])
+				return false;
+		}
+		return true;
+	}
 }

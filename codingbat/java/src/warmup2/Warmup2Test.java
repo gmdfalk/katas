@@ -119,4 +119,11 @@ public class Warmup2Test {
 		assertThat(Warmup2.array667(new int[] { 6, 7, 2, 6, 6, 5, 3, 6, 7 }),
 				is(3));
 	}
+	
+	@Test
+	public void testNoTriples() {
+		assertThat(Warmup2.noTriples(new int[] { 1,1,2,2,1 }), is(true));
+		assertThat(Warmup2.noTriples(new int[] { 1,1,2,2,2,1 }), is(false));
+		assertThat(Warmup2.noTriples(new int[] { 1,1,1,2,2,2,1 }), is(false));
+	}
 }
