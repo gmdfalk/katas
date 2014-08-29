@@ -1,14 +1,9 @@
 package warmup2;
 
-import static org.junit.Assert.*;
-
-import org.junit.Test;
-
 import static org.hamcrest.Matchers.is;
+import static org.junit.Assert.assertThat;
 
 import org.junit.Test;
-
-import warmup1.Warmup1;
 
 public class Warmup2Test {
 
@@ -119,18 +114,19 @@ public class Warmup2Test {
 		assertThat(Warmup2.array667(new int[] { 6, 7, 2, 6, 6, 5, 3, 6, 7 }),
 				is(3));
 	}
-	
+
 	@Test
 	public void testNoTriples() {
-		assertThat(Warmup2.noTriples(new int[] { 1,1,2,2,1 }), is(true));
-		assertThat(Warmup2.noTriples(new int[] { 1,1,2,2,2,1 }), is(false));
-		assertThat(Warmup2.noTriples(new int[] { 1,1,1,2,2,2,1 }), is(false));
+		assertThat(Warmup2.noTriples(new int[] { 1, 1, 2, 2, 1 }), is(true));
+		assertThat(Warmup2.noTriples(new int[] { 1, 1, 2, 2, 2, 1 }), is(false));
+		assertThat(Warmup2.noTriples(new int[] { 1, 1, 1, 2, 2, 2, 1 }),
+				is(false));
 	}
-	
+
 	@Test
 	public void testHas271() {
-		assertThat(Warmup2.has271(new int[] { 1,2,7,1 }), is(true));
-		assertThat(Warmup2.has271(new int[] { 1,2,8,1 }), is(false));
-		assertThat(Warmup2.has271(new int[] { 2,7,1 }), is(true));
+		assertThat(Warmup2.has271(new int[] { 1, 2, 7, 1 }), is(true));
+		assertThat(Warmup2.has271(new int[] { 1, 2, 8, 1 }), is(false));
+		assertThat(Warmup2.has271(new int[] { 2, 7, 1 }), is(true));
 	}
 }
