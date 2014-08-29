@@ -13,4 +13,11 @@ public class String1Test {
 		assertThat(String1.helloName("Alice"), is("Hello Alice"));
 		assertThat(String1.helloName("X"), is("Hello X"));
 	}
+	
+	@Test
+	public void testMakeAbba() {
+		assertThat(String1.makeAbba("Hi", "Bye"), is("HiByeByeHi"));
+		assertThat(String1.makeAbba("Yo", "Alice"), is("YoAliceAliceYo"));
+		assertThat(String1.makeAbba("What", "Up"), is("WhatUpUpWhat"));
+	}
 }
