@@ -21,4 +21,19 @@ public class String1 {
 	public static String makeOutWord(String s1, String s2) {
 		return String.format("%s%s%s", s1.substring(0, 2), s2, s1.substring(2));
 	}
+
+	public static String extraEnd(String str) {
+		String result;
+		if (str.length() < 3)
+			result = repeat(3, str);
+		else if (str.length() == 3)
+			result = repeat(3, str.substring(2));
+		else
+			result = repeat(3, str.substring(3));
+		return result;
+	}
+	
+	public static String repeat(int count, String str) {
+	    return new String(new char[count]).replace("\0", str);
+	}
 }

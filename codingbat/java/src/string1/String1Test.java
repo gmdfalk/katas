@@ -34,4 +34,11 @@ public class String1Test {
 		assertThat(String1.makeOutWord("<<>>", "WooHoo"), is("<<WooHoo>>"));
 		assertThat(String1.makeOutWord("[[]]", "word"), is("[[word]]") );
 	}
+
+	@Test
+	public void testExtraEnd() {
+		assertThat(String1.extraEnd("Hello"), is("lololo"));
+		assertThat(String1.extraEnd("ab"), is("ababab"));
+		assertThat(String1.extraEnd("Hi"), is("HiHiHi"));
+	}
 }
