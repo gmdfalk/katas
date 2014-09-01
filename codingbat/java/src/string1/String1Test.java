@@ -27,4 +27,11 @@ public class String1Test {
 		assertThat(String1.makeTags("i", "Hello"), is("<i>Hello</i>"));
 		assertThat(String1.makeTags("cite", "Yay"), is("<cite>Yay</cite>"));
 	}
+	
+	@Test
+	public void testMakeOutWord() {
+		assertThat(String1.makeOutWord("<<>>", "Yay"), is("<<Yay>>"));
+		assertThat(String1.makeOutWord("<<>>", "WooHoo"), is("<<WooHoo>>"));
+		assertThat(String1.makeOutWord("[[]]", "word"), is("[[word]]") );
+	}
 }
