@@ -41,4 +41,18 @@ public class String1Test {
 		assertThat(String1.extraEnd("ab"), is("ababab"));
 		assertThat(String1.extraEnd("Hi"), is("HiHiHi"));
 	}
+	
+	@Test
+	public void testFirstTwo() {
+		assertThat(String1.firstTwo("Hello"), is("He"));
+		assertThat(String1.firstTwo("abcdefg"), is("ab"));
+		assertThat(String1.firstTwo("ab"), is("ab"));
+	}
+	
+	@Test
+	public void testFirstHalf() {
+		assertThat(String1.firstHalf("WooHoo"), is("Woo"));
+		assertThat(String1.firstHalf("HelloThere"), is("Hello"));
+		assertThat(String1.firstHalf("abcdef"), is("abc"));
+	}
 }

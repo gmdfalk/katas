@@ -36,4 +36,12 @@ public class String1 {
 	public static String repeat(int count, String str) {
 	    return new String(new char[count]).replace("\0", str);
 	}
+
+	public static String firstTwo(String string) {
+		return string.substring(0, 2);
+	}
+
+	public static String firstHalf(String string) {
+		return string.substring(0, string.length()/2);
+	}
 }
