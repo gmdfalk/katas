@@ -55,4 +55,11 @@ public class String1Test {
 		assertThat(String1.firstHalf("HelloThere"), is("Hello"));
 		assertThat(String1.firstHalf("abcdef"), is("abc"));
 	}
+	
+	@Test
+	public void testWithoutEnd() {
+		assertThat(String1.withoutEnd("Hello"), is("ell"));
+		assertThat(String1.withoutEnd("java"), is("av"));
+		assertThat(String1.withoutEnd("coding"), is("odin"));
+	}
 }

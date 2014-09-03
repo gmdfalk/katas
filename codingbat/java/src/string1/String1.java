@@ -44,4 +44,8 @@ public class String1 {
 	public static String firstHalf(String string) {
 		return string.substring(0, string.length()/2);
 	}
+
+	public static String withoutEnd(String str) {
+		return str.substring(1, str.length()-1);
+	}
 }
