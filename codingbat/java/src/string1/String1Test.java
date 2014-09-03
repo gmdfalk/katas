@@ -62,4 +62,11 @@ public class String1Test {
 		assertThat(String1.withoutEnd("java"), is("av"));
 		assertThat(String1.withoutEnd("coding"), is("odin"));
 	}
+	
+	@Test
+	public void testComboString() {
+		assertThat(String1.comboString("Hello", "hi"), is("hiHellohi"));
+		assertThat(String1.comboString("hi", "Hello"), is("hiHellohi"));
+		assertThat(String1.comboString("aaa", "b"), is("baaab"));
+	}
 }

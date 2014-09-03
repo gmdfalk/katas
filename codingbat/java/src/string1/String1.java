@@ -48,4 +48,10 @@ public class String1 {
 	public static String withoutEnd(String str) {
 		return str.substring(1, str.length()-1);
 	}
+
+	public static String comboString(String s1, String s2) {
+		String longStr = s1.length() > s2.length() ? s1 : s2;
+		String shortStr = s1.length() > s2.length() ? s2 : s1;
+		return shortStr + longStr + shortStr;
+	}
 }
