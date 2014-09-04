@@ -69,4 +69,11 @@ public class String1Test {
 		assertThat(String1.comboString("hi", "Hello"), is("hiHellohi"));
 		assertThat(String1.comboString("aaa", "b"), is("baaab"));
 	}
+	
+	@Test
+	public void testNonStart() {
+		assertThat(String1.nonStart("Hello", "There"), is("ellohere"));
+		assertThat(String1.nonStart("java", "code"), is("avaode"));
+		assertThat(String1.nonStart("shotl", "java"), is("hotlava"));
+	}
 }

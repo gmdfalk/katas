@@ -54,4 +54,8 @@ public class String1 {
 		String shortStr = s1.length() > s2.length() ? s2 : s1;
 		return shortStr + longStr + shortStr;
 	}
+
+	public static String nonStart(String s1, String s2) {
+		return s1.substring(1, s1.length()) + s2.substring(1, s2.length());
+	}
 }
