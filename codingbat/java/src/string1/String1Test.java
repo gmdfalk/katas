@@ -76,4 +76,11 @@ public class String1Test {
 		assertThat(String1.nonStart("java", "code"), is("avaode"));
 		assertThat(String1.nonStart("shotl", "java"), is("hotlava"));
 	}
+	
+	@Test
+	public void testLeft2() {
+		assertThat(String1.left2("Hello"), is("lloHe"));
+		assertThat(String1.left2("java"), is("vaja"));
+		assertThat(String1.left2("Hi"), is("Hi"));
+	}
 }
