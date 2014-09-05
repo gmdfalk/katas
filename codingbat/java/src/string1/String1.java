@@ -62,4 +62,9 @@ public class String1 {
 	public static String left2(String string) {
 		return string.substring(2, string.length()) + string.substring(0,2);
 	}
+
+	public static String right2(String str) {
+		int len = str.length();
+		return str.substring(len-2, len) + str.substring(0, len-2);
+	}
 }

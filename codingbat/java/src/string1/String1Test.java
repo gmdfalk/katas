@@ -83,4 +83,11 @@ public class String1Test {
 		assertThat(String1.left2("java"), is("vaja"));
 		assertThat(String1.left2("Hi"), is("Hi"));
 	}
+	
+	@Test
+	public void testRight2() {
+		assertThat(String1.right2("Hello"), is("loHel"));
+		assertThat(String1.right2("java"), is("vaja"));
+		assertThat(String1.right2("Hi"), is("Hi"));
+	}
 }
