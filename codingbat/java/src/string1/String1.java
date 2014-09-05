@@ -67,4 +67,8 @@ public class String1 {
 		int len = str.length();
 		return str.substring(len-2, len) + str.substring(0, len-2);
 	}
+
+	public static String theEnd(String s, boolean b) {
+		return b ? s.substring(0, 1) : s.substring(s.length()-1, s.length());
+	}
 }

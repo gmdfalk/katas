@@ -90,4 +90,11 @@ public class String1Test {
 		assertThat(String1.right2("java"), is("vaja"));
 		assertThat(String1.right2("Hi"), is("Hi"));
 	}
+	
+	@Test
+	public void testTheEnd() {
+		assertThat(String1.theEnd("Hello", true), is("H"));
+		assertThat(String1.theEnd("Hello", false), is("o"));
+		assertThat(String1.theEnd("oh", true), is("o"));
+	}
 }
