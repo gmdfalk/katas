@@ -71,4 +71,8 @@ public class String1 {
 	public static String theEnd(String s, boolean b) {
 		return b ? s.substring(0, 1) : s.substring(s.length()-1, s.length());
 	}
+
+	public static String withouEnd(String str) {
+		return str.substring(1, str.length()-1);
+	}
 }

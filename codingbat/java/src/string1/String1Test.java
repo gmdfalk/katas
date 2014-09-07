@@ -97,4 +97,11 @@ public class String1Test {
 		assertThat(String1.theEnd("Hello", false), is("o"));
 		assertThat(String1.theEnd("oh", true), is("o"));
 	}
+	
+	@Test
+	public void testWithouEnd() {
+		assertThat(String1.withouEnd("Hello"), is("ell"));
+		assertThat(String1.withouEnd("abc"), is("b"));
+		assertThat(String1.withouEnd("ab"), is(""));
+	}
 }
