@@ -75,4 +75,9 @@ public class String1 {
 	public static String withouEnd(String str) {
 		return str.substring(1, str.length()-1);
 	}
+
+	public static String middleTwo(String str) {
+		int middle = str.length()/2;
+		return str.substring(middle-1, middle+1);
+	}
 }
