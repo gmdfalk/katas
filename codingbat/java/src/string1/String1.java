@@ -80,4 +80,14 @@ public class String1 {
 		int middle = str.length()/2;
 		return str.substring(middle-1, middle+1);
 	}
+
+	public static Boolean endsLy(String string) {
+		if (string.length() < 2)
+			return false;
+		return string.substring(string.length()-2).equals( "ly");
+	}
+
+	public static String nTwice(String string, int i) {
+		return string.substring(0, i) + string.substring(string.length()-i);
+	}
 }
