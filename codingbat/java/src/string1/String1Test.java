@@ -111,18 +111,25 @@ public class String1Test {
 		assertThat(String1.middleTwo("code"), is("od"));
 		assertThat(String1.middleTwo("Practice"), is("ct"));
 	}
-	
+
 	@Test
 	public void testEndsLy() {
 		assertThat(String1.endsLy("oddly"), is(true));
 		assertThat(String1.endsLy("y"), is(false));
 		assertThat(String1.endsLy("oddy"), is(false));
 	}
-	
+
 	@Test
 	public void testNTwice() {
 		assertThat(String1.nTwice("Hello", 2), is("Helo"));
 		assertThat(String1.nTwice("Chocolate", 3), is("Choate"));
 		assertThat(String1.nTwice("Chocolate", 1), is("Ce"));
 	}
+	
+	@Test
+	public void testTwoChar() {
+		assertThat(String1.twoChar("java", 0), is("ja"));
+		assertThat(String1.twoChar("java", 2), is("va"));
+		assertThat(String1.twoChar("java", 3), is("ja"));
 	}
+}

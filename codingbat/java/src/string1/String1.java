@@ -90,4 +90,10 @@ public class String1 {
 	public static String nTwice(String string, int i) {
 		return string.substring(0, i) + string.substring(string.length()-i);
 	}
+
+	public static String twoChar(String string, int i) {
+		if (i+2 > string.length())
+			return string.substring(0, 2);
+		return string.substring(i, i+2);
+	}
 }
