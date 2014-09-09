@@ -132,4 +132,11 @@ public class String1Test {
 		assertThat(String1.twoChar("java", 2), is("va"));
 		assertThat(String1.twoChar("java", 3), is("ja"));
 	}
+	
+	@Test
+	public void testMiddleThree() {
+		assertThat(String1.middleThree("Candy"), is("and"));
+		assertThat(String1.middleThree("and"), is("and"));
+		assertThat(String1.middleThree("solving"), is("lvi"));
+	}
 }

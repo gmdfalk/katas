@@ -96,4 +96,9 @@ public class String1 {
 			return string.substring(0, 2);
 		return string.substring(i, i+2);
 	}
+
+	public static String middleThree(String string) {
+		int mid = string.length()/2;
+		return string.substring(mid-1, mid+2);
+	}
 }
