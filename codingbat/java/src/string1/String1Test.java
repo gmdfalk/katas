@@ -146,4 +146,11 @@ public class String1Test {
 		assertThat(String1.hasBad("xbadxx"), is(true));
 		assertThat(String1.hasBad("xxbadxx"), is(false));
 	}
+	
+	@Test
+	public void testAtFirst() {
+		assertThat(String1.atFirst("hello"), is("he"));
+		assertThat(String1.atFirst("hi"), is("hi"));
+		assertThat(String1.atFirst("h"), is("h@"));
+	}
 }

@@ -106,4 +106,12 @@ public class String1 {
 		final int idx = string.indexOf("bad");
 		return idx == 1 || idx == 0;
 	}
+
+	public static String atFirst(String string) {
+		if (string.length() < 2) {
+			return string + "@";
+		} 
+		return string.substring(0, 2);
+			
+	}
 }
