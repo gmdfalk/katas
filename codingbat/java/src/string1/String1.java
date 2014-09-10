@@ -101,4 +101,9 @@ public class String1 {
 		int mid = string.length()/2;
 		return string.substring(mid-1, mid+2);
 	}
+
+	public static Boolean hasBad(String string) {
+		final int idx = string.indexOf("bad");
+		return idx == 1 || idx == 0;
+	}
 }

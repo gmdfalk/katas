@@ -139,4 +139,11 @@ public class String1Test {
 		assertThat(String1.middleThree("and"), is("and"));
 		assertThat(String1.middleThree("solving"), is("lvi"));
 	}
+	
+	@Test
+	public void testHasBad() {
+		assertThat(String1.hasBad("badxx"), is(true));
+		assertThat(String1.hasBad("xbadxx"), is(true));
+		assertThat(String1.hasBad("xxbadxx"), is(false));
+	}
 }
