@@ -1,6 +1,6 @@
 package string1;
 
-public class String1 {
+public final class String1 {
 
 	private String1() {
 	}
@@ -113,5 +113,12 @@ public class String1 {
 		} 
 		return string.substring(0, 2);
 			
+	}
+
+	public static String lastChars(String s1, String s2) {
+		String result = "";
+		result += s1.length() < 1 ? "@" : s1.charAt(0);
+		result += s2.length() < 1 ? "@" : s2.charAt(s2.length()-1);
+		return result;
 	}
 }

@@ -153,4 +153,11 @@ public class String1Test {
 		assertThat(String1.atFirst("hi"), is("hi"));
 		assertThat(String1.atFirst("h"), is("h@"));
 	}
+	
+	@Test
+	public void testLastChars() {
+		assertThat(String1.lastChars("last", "chars"), is("ls"));
+		assertThat(String1.lastChars("yo", "java"), is("ya"));
+		assertThat(String1.lastChars("hi", ""), is("h@"));
+	}
 }
