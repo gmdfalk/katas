@@ -121,4 +121,12 @@ public final class String1 {
 		result += s2.length() < 1 ? "@" : s2.charAt(s2.length()-1);
 		return result;
 	}
+
+	public static String conCat(String s1, String s2) {
+		if (s1.length() < 1)
+			return s2;
+		if (s2.length() < 1)
+			return s1;
+		return s1.charAt(s1.length()-1) == s2.charAt(0) ? s1 + s2.substring(1) : s1 + s2;
+	}
 }

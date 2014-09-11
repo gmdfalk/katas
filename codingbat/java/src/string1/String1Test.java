@@ -160,4 +160,11 @@ public class String1Test {
 		assertThat(String1.lastChars("yo", "java"), is("ya"));
 		assertThat(String1.lastChars("hi", ""), is("h@"));
 	}
+	
+	@Test
+	public void testConCat() {
+		assertThat(String1.conCat("abc", "cat"), is("abcat"));
+		assertThat(String1.conCat("dog", "cat"), is("dogcat"));
+		assertThat(String1.conCat("abc", ""), is("abc"));
+	}
 }
