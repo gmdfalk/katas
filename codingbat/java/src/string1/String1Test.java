@@ -167,4 +167,11 @@ public class String1Test {
 		assertThat(String1.conCat("dog", "cat"), is("dogcat"));
 		assertThat(String1.conCat("abc", ""), is("abc"));
 	}
+	
+	@Test
+	public void testLastTwo() {
+		assertThat(String1.lastTwo("coding"), is("codign"));
+		assertThat(String1.lastTwo("cat"), is("cta"));
+		assertThat(String1.lastTwo("ab"), is("ba"));
+	}
 }

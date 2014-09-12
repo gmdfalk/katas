@@ -129,4 +129,11 @@ public final class String1 {
 			return s1;
 		return s1.charAt(s1.length()-1) == s2.charAt(0) ? s1 + s2.substring(1) : s1 + s2;
 	}
+
+	public static String lastTwo(String string) {
+		final int len = string.length();
+		if (len < 2)
+			return string;
+		return string.substring(0, len-2) + string.charAt(len-1) + string.charAt(len-2);
+	}
 }
