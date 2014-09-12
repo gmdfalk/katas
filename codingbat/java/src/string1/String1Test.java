@@ -174,4 +174,11 @@ public class String1Test {
 		assertThat(String1.lastTwo("cat"), is("cta"));
 		assertThat(String1.lastTwo("ab"), is("ba"));
 	}
+	
+	@Test
+	public void testSeeColor() {
+		assertThat(String1.seeColor("redxx"), is("red"));
+		assertThat(String1.seeColor("xxred"), is(""));
+		assertThat(String1.seeColor("blueTimes"), is("blue"));
+	}
 }

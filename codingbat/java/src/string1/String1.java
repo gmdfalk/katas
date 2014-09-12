@@ -136,4 +136,13 @@ public final class String1 {
 			return string;
 		return string.substring(0, len-2) + string.charAt(len-1) + string.charAt(len-2);
 	}
+
+	public static String seeColor(String string) {
+		if (string.startsWith("red"))
+			return "red";
+		else if (string.startsWith("blue"))
+			return "blue";
+		else
+			return "";
+	}
 }
