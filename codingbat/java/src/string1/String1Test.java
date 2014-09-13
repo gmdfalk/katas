@@ -188,4 +188,11 @@ public class String1Test {
 		assertThat(String1.frontAgain("edit"), is(false));
 		assertThat(String1.frontAgain("ed"), is(true));
 	}
+	
+	@Test
+	public void testMinCat() {
+		assertThat(String1.minCat("Hello", "Hi"), is("loHi"));
+		assertThat(String1.minCat("Hello", "java"), is("ellojava"));
+		assertThat(String1.minCat("java", "Hello"), is("javaello"));
+	}
 }

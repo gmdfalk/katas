@@ -150,4 +150,14 @@ public final class String1 {
 		int len = string.length();
 		return string.substring(0, 2).equals(string.substring(len-2, len));
 	}
+
+	public static String minCat(String s1, String s2) {
+		if (s1.length() > s2.length()) {
+			return s1.substring(s1.length()-s2.length()) + s2;
+		} else if (s2.length() > s1.length()) {
+			return s1 + s2.substring(s2.length()-s1.length());
+		} else {
+			return s1+s2;
+		}
+	}
 }
