@@ -181,4 +181,11 @@ public class String1Test {
 		assertThat(String1.seeColor("xxred"), is(""));
 		assertThat(String1.seeColor("blueTimes"), is("blue"));
 	}
+	
+	@Test
+	public void testFrontAgain() {
+		assertThat(String1.frontAgain("edited"), is(true));
+		assertThat(String1.frontAgain("edit"), is(false));
+		assertThat(String1.frontAgain("ed"), is(true));
+	}
 }

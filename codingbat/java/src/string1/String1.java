@@ -145,4 +145,9 @@ public final class String1 {
 		else
 			return "";
 	}
+
+	public static Boolean frontAgain(String string) {
+		int len = string.length();
+		return string.substring(0, 2).equals(string.substring(len-2, len));
+	}
 }
