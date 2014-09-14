@@ -160,4 +160,10 @@ public final class String1 {
 			return s1+s2;
 		}
 	}
+
+	public static String extraFront(String s) {
+		if (s.length() < 2)
+			return s + s + s;
+		return s.substring(0, 2) + s.substring(0, 2) + s.substring(0, 2);
+	}
 }

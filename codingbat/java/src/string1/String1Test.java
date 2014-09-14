@@ -195,4 +195,11 @@ public class String1Test {
 		assertThat(String1.minCat("Hello", "java"), is("ellojava"));
 		assertThat(String1.minCat("java", "Hello"), is("javaello"));
 	}
+	
+	@Test
+	public void testExtraFront() {
+		assertThat(String1.extraFront("Hello"), is("HeHeHe"));
+		assertThat(String1.extraFront("ab"), is("ababab"));
+		assertThat(String1.extraFront("H"), is("HHH"));
+	}
 }
