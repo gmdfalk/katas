@@ -202,4 +202,11 @@ public class String1Test {
 		assertThat(String1.extraFront("ab"), is("ababab"));
 		assertThat(String1.extraFront("H"), is("HHH"));
 	}
+	
+	@Test
+	public void testWithout2() {
+		assertThat(String1.without2("HelloHe"), is("lloHe"));
+		assertThat(String1.without2("HelloHi"), is("HelloHi"));
+		assertThat(String1.without2("Hi"), is(""));
+	}
 }
