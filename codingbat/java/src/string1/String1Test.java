@@ -209,4 +209,11 @@ public class String1Test {
 		assertThat(String1.without2("HelloHi"), is("HelloHi"));
 		assertThat(String1.without2("Hi"), is(""));
 	}
+	
+	@Test
+	public void testDeFront() {
+		assertThat(String1.deFront("Hello"), is("llo"));
+		assertThat(String1.deFront("java"), is("va"));
+		assertThat(String1.deFront("away"), is("aay"));
+	}
 }

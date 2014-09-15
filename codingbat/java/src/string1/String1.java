@@ -177,4 +177,15 @@ public final class String1 {
 		}
 		return s;
 	}
+
+	public static String deFront(String string) {
+		String result = "";
+		if (string.charAt(0) == 'a') {
+			result += 'a';
+		}
+		if (string.charAt(1) == 'b') {
+			result += 'b';
+		}
+		return result+=string.substring(2,string.length());
+	}
 }
