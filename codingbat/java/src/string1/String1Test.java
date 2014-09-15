@@ -216,4 +216,11 @@ public class String1Test {
 		assertThat(String1.deFront("java"), is("va"));
 		assertThat(String1.deFront("away"), is("aay"));
 	}
+	
+	@Test
+	public void testStartWord() {
+		assertThat(String1.startWord("hippo", "hi"), is("hi"));
+		assertThat(String1.startWord("hippo", "xip"), is("hip"));
+		assertThat(String1.startWord("hippo", "i"), is("h"));
+	}
 }

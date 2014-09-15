@@ -1,5 +1,7 @@
 package string1;
 
+import java.util.regex.Pattern;
+
 public final class String1 {
 
 	private String1() {
@@ -187,5 +189,13 @@ public final class String1 {
 			result += 'b';
 		}
 		return result+=string.substring(2,string.length());
+	}
+
+	public static String startWord(String s1, String s2) {
+		String checkAgainst = s2.length() < 2 ? s2 : s2.substring(1);
+		if (s1.substring(1).startsWith(checkAgainst)) {
+			return s1.substring(0, s2.length());
+		}
+		return "";
 	}
 }
