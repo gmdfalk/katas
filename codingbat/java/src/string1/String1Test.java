@@ -230,4 +230,11 @@ public class String1Test {
 		assertThat(String1.testWithoutX("xHi"), is("Hi"));
 		assertThat(String1.testWithoutX("Hxix"), is("Hxi"));
 	}
+	
+	@Test
+	public void testWithoutX2() {
+		assertThat(String1.testWithoutX2("xHi"), is("Hi"));
+		assertThat(String1.testWithoutX2("Hxi"), is("Hi"));
+		assertThat(String1.testWithoutX2("Hi"), is("Hi"));
+	}
 }

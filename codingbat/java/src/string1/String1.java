@@ -188,7 +188,7 @@ public final class String1 {
 		if (string.charAt(1) == 'b') {
 			result += 'b';
 		}
-		return result+=string.substring(2,string.length());
+		return result += string.substring(2, string.length());
 	}
 
 	public static String startWord(String s1, String s2) {
@@ -204,8 +204,20 @@ public final class String1 {
 		if (s.charAt(0) == 'x') {
 			result = result.substring(1);
 		}
-		if (s.charAt(s.length()-1)=='x') {
-			result = result.substring(0, result.length()-1);
+		if (s.charAt(s.length() - 1) == 'x') {
+			result = result.substring(0, result.length() - 1);
+		}
+		return result;
+	}
+
+	public static String testWithoutX2(String s) {
+		String result = "";
+		for (int i=0; i < s.length(); i++) {
+			if (i < 2 && s.charAt(i) == 'x') {
+				continue;
+			} else {
+				result += s.charAt(i);
+			}
 		}
 		return result;
 	}
