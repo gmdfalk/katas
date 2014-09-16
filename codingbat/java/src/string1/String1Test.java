@@ -223,4 +223,11 @@ public class String1Test {
 		assertThat(String1.startWord("hippo", "xip"), is("hip"));
 		assertThat(String1.startWord("hippo", "i"), is("h"));
 	}
+	
+	@Test
+	public void testWithoutX() {
+		assertThat(String1.testWithoutX("xHix"), is("Hi"));
+		assertThat(String1.testWithoutX("xHi"), is("Hi"));
+		assertThat(String1.testWithoutX("Hxix"), is("Hxi"));
+	}
 }

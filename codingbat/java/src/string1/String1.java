@@ -198,4 +198,15 @@ public final class String1 {
 		}
 		return "";
 	}
+
+	public static String testWithoutX(String s) {
+		String result = s;
+		if (s.charAt(0) == 'x') {
+			result = result.substring(1);
+		}
+		if (s.charAt(s.length()-1)=='x') {
+			result = result.substring(0, result.length()-1);
+		}
+		return result;
+	}
 }
