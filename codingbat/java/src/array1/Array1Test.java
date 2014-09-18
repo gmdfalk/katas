@@ -26,4 +26,10 @@ public class Array1Test {
 		assertThat(Array1.makePi(), is(new int[] { 3, 1, 4 }));
 	}
 
+	@Test
+	public void testCommonEnd() {
+		assertThat(Array1.commonEnd(new int[] { 1, 2, 3 }, new int[] {7,3}), is(true));
+		assertThat(Array1.commonEnd(new int[] { 1, 2, 3 }, new int[] {7,3, 2}), is(false));
+		assertThat(Array1.commonEnd(new int[] { 1, 2, 3 }, new int[] {1,3}), is(true));
+	}
 }

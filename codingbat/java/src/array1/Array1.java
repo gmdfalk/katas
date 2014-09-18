@@ -14,4 +14,8 @@ public class Array1 {
 		return new int[] {3,1,4};
 	}
 
+	public static Boolean commonEnd(int[] is, int[] is2) {
+		return is[0] == is2[0] || is[is.length-1] == is2[is2.length-1];
+	}
+
 }
