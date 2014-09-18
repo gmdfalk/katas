@@ -18,4 +18,11 @@ public class Array1 {
 		return is[0] == is2[0] || is[is.length-1] == is2[is2.length-1];
 	}
 
+	public static Integer sum3(int[] is) {
+		int sum = 0;
+		for (int i=0; i < is.length; i++)
+			sum += is[i];
+		return sum;
+	}
+
 }
