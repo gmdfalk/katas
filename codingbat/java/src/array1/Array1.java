@@ -37,4 +37,12 @@ public class Array1 {
 		return result;
 	}
 
+	public static int[] reverse3(int[] is) {
+		int[] result = new int[is.length];
+		for (int i=0; i < is.length; i++) {
+			result[i] = is[is.length-i-1];
+		}
+		return result;
+	}
+
 }
