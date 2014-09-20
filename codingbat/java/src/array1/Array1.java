@@ -50,4 +50,13 @@ public class Array1 {
 		return new int[] {max,max,max};
 	}
 
+	public static Integer sum2(int[] is) {
+		int sum = 0;
+		for (int i=0; i < is.length && i <2; i++) {
+			sum  += is[i];
+			
+		}
+		return sum;
+	}
+
 }

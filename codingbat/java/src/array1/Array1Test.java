@@ -67,4 +67,11 @@ public class Array1Test {
 		assertThat(Array1.maxEnd3(new int[] { 11,5, 9 }), is(new int[] { 11,11,11 }));
 		assertThat(Array1.maxEnd3(new int[] { 2,11,3 }), is(new int[] { 3,3,3 }));
 	}
+	
+	@Test
+	public void testSum2() {
+		assertThat(Array1.sum2(new int[] { 1, 2, 3 }), is(3));
+		assertThat(Array1.sum2(new int[] { 1,1 }), is(2));
+		assertThat(Array1.sum2(new int[] {1,1,1,1 }), is(2));
+	}
 }
