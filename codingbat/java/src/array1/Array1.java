@@ -45,4 +45,9 @@ public class Array1 {
 		return result;
 	}
 
+	public static int[] maxEnd3(int[] is) {
+		int max = Math.max(is[0], is[2]);
+		return new int[] {max,max,max};
+	}
+
 }
