@@ -53,25 +53,44 @@ public class Array1Test {
 		assertThat(Array1.rotateLeft3(new int[] { 7, 0, 0 }), is(new int[] { 0,
 				0, 7 }));
 	}
-	
+
 	@Test
 	public void testReverse3() {
-		assertThat(Array1.reverse3(new int[] { 1, 2, 3 }), is(new int[] { 3, 2, 1 }));
-		assertThat(Array1.reverse3(new int[] { 5, 11, 9 }), is(new int[] { 9, 11, 5 }));
-		assertThat(Array1.reverse3(new int[] { 7, 0, 0 }), is(new int[] { 0, 0, 7 }));
+		assertThat(Array1.reverse3(new int[] { 1, 2, 3 }), is(new int[] { 3, 2,
+				1 }));
+		assertThat(Array1.reverse3(new int[] { 5, 11, 9 }), is(new int[] { 9,
+				11, 5 }));
+		assertThat(Array1.reverse3(new int[] { 7, 0, 0 }), is(new int[] { 0, 0,
+				7 }));
 	}
-	
+
 	@Test
 	public void testMaxEnd3() {
-		assertThat(Array1.maxEnd3(new int[] { 1, 2, 3 }), is(new int[] { 3, 3,3 }));
-		assertThat(Array1.maxEnd3(new int[] { 11,5, 9 }), is(new int[] { 11,11,11 }));
-		assertThat(Array1.maxEnd3(new int[] { 2,11,3 }), is(new int[] { 3,3,3 }));
+		assertThat(Array1.maxEnd3(new int[] { 1, 2, 3 }), is(new int[] { 3, 3,
+				3 }));
+		assertThat(Array1.maxEnd3(new int[] { 11, 5, 9 }), is(new int[] { 11,
+				11, 11 }));
+		assertThat(Array1.maxEnd3(new int[] { 2, 11, 3 }), is(new int[] { 3, 3,
+				3 }));
 	}
-	
+
 	@Test
 	public void testSum2() {
 		assertThat(Array1.sum2(new int[] { 1, 2, 3 }), is(3));
-		assertThat(Array1.sum2(new int[] { 1,1 }), is(2));
-		assertThat(Array1.sum2(new int[] {1,1,1,1 }), is(2));
+		assertThat(Array1.sum2(new int[] { 1, 1 }), is(2));
+		assertThat(Array1.sum2(new int[] { 1, 1, 1, 1 }), is(2));
+	}
+
+	@Test
+	public void testMiddleWay() {
+		assertThat(
+				Array1.middleWay(new int[] { 1, 2, 3 }, new int[] { 4, 5, 6 }),
+				is(new int[] { 2, 5 }));
+		assertThat(
+				Array1.middleWay(new int[] { 7, 7, 7 }, new int[] { 3, 8, 0 }),
+				is(new int[] { 7, 8 }));
+		assertThat(
+				Array1.middleWay(new int[] { 5, 2, 9 }, new int[] { 1, 4, 5 }),
+				is(new int[] { 2, 4 }));
 	}
 }
