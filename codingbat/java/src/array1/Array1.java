@@ -67,4 +67,11 @@ public class Array1 {
 		return new int[] {is[0], is[is.length-1]};
 	}
 
+	public static Boolean has23(int[] is) {
+		for (int i : is)
+			if (i == 3 || i == 2)
+				return true;
+		return false;
+	}
+
 }

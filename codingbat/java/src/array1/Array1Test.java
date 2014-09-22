@@ -102,4 +102,13 @@ public class Array1Test {
 		assertThat(
 				Array1.makeEnds(new int[] { 7,4,6,2 }),is( new int[] { 7,2 }));
 	}
+	
+	@Test
+	public void testHas23() {
+		assertThat( Array1.has23(new int[] { 2,5 }),is(true));
+		assertThat(
+				Array1.has23(new int[] { 4,3 }),is( true));
+		assertThat(
+				Array1.has23(new int[] { 4,5 }),is( false));
+	}
 }
