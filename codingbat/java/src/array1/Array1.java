@@ -63,4 +63,8 @@ public class Array1 {
 		return new int[] {is[is.length/2], is2[is2.length/2]};
 	}
 
+	public static int[] makeEnds(int[] is) {
+		return new int[] {is[0], is[is.length-1]};
+	}
+
 }
