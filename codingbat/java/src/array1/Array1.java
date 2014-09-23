@@ -60,11 +60,11 @@ public class Array1 {
 	}
 
 	public static int[] middleWay(int[] is, int[] is2) {
-		return new int[] {is[is.length/2], is2[is2.length/2]};
+		return new int[] { is[is.length / 2], is2[is2.length / 2] };
 	}
 
 	public static int[] makeEnds(int[] is) {
-		return new int[] {is[0], is[is.length-1]};
+		return new int[] { is[0], is[is.length - 1] };
 	}
 
 	public static Boolean has23(int[] is) {
@@ -72,6 +72,13 @@ public class Array1 {
 			if (i == 3 || i == 2)
 				return true;
 		return false;
+	}
+
+	public static Boolean no23(int[] is) {
+		for (int i : is)
+			if (i == 3 || i == 2)
+				return false;
+		return true;
 	}
 
 }

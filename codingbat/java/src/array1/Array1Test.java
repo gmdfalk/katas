@@ -93,22 +93,28 @@ public class Array1Test {
 				Array1.middleWay(new int[] { 5, 2, 9 }, new int[] { 1, 4, 5 }),
 				is(new int[] { 2, 4 }));
 	}
-	
+
 	@Test
 	public void testMakeEnds() {
-		assertThat( Array1.makeEnds(new int[] { 1, 2, 3 }),is(new int[] {1,3 }));
-		assertThat(
-				Array1.makeEnds(new int[] { 1, 2, 3, 4 }),is( new int[] { 1,4 }));
-		assertThat(
-				Array1.makeEnds(new int[] { 7,4,6,2 }),is( new int[] { 7,2 }));
+		assertThat(Array1.makeEnds(new int[] { 1, 2, 3 }),
+				is(new int[] { 1, 3 }));
+		assertThat(Array1.makeEnds(new int[] { 1, 2, 3, 4 }), is(new int[] { 1,
+				4 }));
+		assertThat(Array1.makeEnds(new int[] { 7, 4, 6, 2 }), is(new int[] { 7,
+				2 }));
 	}
-	
+
 	@Test
 	public void testHas23() {
-		assertThat( Array1.has23(new int[] { 2,5 }),is(true));
-		assertThat(
-				Array1.has23(new int[] { 4,3 }),is( true));
-		assertThat(
-				Array1.has23(new int[] { 4,5 }),is( false));
+		assertThat(Array1.has23(new int[] { 2, 5 }), is(true));
+		assertThat(Array1.has23(new int[] { 4, 3 }), is(true));
+		assertThat(Array1.has23(new int[] { 4, 5 }), is(false));
+	}
+
+	@Test
+	public void testNo23() {
+		assertThat(Array1.no23(new int[] { 4, 5 }), is(true));
+		assertThat(Array1.no23(new int[] { 4, 2 }), is(false));
+		assertThat(Array1.no23(new int[] { 3, 5 }), is(false));
 	}
 }
