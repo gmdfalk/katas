@@ -117,4 +117,11 @@ public class Array1Test {
 		assertThat(Array1.no23(new int[] { 4, 2 }), is(false));
 		assertThat(Array1.no23(new int[] { 3, 5 }), is(false));
 	}
+	
+	@Test
+	public void testMakeLast() {
+		assertThat(Array1.makeLast(new int[] { 4, 5,6 }), is(new int[] {0,0,0,0,0,6}));
+		assertThat(Array1.makeLast(new int[] { 1,2 }), is(new int[] {0,0,0,2}));
+		assertThat(Array1.makeLast(new int[] { 3 }), is(new int[] {0,3}));
+	}
 }

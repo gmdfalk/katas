@@ -81,4 +81,10 @@ public class Array1 {
 		return true;
 	}
 
+	public static int[] makeLast(int[] is) {
+		int[] result = new int[is.length*2];
+		result[result.length-1] = is[is.length-1];
+		return  result;
+	}
+
 }
