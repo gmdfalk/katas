@@ -124,4 +124,11 @@ public class Array1Test {
 		assertThat(Array1.makeLast(new int[] { 1,2 }), is(new int[] {0,0,0,2}));
 		assertThat(Array1.makeLast(new int[] { 3 }), is(new int[] {0,3}));
 	}
+	
+	@Test
+	public void testDouble23() {
+		assertThat(Array1.double23(new int[] { 2,2 }), is(true));
+		assertThat(Array1.double23(new int[] { 3,3}), is(true));
+		assertThat(Array1.double23(new int[] { 2,3 }), is(false));
+	}
 }

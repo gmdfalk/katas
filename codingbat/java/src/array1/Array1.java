@@ -87,4 +87,17 @@ public class Array1 {
 		return  result;
 	}
 
+	public static Boolean double23(int[] is) {
+		int twoCount = 0;
+		int threeCount = 0;
+		for (int i : is) {
+			if (i == 2)
+				twoCount++;
+			else if (i == 3)
+				threeCount++;
+		}
+		
+		return twoCount > 1 || threeCount > 1;
+	}
+
 }
