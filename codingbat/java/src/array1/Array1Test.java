@@ -117,18 +117,30 @@ public class Array1Test {
 		assertThat(Array1.no23(new int[] { 4, 2 }), is(false));
 		assertThat(Array1.no23(new int[] { 3, 5 }), is(false));
 	}
-	
+
 	@Test
 	public void testMakeLast() {
-		assertThat(Array1.makeLast(new int[] { 4, 5,6 }), is(new int[] {0,0,0,0,0,6}));
-		assertThat(Array1.makeLast(new int[] { 1,2 }), is(new int[] {0,0,0,2}));
-		assertThat(Array1.makeLast(new int[] { 3 }), is(new int[] {0,3}));
+		assertThat(Array1.makeLast(new int[] { 4, 5, 6 }), is(new int[] { 0, 0,
+				0, 0, 0, 6 }));
+		assertThat(Array1.makeLast(new int[] { 1, 2 }), is(new int[] { 0, 0, 0,
+				2 }));
+		assertThat(Array1.makeLast(new int[] { 3 }), is(new int[] { 0, 3 }));
 	}
-	
+
 	@Test
 	public void testDouble23() {
-		assertThat(Array1.double23(new int[] { 2,2 }), is(true));
-		assertThat(Array1.double23(new int[] { 3,3}), is(true));
-		assertThat(Array1.double23(new int[] { 2,3 }), is(false));
+		assertThat(Array1.double23(new int[] { 2, 2 }), is(true));
+		assertThat(Array1.double23(new int[] { 3, 3 }), is(true));
+		assertThat(Array1.double23(new int[] { 2, 3 }), is(false));
+	}
+
+	@Test
+	public void testFix23() {
+		assertThat(Array1.fix23(new int[] { 1, 2, 3 }),
+				is(new int[] { 1, 2, 0 }));
+		assertThat(Array1.fix23(new int[] { 2, 3, 5 }),
+				is(new int[] { 2, 0, 5 }));
+		assertThat(Array1.fix23(new int[] { 1, 2, 1 }),
+				is(new int[] { 1, 2, 1 }));
 	}
 }

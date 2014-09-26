@@ -82,9 +82,9 @@ public class Array1 {
 	}
 
 	public static int[] makeLast(int[] is) {
-		int[] result = new int[is.length*2];
-		result[result.length-1] = is[is.length-1];
-		return  result;
+		int[] result = new int[is.length * 2];
+		result[result.length - 1] = is[is.length - 1];
+		return result;
 	}
 
 	public static Boolean double23(int[] is) {
@@ -96,8 +96,18 @@ public class Array1 {
 			else if (i == 3)
 				threeCount++;
 		}
-		
+
 		return twoCount > 1 || threeCount > 1;
+	}
+
+	public static int[] fix23(int[] is) {
+		for (int i = 0; i < is.length - 1; i++) {
+			if (is[i] == 2 && is[i + 1] == 3) {
+				is[i + 1] = 0;
+			}
+
+		}
+		return is;
 	}
 
 }
