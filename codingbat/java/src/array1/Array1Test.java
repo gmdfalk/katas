@@ -143,4 +143,15 @@ public class Array1Test {
 		assertThat(Array1.fix23(new int[] { 1, 2, 1 }),
 				is(new int[] { 1, 2, 1 }));
 	}
+	
+
+	@Test
+	public void testStart1() {
+		assertThat(Array1.start1(new int[] { 1, 2, 3 }, new int[] {1,3}),
+				is(2));
+		assertThat(Array1.start1(new int[] { 7,2,3}, new int[] {1}),
+				is(1));
+		assertThat(Array1.start1(new int[] { 1, 2}, new int[] {}),
+				is(1));
+	}
 }

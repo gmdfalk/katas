@@ -110,4 +110,13 @@ public class Array1 {
 		return is;
 	}
 
+	public static Integer start1(int[] is, int[] is2) {
+		int count = 0;
+		if (is.length > 0 && is[0] == 1)
+			count++;
+		if (is2.length > 0 && is2[0] == 1)
+			count++;
+		return  count;
+	}
+
 }
