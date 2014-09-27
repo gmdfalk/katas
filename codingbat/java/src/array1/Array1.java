@@ -116,7 +116,14 @@ public class Array1 {
 			count++;
 		if (is2.length > 0 && is2[0] == 1)
 			count++;
-		return  count;
+		return count;
+	}
+
+	public static int[] biggerTwo(int[] is, int[] is2) {
+		int a = is[0] + is[1];
+		int b = is2[0] + is2[1];
+
+		return a >= b ? is : is2;
 	}
 
 }
