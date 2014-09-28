@@ -161,4 +161,14 @@ public class Array1Test {
 		assertThat(Array1.biggerTwo(new int[] { 1, 1 }, new int[] { 1, 2 }),
 				is(new int[] { 1, 2 }));
 	}
+
+	@Test
+	public void testMakeMiddle() {
+		assertThat(Array1.makeMiddle(new int[] { 1, 2, 3, 4 }), is(new int[] {
+				2, 3 }));
+		assertThat(Array1.makeMiddle(new int[] { 7, 1, 2, 3, 4, 9 }),
+				is(new int[] { 2, 3 }));
+		assertThat(Array1.makeMiddle(new int[] { 1, 2 }),
+				is(new int[] { 1, 2 }));
+	}
 }

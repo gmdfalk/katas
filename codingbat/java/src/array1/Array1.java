@@ -126,4 +126,9 @@ public class Array1 {
 		return a >= b ? is : is2;
 	}
 
+	public static int[] makeMiddle(int[] is) {
+		int mid = is.length / 2 - 1;
+		return new int[] { is[mid], is[mid + 1] };
+	}
+
 }
