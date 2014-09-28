@@ -131,4 +131,15 @@ public class Array1 {
 		return new int[] { is[mid], is[mid + 1] };
 	}
 
+	public static int[] plusTwo(int[] is, int[] is2) {
+		final int len1 = is.length;
+		final int len2 = is2.length;
+		int[] result = new int[len1 + len2];
+
+		System.arraycopy(is, 0, result, 0, len1);
+		System.arraycopy(is2, 0, result, len1, len2);
+
+		return result;
+	}
+
 }

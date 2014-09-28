@@ -171,4 +171,14 @@ public class Array1Test {
 		assertThat(Array1.makeMiddle(new int[] { 1, 2 }),
 				is(new int[] { 1, 2 }));
 	}
+
+	@Test
+	public void testPlusTwo() {
+		assertThat(Array1.plusTwo(new int[] { 1, 2 }, new int[] { 3, 4 }),
+				is(new int[] { 1, 2, 3, 4 }));
+		assertThat(Array1.plusTwo(new int[] { 4, 4 }, new int[] { 2, 2 }),
+				is(new int[] { 4, 4, 2, 2 }));
+		assertThat(Array1.plusTwo(new int[] { 9, 2 }, new int[] { 3, 4 }),
+				is(new int[] { 9, 2, 3, 4 }));
+	}
 }
