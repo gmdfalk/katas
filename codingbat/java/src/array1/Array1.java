@@ -142,4 +142,12 @@ public class Array1 {
 		return result;
 	}
 
+	public static int[] swapEnds(int[] is) {
+		int[] result = new int[is.length];
+		result[0] = is[is.length-1];
+		result[result.length-1] = is[0];
+		System.arraycopy(is, 1, result, 1, is.length-2);
+		return result;
+	}
+
 }

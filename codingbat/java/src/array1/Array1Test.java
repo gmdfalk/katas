@@ -181,4 +181,13 @@ public class Array1Test {
 		assertThat(Array1.plusTwo(new int[] { 9, 2 }, new int[] { 3, 4 }),
 				is(new int[] { 9, 2, 3, 4 }));
 	}
+	
+	@Test
+	public void testSwapEnds() {
+		assertThat(Array1.swapEnds(new int[] { 1,2,3,4 }), is(new int[] {4,2,3,1}));
+		assertThat(Array1.swapEnds(new int[] { 1,2,3 }),
+				is(new int[] { 3,2,1 }));
+		assertThat(Array1.swapEnds(new int[] { 8,6,7,9,5 }),
+				is(new int[] { 5,6,7,9,8 }));
+	}
 }
