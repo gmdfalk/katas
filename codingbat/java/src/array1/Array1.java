@@ -144,10 +144,15 @@ public class Array1 {
 
 	public static int[] swapEnds(int[] is) {
 		int[] result = new int[is.length];
-		result[0] = is[is.length-1];
-		result[result.length-1] = is[0];
-		System.arraycopy(is, 1, result, 1, is.length-2);
+		result[0] = is[is.length - 1];
+		result[result.length - 1] = is[0];
+		System.arraycopy(is, 1, result, 1, is.length - 2);
 		return result;
+	}
+
+	public static int[] midThree(int[] is) {
+		int mid = is.length/2;
+		return new int[] { is[mid -1], is[mid], is[mid+1]};
 	}
 
 }
