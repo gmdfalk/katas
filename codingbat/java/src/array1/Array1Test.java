@@ -198,4 +198,11 @@ public class Array1Test {
 		assertThat(Array1.midThree(new int[] { 8,6,7,5,3,0,9 }), is(new int[] { 7,5,3 }));
 		assertThat(Array1.midThree(new int[] { 1,2,3 }), is(new int[] { 1,2,3 }));
 	}
+	
+	@Test
+	public void testMaxTriple() {
+		assertThat(Array1.maxTriple(new int[] {1,2,3}),is(3));
+		assertThat(Array1.maxTriple(new int[] { 1,5,3}),is(5));
+		assertThat(Array1.maxTriple(new int[] { 5,2,3}),is(5));
+	}
 }

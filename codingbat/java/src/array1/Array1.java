@@ -155,4 +155,8 @@ public class Array1 {
 		return new int[] { is[mid -1], is[mid], is[mid+1]};
 	}
 
+	public static Integer maxTriple(int[] is) {
+		return Math.max(is[is.length/2], Math.max(is[0],  is[is.length-1]));
+	}
+
 }
