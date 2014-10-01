@@ -151,12 +151,19 @@ public class Array1 {
 	}
 
 	public static int[] midThree(int[] is) {
-		int mid = is.length/2;
-		return new int[] { is[mid -1], is[mid], is[mid+1]};
+		int mid = is.length / 2;
+		return new int[] { is[mid - 1], is[mid], is[mid + 1] };
 	}
 
 	public static Integer maxTriple(int[] is) {
-		return Math.max(is[is.length/2], Math.max(is[0],  is[is.length-1]));
+		return Math.max(is[is.length / 2], Math.max(is[0], is[is.length - 1]));
+	}
+
+	public static int[] frontPiece(int[] is) {
+		int len = is.length > 1 ? 2 : is.length;
+		int[] result = new int[len];
+		System.arraycopy(is, 0, result, 0, len);
+		return result;
 	}
 
 }

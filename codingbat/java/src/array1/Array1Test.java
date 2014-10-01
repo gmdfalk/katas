@@ -191,18 +191,30 @@ public class Array1Test {
 		assertThat(Array1.swapEnds(new int[] { 8, 6, 7, 9, 5 }), is(new int[] {
 				5, 6, 7, 9, 8 }));
 	}
-	
+
 	@Test
 	public void testMidThree() {
-		assertThat(Array1.midThree(new int[] { 1, 2, 3, 4,5 }), is(new int[] { 2,3,4 }));
-		assertThat(Array1.midThree(new int[] { 8,6,7,5,3,0,9 }), is(new int[] { 7,5,3 }));
-		assertThat(Array1.midThree(new int[] { 1,2,3 }), is(new int[] { 1,2,3 }));
+		assertThat(Array1.midThree(new int[] { 1, 2, 3, 4, 5 }), is(new int[] {
+				2, 3, 4 }));
+		assertThat(Array1.midThree(new int[] { 8, 6, 7, 5, 3, 0, 9 }),
+				is(new int[] { 7, 5, 3 }));
+		assertThat(Array1.midThree(new int[] { 1, 2, 3 }), is(new int[] { 1, 2,
+				3 }));
 	}
-	
+
 	@Test
 	public void testMaxTriple() {
-		assertThat(Array1.maxTriple(new int[] {1,2,3}),is(3));
-		assertThat(Array1.maxTriple(new int[] { 1,5,3}),is(5));
-		assertThat(Array1.maxTriple(new int[] { 5,2,3}),is(5));
+		assertThat(Array1.maxTriple(new int[] { 1, 2, 3 }), is(3));
+		assertThat(Array1.maxTriple(new int[] { 1, 5, 3 }), is(5));
+		assertThat(Array1.maxTriple(new int[] { 5, 2, 3 }), is(5));
+	}
+
+	@Test
+	public void testFrontPiece() {
+		assertThat(Array1.frontPiece(new int[] { 1, 2, 3 }), is(new int[] { 1,
+				2 }));
+		assertThat(Array1.frontPiece(new int[] { 1, 2 }),
+				is(new int[] { 1, 2 }));
+		assertThat(Array1.frontPiece(new int[] { 1 }), is(new int[] { 1 }));
 	}
 }
