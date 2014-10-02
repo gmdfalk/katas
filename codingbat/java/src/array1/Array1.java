@@ -166,4 +166,15 @@ public class Array1 {
 		return result;
 	}
 
+	public static Boolean unlucky1(int[] is) {
+		for (int i = 0; i < is.length - 1; i++) {
+			if (i > 1 && i < is.length - 2) {
+				continue;
+			}
+			if (is[i] == 1 && is[i + 1] == 3)
+				return true;
+		}
+		return false;
+	}
+
 }

@@ -217,4 +217,12 @@ public class Array1Test {
 				is(new int[] { 1, 2 }));
 		assertThat(Array1.frontPiece(new int[] { 1 }), is(new int[] { 1 }));
 	}
+
+	@Test
+	public void testUnlucky1() {
+		assertThat(Array1.unlucky1(new int[] { 1, 3, 4, 5 }), is(true));
+		assertThat(Array1.unlucky1(new int[] { 2, 1, 3, 4, 5 }), is(true));
+		assertThat(Array1.unlucky1(new int[] { 1, 1, 1 }), is(false));
+		assertThat(Array1.unlucky1(new int[] { 1, 1, 1, 1, 3, 1, 3, 1, 1, 2 }), is(false));
+	}
 }
