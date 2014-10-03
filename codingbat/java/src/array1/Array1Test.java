@@ -223,6 +223,17 @@ public class Array1Test {
 		assertThat(Array1.unlucky1(new int[] { 1, 3, 4, 5 }), is(true));
 		assertThat(Array1.unlucky1(new int[] { 2, 1, 3, 4, 5 }), is(true));
 		assertThat(Array1.unlucky1(new int[] { 1, 1, 1 }), is(false));
-		assertThat(Array1.unlucky1(new int[] { 1, 1, 1, 1, 3, 1, 3, 1, 1, 2 }), is(false));
+		assertThat(Array1.unlucky1(new int[] { 1, 1, 1, 1, 3, 1, 3, 1, 1, 2 }),
+				is(false));
+	}
+
+	@Test
+	public void testMake2() {
+		assertThat(Array1.make2(new int[] { 4, 5 }, new int[] { 1, 2, 3 }),
+				is(new int[] { 4, 5 }));
+		assertThat(Array1.make2(new int[] { 4 }, new int[] { 1, 2, 3 }),
+				is(new int[] { 4, 1 }));
+		assertThat(Array1.make2(new int[] {}, new int[] { 1, 2 }),
+				is(new int[] { 1, 2 }));
 	}
 }
