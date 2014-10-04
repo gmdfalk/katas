@@ -180,11 +180,24 @@ public class Array1 {
 	public static int[] make2(int[] is, int[] is2) {
 		int[] result = new int[2];
 		final int len = is.length > 2 ? 2 : is.length;
-		
+
 		System.arraycopy(is, 0, result, 0, len);
-		if (len < 2) 
-			System.arraycopy(is2, 0, result, len, 2-len);
-		
+		if (len < 2)
+			System.arraycopy(is2, 0, result, len, 2 - len);
+
+		return result;
+	}
+
+	public static int[] front11(int[] is, int[] is2) {
+		int[] result;
+		if (is.length == 0) {
+			result = new int[] { is2[0] };
+		} else if (is2.length == 0) {
+			result = new int[] { is[0] };
+		} else {
+			result = new int[] { is[0], is2[0] };
+
+		}
 		return result;
 	}
 

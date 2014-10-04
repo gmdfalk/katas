@@ -236,4 +236,15 @@ public class Array1Test {
 		assertThat(Array1.make2(new int[] {}, new int[] { 1, 2 }),
 				is(new int[] { 1, 2 }));
 	}
+
+	@Test
+	public void testFront11() {
+		assertThat(
+				Array1.front11(new int[] { 1, 2, 3 }, new int[] { 7, 9, 8 }),
+				is(new int[] { 1, 7 }));
+		assertThat(Array1.front11(new int[] { 1 }, new int[] { 2 }),
+				is(new int[] { 1, 2 }));
+		assertThat(Array1.front11(new int[] { 1, 7 }, new int[] {}),
+				is(new int[] { 1 }));
+	}
 }
