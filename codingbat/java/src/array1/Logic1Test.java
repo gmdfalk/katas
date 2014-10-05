@@ -21,5 +21,12 @@ public class Logic1Test {
 		assertThat(Logic1.dateFashion(5,2), is(0));
 		assertThat(Logic1.dateFashion(5,5), is(1));
 	}
+	
+	@Test
+	public void testSquirrelPlay() {
+		assertThat(Logic1.squirrelPlay(70,false), is(true));
+		assertThat(Logic1.squirrelPlay(95,false), is(false));
+		assertThat(Logic1.squirrelPlay(95,true), is(true));
+	}
 
 }

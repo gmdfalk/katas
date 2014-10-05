@@ -14,4 +14,9 @@ public class Logic1 {
 		return 1;
 	}
 
+	public static Boolean squirrelPlay(int temp, boolean isSummer) {
+		int max = isSummer ? 100 : 90;
+		return temp >= 60 && temp <= max;
+	}
+
 }
