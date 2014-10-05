@@ -19,4 +19,13 @@ public class Logic1 {
 		return temp >= 60 && temp <= max;
 	}
 
+	public static Integer caughtSpeeding(int speed, boolean isBirthday) {
+		int max = isBirthday ? 5 : 0;
+		if (speed > 80 + max)
+			return 2;
+		else if (speed > 60 + max)
+			return 1;
+		return 0;
+	}
+
 }

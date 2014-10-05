@@ -29,4 +29,11 @@ public class Logic1Test {
 		assertThat(Logic1.squirrelPlay(95,true), is(true));
 	}
 
+@Test
+public void testCaughtSpeeding() {
+	assertThat(Logic1.caughtSpeeding(60,false), is(0));
+	assertThat(Logic1.caughtSpeeding(65,false), is(1));
+	assertThat(Logic1.caughtSpeeding(65,true), is(0));
+}
+
 }
