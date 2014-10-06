@@ -27,5 +27,18 @@ public class Logic1 {
 			return 1;
 		return 0;
 	}
+	
+	public static void stuff(boolean a, boolean b, boolean c, boolean d) {
+		if ((a && b) && c) {
+			System.out.println();
+		} else {
+			System.out.println();
+		}
+	}
+
+	public static Integer sortaSum(int i, int j) {
+		final int sum = i+j;
+		return sum >= 10 && sum <= 19 ? 20 : sum;
+	}
 
 }
