@@ -47,5 +47,15 @@ public class Logic1Test {
 		assertThat(Logic1.sortaSum(9,4), is(20));
 		assertThat(Logic1.sortaSum(10,11), is(21));
 	}
+	
+
+	@Test
+	public void testAlarmClock() {
+		assertThat(Logic1.alarmClock(1, false), is("7:00"));
+		assertThat(Logic1.alarmClock(5, false), is("7:00"));
+		assertThat(Logic1.alarmClock(0, false), is("10:00"));
+		assertThat(Logic1.alarmClock(0, true), is("off"));
+		assertThat(Logic1.alarmClock(1, true), is("10:00"));
+	}
 
 }

@@ -41,4 +41,16 @@ public class Logic1 {
 		return sum >= 10 && sum <= 19 ? 20 : sum;
 	}
 
+	public static String alarmClock(int day, boolean vacation) {
+		String result = "";
+		boolean isWeekday = day >= 1 && day <= 5;
+		if (isWeekday) {
+			result = vacation ? "10:00" : "7:00";
+		}
+		else {
+			result = vacation ? "off" : "10:00";
+		}
+		return result;
+	}
+
 }
