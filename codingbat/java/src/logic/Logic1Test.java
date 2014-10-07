@@ -1,4 +1,4 @@
-package array1;
+package logic;
 
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
@@ -34,28 +34,28 @@ public class Logic1Test {
 		assertThat(Logic1.caughtSpeeding(65, false), is(1));
 		assertThat(Logic1.caughtSpeeding(65, true), is(0));
 	}
-	
-//	@Test
-//	public void testStuff() {
-//		Logic1.stuff(true, true, true, true);
-//		Logic1.stuff(false, true, true, false);
-//	}
-	
-	@Test
-	public void testSortaSum() {
-		assertThat(Logic1.sortaSum(3,4), is(7));
-		assertThat(Logic1.sortaSum(9,4), is(20));
-		assertThat(Logic1.sortaSum(10,11), is(21));
-	}
-	
 
 	@Test
 	public void testAlarmClock() {
 		assertThat(Logic1.alarmClock(1, false), is("7:00"));
 		assertThat(Logic1.alarmClock(5, false), is("7:00"));
 		assertThat(Logic1.alarmClock(0, false), is("10:00"));
-		assertThat(Logic1.alarmClock(0, true), is("off"));
 		assertThat(Logic1.alarmClock(1, true), is("10:00"));
+		assertThat(Logic1.alarmClock(0, true), is("off"));
+	}
+
+	@Test
+	public void testSortaSum() {
+		assertThat(Logic1.sortaSum(3, 4), is(7));
+		assertThat(Logic1.sortaSum(9, 4), is(20));
+		assertThat(Logic1.sortaSum(10, 11), is(21));
+	}
+	
+	@Test
+	public void testLove6() {
+		assertThat(Logic1.love6(6,4), is(true));
+		assertThat(Logic1.love6(4,5), is(false));
+		assertThat(Logic1.love6(1,5), is(true));
 	}
 
 }

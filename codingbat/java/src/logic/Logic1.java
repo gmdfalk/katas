@@ -1,4 +1,4 @@
-package array1;
+package logic;
 
 public class Logic1 {
 
@@ -28,16 +28,8 @@ public class Logic1 {
 		return 0;
 	}
 	
-	public static void stuff(boolean a, boolean b, boolean c, boolean d) {
-		if ((a && b) && c) {
-			System.out.println();
-		} else {
-			System.out.println();
-		}
-	}
-
 	public static Integer sortaSum(int i, int j) {
-		final int sum = i+j;
+		final int sum = i + j;
 		return sum >= 10 && sum <= 19 ? 20 : sum;
 	}
 
@@ -46,11 +38,16 @@ public class Logic1 {
 		boolean isWeekday = day >= 1 && day <= 5;
 		if (isWeekday) {
 			result = vacation ? "10:00" : "7:00";
-		}
-		else {
+		} else {
 			result = vacation ? "off" : "10:00";
 		}
 		return result;
 	}
+
+	public static Boolean love6(int i, int j) {
+		return Math.abs(i+j) == 6 || i == 6  || j == 6;
+	}
+	
+	
 
 }

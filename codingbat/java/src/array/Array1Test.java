@@ -1,4 +1,4 @@
-package array1;
+package array;
 
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
