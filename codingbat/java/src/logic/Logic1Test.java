@@ -57,5 +57,12 @@ public class Logic1Test {
 		assertThat(Logic1.love6(4,5), is(false));
 		assertThat(Logic1.love6(1,5), is(true));
 	}
+	
+	@Test
+	public void testIn1To10() {
+		assertThat(Logic1.in1To10(5, false), is(true));
+		assertThat(Logic1.in1To10(11, false), is(false));
+		assertThat(Logic1.in1To10(11, true), is(true));
+	}
 
 }

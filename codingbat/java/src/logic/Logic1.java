@@ -47,7 +47,10 @@ public class Logic1 {
 	public static Boolean love6(int i, int j) {
 		return Math.abs(i+j) == 6 || i == 6  || j == 6;
 	}
-	
-	
 
+	public static Boolean in1To10(int i, boolean b) {
+		if (b)
+			return i <= 1 || i >= 10;
+		return i >= 1 && i <= 10;
+	}
 }
