@@ -71,5 +71,12 @@ public class Logic1Test {
 		assertThat(Logic1.specialEleven(23), is(true));
 		assertThat(Logic1.specialEleven(24), is(false));
 	}
+	
+	@Test
+	public void testMore20() {
+		assertThat(Logic1.more20(20), is(false));
+		assertThat(Logic1.more20(21), is(true));
+		assertThat(Logic1.more20(22), is(true));
+	}
 
 }
