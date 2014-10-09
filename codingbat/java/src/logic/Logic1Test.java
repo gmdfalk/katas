@@ -64,5 +64,12 @@ public class Logic1Test {
 		assertThat(Logic1.in1To10(11, false), is(false));
 		assertThat(Logic1.in1To10(11, true), is(true));
 	}
+	
+	@Test
+	public void testSpecialEleven() {
+		assertThat(Logic1.specialEleven(22), is(true));
+		assertThat(Logic1.specialEleven(23), is(true));
+		assertThat(Logic1.specialEleven(24), is(false));
+	}
 
 }

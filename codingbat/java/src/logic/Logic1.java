@@ -53,4 +53,8 @@ public class Logic1 {
 			return i <= 1 || i >= 10;
 		return i >= 1 && i <= 10;
 	}
+
+	public static Boolean specialEleven(int i) {
+		return i % 11 < 2;
+	}
 }
