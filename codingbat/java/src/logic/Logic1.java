@@ -61,4 +61,8 @@ public class Logic1 {
 	public static Boolean more20(int i) {
 		return i % 20 > 0;
 	}
+
+	public static Boolean old35(int i) {
+		return !(i % 3 == 0 && i % 5 == 0) && (i % 3 == 0 || i % 5 == 0);
+	}
 }
