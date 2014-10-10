@@ -85,5 +85,12 @@ public class Logic1Test {
 		assertThat(Logic1.old35(10), is(true));
 		assertThat(Logic1.old35(15), is(false));
 	}
+	
+	@Test
+	public void testLess20() {
+		assertThat(Logic1.less20(18), is(true));
+		assertThat(Logic1.less20(19), is(true));
+		assertThat(Logic1.less20(20), is(false));
+	}
 
 }
