@@ -69,4 +69,8 @@ public class Logic1 {
 	public static Boolean less20(int i) {
 		return i % 20 > 17;
 	}
+
+	public static Boolean nearTen(int i) {
+		return i % 10 > 7 || i % 10 < 3;
+	}
 }

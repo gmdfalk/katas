@@ -92,5 +92,12 @@ public class Logic1Test {
 		assertThat(Logic1.less20(19), is(true));
 		assertThat(Logic1.less20(20), is(false));
 	}
+	
+	@Test
+	public void testNearTen() {
+		assertThat(Logic1.nearTen(12), is(true));
+		assertThat(Logic1.nearTen(17), is(false));
+		assertThat(Logic1.nearTen(19), is(true));
+	}
 
 }
