@@ -99,5 +99,11 @@ public class Logic1Test {
 		assertThat(Logic1.nearTen(17), is(false));
 		assertThat(Logic1.nearTen(19), is(true));
 	}
-
+	
+	@Test
+	public void testTeenSum() {
+		assertThat(Logic1.teenSum(3,4), is(7));
+		assertThat(Logic1.teenSum(10,13), is(19));
+		assertThat(Logic1.teenSum(13,2), is(19));
+	}
 }

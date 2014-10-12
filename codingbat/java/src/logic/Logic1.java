@@ -73,4 +73,9 @@ public class Logic1 {
 	public static Boolean nearTen(int i) {
 		return i % 10 > 7 || i % 10 < 3;
 	}
+
+	public static Integer teenSum(int i, int j) {
+		return (i >= 13 && i <= 19) || (j >= 13 && j <= 19) ? 19 : i+j;
+	}
+
 }
