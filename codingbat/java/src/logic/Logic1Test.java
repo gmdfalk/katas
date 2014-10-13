@@ -106,4 +106,11 @@ public class Logic1Test {
 		assertThat(Logic1.teenSum(10,13), is(19));
 		assertThat(Logic1.teenSum(13,2), is(19));
 	}
+	
+	@Test
+	public void testAnswerCell() {
+		assertThat(Logic1.answerCell(false, false, false), is(true));
+		assertThat(Logic1.answerCell(false, false, true), is(false));
+		assertThat(Logic1.answerCell(true, false, false), is(false));
+	}
 }

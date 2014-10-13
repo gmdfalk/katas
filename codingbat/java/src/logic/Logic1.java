@@ -78,4 +78,10 @@ public class Logic1 {
 		return (i >= 13 && i <= 19) || (j >= 13 && j <= 19) ? 19 : i+j;
 	}
 
+	public static Boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep) {
+		if (isAsleep || (isMorning && !isMom))
+			return false;
+		return true;
+	}
+
 }
