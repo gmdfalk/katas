@@ -84,4 +84,12 @@ public class Logic1 {
 		return true;
 	}
 
+	public static Object teaParty(int tea, int candy) {
+		if (tea < 5 || candy < 5)
+			return 0;
+		else if (tea > candy*2 || candy > tea*2)
+			return 2;
+		return 1;
+	}
+
 }

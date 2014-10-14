@@ -113,4 +113,11 @@ public class Logic1Test {
 		assertThat(Logic1.answerCell(false, false, true), is(false));
 		assertThat(Logic1.answerCell(true, false, false), is(false));
 	}
+	
+	@Test
+	public void testTeaParty() {
+		assertThat(Logic1.teaParty(6,8), is(1));
+		assertThat(Logic1.teaParty(3,8), is(0));
+		assertThat(Logic1.teaParty(20,6), is(2));
+	}
 }
