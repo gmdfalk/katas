@@ -92,4 +92,14 @@ public class Logic1 {
 		return 1;
 	}
 
+	public static String fizzString(String string) {
+		if (string.matches("f.*b"))
+			return "FizzBuzz";
+		else if (string.startsWith("f"))
+			return "Fizz";
+		else if (string.endsWith("b"))
+			return "Buzz";
+		return "";
+	}
+
 }

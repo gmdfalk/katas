@@ -120,4 +120,11 @@ public class Logic1Test {
 		assertThat(Logic1.teaParty(3,8), is(0));
 		assertThat(Logic1.teaParty(20,6), is(2));
 	}
+	
+	@Test
+	public void testFizzString() {
+		assertThat(Logic1.fizzString("fig"), is("Fizz"));
+		assertThat(Logic1.fizzString("dib"), is("Buzz"));
+		assertThat(Logic1.fizzString("fib"), is("FizzBuzz"));
+	}
 }
