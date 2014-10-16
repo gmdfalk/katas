@@ -84,7 +84,7 @@ public class Logic1 {
 		return true;
 	}
 
-	public static Object teaParty(int tea, int candy) {
+	public static Integer teaParty(int tea, int candy) {
 		if (tea < 5 || candy < 5)
 			return 0;
 		else if (tea > candy*2 || candy > tea*2)
@@ -100,6 +100,12 @@ public class Logic1 {
 		else if (string.endsWith("b"))
 			return "Buzz";
 		return "";
+	}
+
+	public static String fizzString2(int i) {
+		if (i % 3 == 0)
+			return "Fizz!";
+		return String.valueOf(i) + "!";
 	}
 
 }

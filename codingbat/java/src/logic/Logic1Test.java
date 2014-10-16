@@ -127,4 +127,11 @@ public class Logic1Test {
 		assertThat(Logic1.fizzString("dib"), is("Buzz"));
 		assertThat(Logic1.fizzString("fib"), is("FizzBuzz"));
 	}
+	
+	@Test
+	public void testFizzString2() {
+		assertThat(Logic1.fizzString2(1), is("1!"));
+		assertThat(Logic1.fizzString2(2), is("2!"));
+		assertThat(Logic1.fizzString2(3), is("Fizz!"));
+	}
 }
