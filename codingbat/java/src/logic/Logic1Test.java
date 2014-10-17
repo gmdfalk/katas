@@ -134,4 +134,11 @@ public class Logic1Test {
 		assertThat(Logic1.fizzString2(2), is("2!"));
 		assertThat(Logic1.fizzString2(3), is("Fizz!"));
 	}
+	
+	@Test
+	public void testTwoAsOne() {
+		assertThat(Logic1.twoAsOne(1,2,3), is(true));
+		assertThat(Logic1.twoAsOne(3,1,2), is(true));
+		assertThat(Logic1.twoAsOne(3,2,2), is(false));
+	}
 }

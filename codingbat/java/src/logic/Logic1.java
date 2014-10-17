@@ -108,4 +108,8 @@ public class Logic1 {
 		return String.valueOf(i) + "!";
 	}
 
+	public static Boolean twoAsOne(int i, int j, int k) {
+		return i + j == k || j + k == i || i + k == j;
+	}
+
 }
