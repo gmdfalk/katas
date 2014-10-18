@@ -112,4 +112,10 @@ public class Logic1 {
 		return i + j == k || j + k == i || i + k == j;
 	}
 
+	public static Boolean inOrder(int a, int b, int c, boolean bOk) {
+		if (bOk) 
+			return c > b;
+		return b > a && c > b;
+	}
+
 }

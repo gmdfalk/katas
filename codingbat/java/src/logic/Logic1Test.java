@@ -141,4 +141,11 @@ public class Logic1Test {
 		assertThat(Logic1.twoAsOne(3,1,2), is(true));
 		assertThat(Logic1.twoAsOne(3,2,2), is(false));
 	}
+	
+	@Test
+	public void testInOrder() {
+		assertThat(Logic1.inOrder(1,2,4,false), is(true));
+		assertThat(Logic1.inOrder(1,2,1,false), is(false));
+		assertThat(Logic1.inOrder(1,1,2,true), is(true));
+	}
 }
