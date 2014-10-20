@@ -148,4 +148,12 @@ public class Logic1Test {
 		assertThat(Logic1.inOrder(1,2,1,false), is(false));
 		assertThat(Logic1.inOrder(1,1,2,true), is(true));
 	}
+	
+	@Test
+	public void testInOrderEqual() {
+		assertThat(Logic1.inOrderEqual(2,5,11,false), is(true));
+		assertThat(Logic1.inOrderEqual(5,7,6,false), is(false));
+		assertThat(Logic1.inOrderEqual(5,5,7,true), is(true));
+	}
+	
 }

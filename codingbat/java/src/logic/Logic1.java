@@ -118,4 +118,11 @@ public class Logic1 {
 		return b > a && c > b;
 	}
 
+	public static boolean inOrderEqual(int i, int j, int k, boolean b) {
+		if (b) {
+			return j >= i && k >= j;
+		}
+		return inOrder(i,j,k, false);
+	}
+	
 }
