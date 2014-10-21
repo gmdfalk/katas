@@ -124,5 +124,9 @@ public class Logic1 {
 		}
 		return inOrder(i,j,k, false);
 	}
+
+	public static boolean lastDigit(int i, int j, int k) {
+		return i % 10 == j % 10 || j % 10 == k % 10 || i % 10 == k % 10;
+	}
 	
 }

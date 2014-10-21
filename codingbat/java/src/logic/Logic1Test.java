@@ -156,4 +156,11 @@ public class Logic1Test {
 		assertThat(Logic1.inOrderEqual(5,5,7,true), is(true));
 	}
 	
+	@Test
+	public void testLastDigit() {
+		assertThat(Logic1.lastDigit(23, 19, 13), is(true));
+		assertThat(Logic1.lastDigit(23, 19, 12), is(false));
+		assertThat(Logic1.lastDigit(23, 19, 3), is(true));
+	}
+	
 }
