@@ -163,4 +163,11 @@ public class Logic1Test {
 		assertThat(Logic1.lastDigit(23, 19, 3), is(true));
 	}
 	
+	@Test
+	public void testLessBy10() {
+		assertThat(Logic1.lessBy10(1,7,11), is(true));
+		assertThat(Logic1.lessBy10(1,7,10), is(false));
+		assertThat(Logic1.lessBy10(11,1,7), is(true));
+	}
+	
 }

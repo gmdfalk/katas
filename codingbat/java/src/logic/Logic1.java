@@ -128,5 +128,13 @@ public class Logic1 {
 	public static boolean lastDigit(int i, int j, int k) {
 		return i % 10 == j % 10 || j % 10 == k % 10 || i % 10 == k % 10;
 	}
+
+	public static boolean lessBy10(int a, int b, int c) {
+		return isLb10(a, b) || isLb10(a, c) || isLb10(b, c);
+	}
+
+	private static boolean isLb10(int a, int b) {
+		return a+9 < b || b+9 < a;
+	}
 	
 }
