@@ -170,4 +170,11 @@ public class Logic1Test {
 		assertThat(Logic1.lessBy10(11,1,7), is(true));
 	}
 	
+	@Test
+	public void testWithoutDoubles() {
+		assertThat(Logic1.withoutDoubles(2,3,true), is(5));
+		assertThat(Logic1.withoutDoubles(3,3,true), is(7));
+		assertThat(Logic1.withoutDoubles(3,3,false), is(6));
+	}
+	
 }

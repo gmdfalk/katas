@@ -136,5 +136,12 @@ public class Logic1 {
 	private static boolean isLb10(int a, int b) {
 		return a+9 < b || b+9 < a;
 	}
+
+	public static int withoutDoubles(int i, int j, boolean b) {
+		if (b && i == j && ++i == 7) {
+				i = 1;
+		}
+		return i+j;
+	}
 	
 }
