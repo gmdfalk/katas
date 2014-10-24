@@ -143,5 +143,13 @@ public class Logic1 {
 		}
 		return i+j;
 	}
+
+	public static int maxMod5(int i, int j) {
+		if (i == j)
+			return 0;
+		if (i % 5 == j % 5)
+			return Math.min(i, j);
+		return Math.max(i, j);
+	}
 	
 }
