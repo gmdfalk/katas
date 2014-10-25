@@ -184,4 +184,11 @@ public class Logic1Test {
 		assertThat(Logic1.maxMod5(3, 2), is(3));
 	}
 
+@Test
+public void testRedTicket() {
+	assertThat(Logic1.redTicket(2, 2, 2), is(10));
+	assertThat(Logic1.redTicket(2, 2, 1), is(0));
+	assertThat(Logic1.redTicket(0, 0, 0), is(5));
+}
+
 }

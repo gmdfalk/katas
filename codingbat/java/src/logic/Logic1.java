@@ -151,5 +151,15 @@ public class Logic1 {
 			return Math.min(i, j);
 		return Math.max(i, j);
 	}
+
+	public static int redTicket(int i, int j, int k) {
+		if (i == k && i == j) {
+			return i == 2 ? 10 : 5;
+		}
+		if (k != i && j!= i){
+			return 1;
+		}
+		return 0;
+	}
 	
 }
