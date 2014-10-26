@@ -27,7 +27,7 @@ public class Logic1 {
 			return 1;
 		return 0;
 	}
-	
+
 	public static Integer sortaSum(int i, int j) {
 		final int sum = i + j;
 		return sum >= 10 && sum <= 19 ? 20 : sum;
@@ -45,7 +45,7 @@ public class Logic1 {
 	}
 
 	public static Boolean love6(int i, int j) {
-		return Math.abs(i+j) == 6 || i == 6  || j == 6;
+		return Math.abs(i + j) == 6 || i == 6 || j == 6;
 	}
 
 	public static Boolean in1To10(int i, boolean b) {
@@ -75,10 +75,11 @@ public class Logic1 {
 	}
 
 	public static Integer teenSum(int i, int j) {
-		return (i >= 13 && i <= 19) || (j >= 13 && j <= 19) ? 19 : i+j;
+		return (i >= 13 && i <= 19) || (j >= 13 && j <= 19) ? 19 : i + j;
 	}
 
-	public static Boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep) {
+	public static Boolean answerCell(boolean isMorning, boolean isMom,
+			boolean isAsleep) {
 		if (isAsleep || (isMorning && !isMom))
 			return false;
 		return true;
@@ -87,7 +88,7 @@ public class Logic1 {
 	public static Integer teaParty(int tea, int candy) {
 		if (tea < 5 || candy < 5)
 			return 0;
-		else if (tea > candy*2 || candy > tea*2)
+		else if (tea > candy * 2 || candy > tea * 2)
 			return 2;
 		return 1;
 	}
@@ -113,7 +114,7 @@ public class Logic1 {
 	}
 
 	public static Boolean inOrder(int a, int b, int c, boolean bOk) {
-		if (bOk) 
+		if (bOk)
 			return c > b;
 		return b > a && c > b;
 	}
@@ -122,7 +123,7 @@ public class Logic1 {
 		if (b) {
 			return j >= i && k >= j;
 		}
-		return inOrder(i,j,k, false);
+		return inOrder(i, j, k, false);
 	}
 
 	public static boolean lastDigit(int i, int j, int k) {
@@ -134,14 +135,14 @@ public class Logic1 {
 	}
 
 	private static boolean isLb10(int a, int b) {
-		return a+9 < b || b+9 < a;
+		return a + 9 < b || b + 9 < a;
 	}
 
 	public static int withoutDoubles(int i, int j, boolean b) {
 		if (b && i == j && ++i == 7) {
-				i = 1;
+			i = 1;
 		}
-		return i+j;
+		return i + j;
 	}
 
 	public static int maxMod5(int i, int j) {
@@ -156,10 +157,18 @@ public class Logic1 {
 		if (i == k && i == j) {
 			return i == 2 ? 10 : 5;
 		}
-		if (k != i && j!= i){
+		if (k != i && j != i) {
 			return 1;
 		}
 		return 0;
 	}
-	
+
+	public static int greenTicket(int i, int j, int k) {
+		if (i == j && i == k)
+			return 20;
+		if (i == j || j == k)
+			return 10;
+		return 0;
+	}
+
 }
