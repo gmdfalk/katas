@@ -198,4 +198,11 @@ public class Logic1Test {
 		assertThat(Logic1.greenTicket(1, 1, 2), is(10));
 	}
 
+	@Test
+	public void testBlueTicket() {
+		assertThat(Logic1.blueTicket(9, 1, 0), is(10));
+		assertThat(Logic1.blueTicket(9, 2, 0), is(0));
+		assertThat(Logic1.blueTicket(6, 1, 4), is(10));
+	}
+
 }
