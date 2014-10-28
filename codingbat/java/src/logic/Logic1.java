@@ -175,10 +175,14 @@ public class Logic1 {
 		final int ab = a + b, ac = a + c, bc = b + c;
 		if (ab == 10 || ac == 10 || bc == 10) {
 			return 10;
-		} else if (ab == bc+10 || ab == ac+10) {
+		} else if (ab == bc + 10 || ab == ac + 10) {
 			return 5;
 		}
 		return 0;
+	}
+
+	public static boolean shareDigit(int i, int j) {
+		return i % 10 == j % 10 || i / 10 == j / 10 || i / 10 == j % 10 || j/10 == i % 10;
 	}
 
 }

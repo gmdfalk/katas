@@ -205,4 +205,16 @@ public class Logic1Test {
 		assertThat(Logic1.blueTicket(6, 1, 4), is(10));
 	}
 
+	@Test
+	public void testShareDigit() {
+		assertThat(Logic1.shareDigit(12, 23), is(true));
+		assertThat(Logic1.shareDigit(19, 99), is(true));
+		assertThat(Logic1.shareDigit(43, 74), is(true));
+		assertThat(Logic1.shareDigit(12, 12), is(true));
+		assertThat(Logic1.shareDigit(12, 43), is(false));
+		assertThat(Logic1.shareDigit(12, 44), is(false));
+		assertThat(Logic1.shareDigit(99, 88), is(false));
+		assertThat(Logic1.shareDigit(27, 54), is(false));
+		assertThat(Logic1.shareDigit(39, 12), is(false));
+	}
 }
