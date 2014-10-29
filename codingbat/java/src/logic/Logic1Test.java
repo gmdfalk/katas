@@ -217,4 +217,11 @@ public class Logic1Test {
 		assertThat(Logic1.shareDigit(27, 54), is(false));
 		assertThat(Logic1.shareDigit(39, 12), is(false));
 	}
+
+	@Test
+	public void testSumLimit() {
+		assertThat(Logic1.sumLimit(2, 3), is(5));
+		assertThat(Logic1.sumLimit(8, 3), is(8));
+		assertThat(Logic1.sumLimit(8, 1), is(9));
+	}
 }
