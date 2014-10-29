@@ -182,7 +182,13 @@ public class Logic1 {
 	}
 
 	public static boolean shareDigit(int i, int j) {
-		return i % 10 == j % 10 || i / 10 == j / 10 || i / 10 == j % 10 || j/10 == i % 10;
+		return i % 10 == j % 10 || i / 10 == j / 10 || i / 10 == j % 10
+				|| j / 10 == i % 10;
+	}
+
+	public static int sumLimit(int i, int j) {
+		return String.valueOf(i).length() == String.valueOf(i + j).length() ? i
+				+ j : i;
 	}
 
 }
