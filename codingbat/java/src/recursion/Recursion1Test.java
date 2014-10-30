@@ -16,5 +16,11 @@ public class Recursion1Test {
 		assertThat(Recursion1.factorial(5), is(120));
 	}
 
+	@Test
+	public void testBunnyEars() {
+		assertThat(Recursion1.bunnyEars(0), is(0));
+		assertThat(Recursion1.bunnyEars(1), is(2));
+		assertThat(Recursion1.bunnyEars(2), is(4));
+	}
 
 }
