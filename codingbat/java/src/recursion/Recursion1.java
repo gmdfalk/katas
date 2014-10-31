@@ -48,4 +48,8 @@ public class Recursion1 {
 		return n < 2 ? n : n + triangle( n-1 );
 	}
 
+	public static int sumDigits( int n ) {
+		return n < 1 ? 0 : n % 10 + sumDigits(n/10);
+	}
+
 }
