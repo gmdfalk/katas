@@ -30,4 +30,16 @@ public class Recursion1 {
 		return n < 2 ? n : fibonacci( n - 1 ) + fibonacci( n - 2 );
 	}
 
+	public static Integer bunnyEars2( int n ) {
+		return n < 1 ? 0 : individualEars( n ) + bunnyEars2( n - 1 );
+	}
+
+	private static int individualEars( int n ) {
+		return isEven( n ) ? 3 : 2;
+	}
+
+	private static boolean isEven( int n ) {
+		return n % 2 == 0;
+	}
+
 }

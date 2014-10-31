@@ -21,6 +21,10 @@ public class Recursion1Test {
 		assertThat(Recursion1.bunnyEars(0), is(0));
 		assertThat(Recursion1.bunnyEars(1), is(2));
 		assertThat(Recursion1.bunnyEars(2), is(4));
+		assertThat(Recursion1.bunnyEars(3), is(6));
+		assertThat(Recursion1.bunnyEars(4), is(8));
+		assertThat(Recursion1.bunnyEars(5), is(10));
+		assertThat(Recursion1.bunnyEars(6), is(12));
 	}
 	
 	@Test
@@ -33,4 +37,15 @@ public class Recursion1Test {
 		assertThat(Recursion1.fibonacci(5), is(5));
 	}
 
+	
+	@Test
+	public void testBunnyEars2() {
+		assertThat(Recursion1.bunnyEars2(0), is(0));
+		assertThat(Recursion1.bunnyEars2(1), is(2));
+		assertThat(Recursion1.bunnyEars2(2), is(5));
+		assertThat(Recursion1.bunnyEars2(3), is(7));
+		assertThat(Recursion1.bunnyEars2(4), is(10));
+		assertThat(Recursion1.bunnyEars2(5), is(12));
+		assertThat(Recursion1.bunnyEars2(6), is(15));
+	}
 }
