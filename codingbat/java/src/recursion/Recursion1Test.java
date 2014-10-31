@@ -71,4 +71,12 @@ public class Recursion1Test {
 		assertThat( Recursion1.count7( 7 ), is( 1 ) );
 		assertThat( Recursion1.count7( 123 ), is( 0 ) );
 	}
+	
+	@Test
+	public void testCount8() {
+		assertThat( Recursion1.count8( 10 ), is( 0 ) );
+		assertThat( Recursion1.count8( 8 ), is( 1 ) );
+		assertThat( Recursion1.count8( 818 ), is( 2 ) );
+		assertThat( Recursion1.count8( 8818 ), is( 4 ) );
+	}
 }

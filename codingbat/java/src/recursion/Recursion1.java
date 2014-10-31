@@ -53,11 +53,19 @@ public class Recursion1 {
 	}
 
 	public static int count7( int n ) {
-		return n < 1 ? 0 : containsSeven( n ) + count7( n / 10 );
+		return n < 1 ? 0 : containsInt( n, 7 ) + count7( n / 10 );
 	}
 
-	private static int containsSeven( int n ) {
-		return n % 10 == 7 ? 1 : 0;
+	private static int containsInt( int a, int b ) {
+		return a % 10 == b ? 1 : 0;
+	}
+
+	public static Integer count8( int n ) {
+		if ( n < 1 )
+			return 0;
+		if ( containsInt( n / 10, 8 ) == 1 && containsInt( n, 8 ) == 1 )
+			return 2 + count8( n / 10 );
+		return containsInt( n, 8 ) + count8( n / 10 );
 	}
 
 }
