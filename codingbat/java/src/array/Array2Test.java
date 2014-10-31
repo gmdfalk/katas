@@ -21,4 +21,11 @@ public class Array2Test {
 		assertThat( Array2.bigDiff( new int[] { 2, 10, 7, 2 } ), is( 8 ) );
 	}
 
+	@Test
+	public void testCenteredAverage() {
+		assertThat( Array2.centeredAverage( new int[] { 1, 2, 3, 4, 100 } ), is( 3 ) );
+		assertThat( Array2.centeredAverage( new int[] { 1, 1, 5, 5, 10, 8, 7 } ), is( 5 ) );
+		assertThat( Array2.centeredAverage( new int[] { -10, -4, -2, -4, -2, 0 } ), is( -3 ) );
+	}
+
 }
