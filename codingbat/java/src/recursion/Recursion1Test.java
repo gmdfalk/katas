@@ -71,12 +71,21 @@ public class Recursion1Test {
 		assertThat( Recursion1.count7( 7 ), is( 1 ) );
 		assertThat( Recursion1.count7( 123 ), is( 0 ) );
 	}
-	
+
 	@Test
 	public void testCount8() {
 		assertThat( Recursion1.count8( 10 ), is( 0 ) );
 		assertThat( Recursion1.count8( 8 ), is( 1 ) );
 		assertThat( Recursion1.count8( 818 ), is( 2 ) );
 		assertThat( Recursion1.count8( 8818 ), is( 4 ) );
+	}
+
+	@Test
+	public void testPowerN() {
+		assertThat( Recursion1.powerN( 3, 1 ), is( 3 ) );
+		assertThat( Recursion1.powerN( 3, 2 ), is( 9 ) );
+		assertThat( Recursion1.powerN( 3, 3 ), is( 27 ) );
+		assertThat( Recursion1.powerN( 4, 3 ), is( 64 ) );
+		assertThat( Recursion1.powerN( 4, 4 ), is( 256 ) );
 	}
 }

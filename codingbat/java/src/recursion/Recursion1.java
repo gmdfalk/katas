@@ -60,12 +60,16 @@ public class Recursion1 {
 		return a % 10 == b ? 1 : 0;
 	}
 
-	public static Integer count8( int n ) {
+	public static int count8( int n ) {
 		if ( n < 1 )
 			return 0;
 		if ( containsInt( n / 10, 8 ) == 1 && containsInt( n, 8 ) == 1 )
 			return 2 + count8( n / 10 );
 		return containsInt( n, 8 ) + count8( n / 10 );
+	}
+
+	public static int powerN( int base, int n ) {
+		return n == 0 ? 1 : base * powerN( base, n - 1 );
 	}
 
 }
