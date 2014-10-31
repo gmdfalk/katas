@@ -57,11 +57,18 @@ public class Recursion1Test {
 		assertThat( Recursion1.triangle( 4 ), is( 10 ) );
 		assertThat( Recursion1.triangle( 5 ), is( 15 ) );
 	}
-	
+
 	@Test
 	public void testSumDigits() {
 		assertThat( Recursion1.sumDigits( 126 ), is( 9 ) );
 		assertThat( Recursion1.sumDigits( 49 ), is( 13 ) );
 		assertThat( Recursion1.sumDigits( 12 ), is( 3 ) );
+	}
+
+	@Test
+	public void testCount7() {
+		assertThat( Recursion1.count7( 717 ), is( 2 ) );
+		assertThat( Recursion1.count7( 7 ), is( 1 ) );
+		assertThat( Recursion1.count7( 123 ), is( 0 ) );
 	}
 }

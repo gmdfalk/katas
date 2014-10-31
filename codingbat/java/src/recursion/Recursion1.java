@@ -45,11 +45,19 @@ public class Recursion1 {
 	}
 
 	public static int triangle( int n ) {
-		return n < 2 ? n : n + triangle( n-1 );
+		return n < 2 ? n : n + triangle( n - 1 );
 	}
 
 	public static int sumDigits( int n ) {
-		return n < 1 ? 0 : n % 10 + sumDigits(n/10);
+		return n < 1 ? 0 : n % 10 + sumDigits( n / 10 );
+	}
+
+	public static int count7( int n ) {
+		return n < 1 ? 0 : containsSeven( n ) + count7( n / 10 );
+	}
+
+	private static int containsSeven( int n ) {
+		return n % 10 == 7 ? 1 : 0;
 	}
 
 }
