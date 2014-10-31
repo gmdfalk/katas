@@ -14,4 +14,11 @@ public class Array2Test {
 		assertThat( Array2.countEvens( new int[] { 1, 3, 5 } ), is( 0 ) );
 	}
 
+	@Test
+	public void testBigDiff() {
+		assertThat( Array2.bigDiff( new int[] { 10, 3, 5, 6 } ), is( 7 ) );
+		assertThat( Array2.bigDiff( new int[] { 7, 2, 10, 9 } ), is( 8 ) );
+		assertThat( Array2.bigDiff( new int[] { 2, 10, 7, 2 } ), is( 8 ) );
+	}
+
 }
