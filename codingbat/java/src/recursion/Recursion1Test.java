@@ -88,4 +88,12 @@ public class Recursion1Test {
 		assertThat( Recursion1.powerN( 4, 3 ), is( 64 ) );
 		assertThat( Recursion1.powerN( 4, 4 ), is( 256 ) );
 	}
+
+	@Test
+	public void testCountX() {
+		assertThat( Recursion1.countX( "xxhixx" ), is( 4 ) );
+		assertThat( Recursion1.countX( "xhixhix" ), is( 3 ) );
+		assertThat( Recursion1.countX( "hi" ), is( 0 ) );
+		assertThat( Recursion1.countX( "xyouxarexcooxx" ), is( 5 ) );
+	}
 }
