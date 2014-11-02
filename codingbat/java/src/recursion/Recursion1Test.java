@@ -104,4 +104,11 @@ public class Recursion1Test {
 		assertThat( Recursion1.countHi( "hi" ), is( 1 ) );
 		assertThat( Recursion1.countHi( "xyouxarexcooxx" ), is( 0 ) );
 	}
+
+	@Test
+	public void testChangeXY() {
+		assertThat( Recursion1.changeXY( "codex" ), is( "codey" ) );
+		assertThat( Recursion1.changeXY( "xxhixx" ), is( "yyhiyy" ) );
+		assertThat( Recursion1.changeXY( "xhixhix" ), is( "yhiyhiy" ) );
+	}
 }

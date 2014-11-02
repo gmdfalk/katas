@@ -89,4 +89,12 @@ public class Recursion1 {
 		return ( string.substring( 0, 2 ).equals( "hi" ) ? 1 : 0 ) + countHi( string.substring( 1 ) );
 	}
 
+	public static String changeXY( String string ) {
+		if ( string.isEmpty() ) {
+			return "";
+		}
+		final char firstChar = string.charAt( 0 );
+		return ( firstChar == 'x' ? 'y' : firstChar ) + changeXY( string.substring( 1 ) );
+	}
+
 }
