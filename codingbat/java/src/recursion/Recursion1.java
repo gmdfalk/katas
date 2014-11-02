@@ -79,8 +79,14 @@ public class Recursion1 {
 		if ( string.isEmpty() ) {
 			return 0;
 		}
-		final int result = string.charAt( 0 ) == 'x' ? 1 : 0;
-		return result + countX( string.substring( 1 ) );
+		return ( string.charAt( 0 ) == 'x' ? 1 : 0 ) + countX( string.substring( 1 ) );
+	}
+
+	public static int countHi( final String string ) {
+		if ( string.length() < 2 ) {
+			return 0;
+		}
+		return ( string.substring( 0, 2 ).equals( "hi" ) ? 1 : 0 ) + countHi( string.substring( 1 ) );
 	}
 
 }

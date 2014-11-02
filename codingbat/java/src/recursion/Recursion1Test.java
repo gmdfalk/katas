@@ -96,4 +96,12 @@ public class Recursion1Test {
 		assertThat( Recursion1.countX( "hi" ), is( 0 ) );
 		assertThat( Recursion1.countX( "xyouxarexcooxx" ), is( 5 ) );
 	}
+
+	@Test
+	public void testCountHi() {
+		assertThat( Recursion1.countHi( "xxhixx" ), is( 1 ) );
+		assertThat( Recursion1.countHi( "xhixhix" ), is( 2 ) );
+		assertThat( Recursion1.countHi( "hi" ), is( 1 ) );
+		assertThat( Recursion1.countHi( "xyouxarexcooxx" ), is( 0 ) );
+	}
 }
