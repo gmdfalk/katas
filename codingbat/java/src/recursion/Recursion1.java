@@ -97,4 +97,13 @@ public class Recursion1 {
 		return ( firstChar == 'x' ? 'y' : firstChar ) + changeXY( string.substring( 1 ) );
 	}
 
+	public static String changePi( String string ) {
+		if ( string.isEmpty() ) {
+			return "";
+		} else if ( string.length() >= 2 && string.substring( 0, 2 ).equals( "pi" ) ) {
+			return "3.14" + changePi( string.substring( 2 ) );
+		} else {
+			return string.substring( 0, 1 ) + changePi( string.substring( 1 ) );
+		}
+	}
 }

@@ -111,4 +111,11 @@ public class Recursion1Test {
 		assertThat( Recursion1.changeXY( "xxhixx" ), is( "yyhiyy" ) );
 		assertThat( Recursion1.changeXY( "xhixhix" ), is( "yhiyhiy" ) );
 	}
+
+	@Test
+	public void testChangePi() {
+		assertThat( Recursion1.changePi( "xpix" ), is( "x3.14x" ) );
+		assertThat( Recursion1.changePi( "pipi" ), is( "3.143.14" ) );
+		assertThat( Recursion1.changePi( "pip" ), is( "3.14p" ) );
+	}
 }
