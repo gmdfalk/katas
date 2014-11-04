@@ -118,4 +118,11 @@ public class Recursion1Test {
 		assertThat( Recursion1.changePi( "pipi" ), is( "3.143.14" ) );
 		assertThat( Recursion1.changePi( "pip" ), is( "3.14p" ) );
 	}
+
+	@Test
+	public void testNoX() {
+		assertThat( Recursion1.noX( "xaxb" ), is( "ab" ) );
+		assertThat( Recursion1.noX( "abc" ), is( "abc" ) );
+		assertThat( Recursion1.noX( "xx" ), is( "" ) );
+	}
 }

@@ -89,7 +89,7 @@ public class Recursion1 {
 		return ( string.substring( 0, 2 ).equals( "hi" ) ? 1 : 0 ) + countHi( string.substring( 1 ) );
 	}
 
-	public static String changeXY( String string ) {
+	public static String changeXY( final String string ) {
 		if ( string.isEmpty() ) {
 			return "";
 		}
@@ -97,7 +97,7 @@ public class Recursion1 {
 		return ( firstChar == 'x' ? 'y' : firstChar ) + changeXY( string.substring( 1 ) );
 	}
 
-	public static String changePi( String string ) {
+	public static String changePi( final String string ) {
 		if ( string.isEmpty() ) {
 			return "";
 		} else if ( string.length() >= 2 && string.substring( 0, 2 ).equals( "pi" ) ) {
@@ -105,5 +105,13 @@ public class Recursion1 {
 		} else {
 			return string.substring( 0, 1 ) + changePi( string.substring( 1 ) );
 		}
+	}
+
+	public static String noX( final String string ) {
+		if (string.isEmpty()) {
+			return "";
+		}
+		final char charAt = string.charAt( 0 );
+		return ( charAt == 'x' ? "" : charAt ) + noX( string.substring( 1 ) );
 	}
 }
