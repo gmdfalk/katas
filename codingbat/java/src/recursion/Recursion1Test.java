@@ -125,4 +125,11 @@ public class Recursion1Test {
 		assertThat( Recursion1.noX( "abc" ), is( "abc" ) );
 		assertThat( Recursion1.noX( "xx" ), is( "" ) );
 	}
+
+	@Test
+	public void testArray6() {
+		assertThat( Recursion1.array6( new int[] { 1, 6, 4 }, 0 ), is( true ) );
+		assertThat( Recursion1.array6( new int[] { 1, 4 }, 0 ), is( false ) );
+		assertThat( Recursion1.array6( new int[] { 6 }, 0 ), is( true ) );
+	}
 }

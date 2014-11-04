@@ -114,4 +114,15 @@ public class Recursion1 {
 		final char charAt = string.charAt( 0 );
 		return ( charAt == 'x' ? "" : charAt ) + noX( string.substring( 1 ) );
 	}
+
+	public static boolean array6( final int[] is, int i ) {
+		System.out.println( i );
+		if ( i >= is.length ) {
+			return false;
+		}
+		if ( is[i] == 6 ) {
+			return true;
+		}
+		return array6( is, ++i );
+	}
 }
