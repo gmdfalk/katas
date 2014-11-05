@@ -131,4 +131,13 @@ public class Recursion1 {
 		}
 		return ( is[i] == 11 ? 1 : 0 ) + array11( is, ++i );
 	}
+
+	public static boolean array220( final int[] is, int i ) {
+		if ( i == is.length - 1 ) {
+			return false;
+		} else if ( is[i + 1] == is[i] * 10 ) {
+			return true;
+		}
+		return array220( is, ++i );
+	}
 }
