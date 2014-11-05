@@ -132,4 +132,11 @@ public class Recursion1Test {
 		assertThat( Recursion1.array6( new int[] { 1, 4 }, 0 ), is( false ) );
 		assertThat( Recursion1.array6( new int[] { 6 }, 0 ), is( true ) );
 	}
+
+	@Test
+	public void testArray11() {
+		assertThat( Recursion1.array11( new int[] { 1, 2, 11 }, 0 ), is( 1 ) );
+		assertThat( Recursion1.array11( new int[] { 11, 11 }, 0 ), is( 2 ) );
+		assertThat( Recursion1.array11( new int[] { 1, 2, 3, 4 }, 0 ), is( 0 ) );
+	}
 }

@@ -116,7 +116,6 @@ public class Recursion1 {
 	}
 
 	public static boolean array6( final int[] is, int i ) {
-		System.out.println( i );
 		if ( i >= is.length ) {
 			return false;
 		}
@@ -124,5 +123,12 @@ public class Recursion1 {
 			return true;
 		}
 		return array6( is, ++i );
+	}
+
+	public static int array11( final int[] is, int i ) {
+		if ( i >= is.length ) {
+			return 0;
+		}
+		return ( is[i] == 11 ? 1 : 0 ) + array11( is, ++i );
 	}
 }
