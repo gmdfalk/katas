@@ -153,4 +153,11 @@ public class Recursion1Test {
 		assertThat( Recursion1.allStar( "abc" ), is( "a*b*c" ) );
 		assertThat( Recursion1.allStar( "ab" ), is( "a*b" ) );
 	}
+
+	@Test
+	public void testPairStar() {
+		assertThat( Recursion1.pairStar( "hello" ), is( "hel*lo" ) );
+		assertThat( Recursion1.pairStar( "xxyy" ), is( "x*xy*y" ) );
+		assertThat( Recursion1.pairStar( "aaaa" ), is( "a*a*a*a" ) );
+	}
 }

@@ -145,6 +145,18 @@ public class Recursion1 {
 		if ( string.isEmpty() ) {
 			return "";
 		}
-		return ( string.length() == 1 ? string.charAt( 0 ) : string.charAt( 0 ) + "*" ) + allStar( string.substring( 1 ) );
+		final char charAt = string.charAt( 0 );
+		return ( string.length() == 1 ? charAt : charAt + "*" ) + allStar( string.substring( 1 ) );
+	}
+
+	public static String pairStar( final String string ) {
+		if ( string.isEmpty() ) {
+			return "";
+		} else if ( string.length() == 1 ) {
+			return string.substring( 0, 1 );
+		}
+		final char charAt = string.charAt( 0 );
+		return ( charAt == string.charAt( 1 ) ? charAt + "*" : charAt )
+				+ pairStar( string.substring( 1 ) );
 	}
 }
