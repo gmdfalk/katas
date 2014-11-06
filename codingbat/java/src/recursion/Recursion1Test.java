@@ -146,4 +146,11 @@ public class Recursion1Test {
 		assertThat( Recursion1.array220( new int[] { 3, 30 }, 0 ), is( true ) );
 		assertThat( Recursion1.array220( new int[] { 3 }, 0 ), is( false ) );
 	}
+
+	@Test
+	public void testAllStar() {
+		assertThat( Recursion1.allStar( "hello" ), is( "h*e*l*l*o" ) );
+		assertThat( Recursion1.allStar( "abc" ), is( "a*b*c" ) );
+		assertThat( Recursion1.allStar( "ab" ), is( "a*b" ) );
+	}
 }

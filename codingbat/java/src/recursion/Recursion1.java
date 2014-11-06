@@ -140,4 +140,11 @@ public class Recursion1 {
 		}
 		return array220( is, ++i );
 	}
+
+	public static String allStar( final String string ) {
+		if ( string.isEmpty() ) {
+			return "";
+		}
+		return ( string.length() == 1 ? string.charAt( 0 ) : string.charAt( 0 ) + "*" ) + allStar( string.substring( 1 ) );
+	}
 }
