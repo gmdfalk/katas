@@ -160,4 +160,11 @@ public class Recursion1Test {
 		assertThat( Recursion1.pairStar( "xxyy" ), is( "x*xy*y" ) );
 		assertThat( Recursion1.pairStar( "aaaa" ), is( "a*a*a*a" ) );
 	}
+
+	@Test
+	public void testEndX() {
+		assertThat( Recursion1.endX( "xxre" ), is( "rexx" ) );
+		assertThat( Recursion1.endX( "xxhixx" ), is( "hixxxx" ) );
+		assertThat( Recursion1.endX( "xhixhix" ), is( "hihixxx" ) );
+	}
 }

@@ -1,5 +1,6 @@
 package recursion;
 
+
 public class Recursion1 {
 
 	public static int factorial( final int n ) {
@@ -158,5 +159,35 @@ public class Recursion1 {
 		final char charAt = string.charAt( 0 );
 		return ( charAt == string.charAt( 1 ) ? charAt + "*" : charAt )
 				+ pairStar( string.substring( 1 ) );
+	}
+
+	public static String endX( final String string ) {
+		final int occurrencesOfX = countOccurrences( 'x', string );
+		if ( string.indexOf( "x" ) == -1 ||
+				string.substring( string.length() - occurrencesOfX ).equals( multiplyChar( 'x', occurrencesOfX ) ) ) {
+			return string;
+		}
+		if ( string.charAt( 0 ) == 'x' ) {
+			return endX( string.substring( 1 ) + "x" );
+		}
+		return string.charAt( 0 ) + endX( string.substring( 1 ) );
+	}
+
+	private static int countOccurrences( final char c, final String str ) {
+		int count = 0;
+		for ( int i = 0; i < str.length(); i++ ) {
+			if ( str.charAt( i ) == c ) {
+				count++;
+			}
+		}
+		return count;
+	}
+
+	private static String multiplyChar( final char c, final int n ) {
+		final StringBuilder result = new StringBuilder();
+		for ( int i = 0; i < n; i++ ) {
+			result.append( c );
+		}
+		return result.toString();
 	}
 }
