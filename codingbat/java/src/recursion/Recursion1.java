@@ -197,4 +197,12 @@ public class Recursion1 {
 		}
 		return ( string.charAt( 0 ) == string.charAt( 2 ) ? 1 : 0 ) + countPairs( string.substring( 1 ) );
 	}
+
+	public static Integer countAbc( final String string ) {
+		if ( string.length() < 3 ) {
+			return 0;
+		}
+		final String substr = string.substring( 0, 3 );
+		return ( substr.equals( "abc" ) || substr.equals( "aba" ) ? 1 : 0 ) + countAbc( string.substring( 1 ) );
+	}
 }

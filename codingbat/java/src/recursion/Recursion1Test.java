@@ -174,4 +174,11 @@ public class Recursion1Test {
 		assertThat( Recursion1.countPairs( "axax" ), is( 2 ) );
 		assertThat( Recursion1.countPairs( "axbx" ), is( 1 ) );
 	}
+
+	@Test
+	public void testCountAbc() {
+		assertThat( Recursion1.countAbc( "abc" ), is( 1 ) );
+		assertThat( Recursion1.countAbc( "abcxxabc" ), is( 2 ) );
+		assertThat( Recursion1.countAbc( "abaxxaba" ), is( 2 ) );
+	}
 }
