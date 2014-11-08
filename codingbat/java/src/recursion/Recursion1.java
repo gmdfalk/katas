@@ -205,4 +205,12 @@ public class Recursion1 {
 		final String substr = string.substring( 0, 3 );
 		return ( substr.equals( "abc" ) || substr.equals( "aba" ) ? 1 : 0 ) + countAbc( string.substring( 1 ) );
 	}
+
+	public static int count11( String string ) {
+		if (string.length() < 2)
+			return 0;
+		if (string.charAt(0) != '1')
+			return count11(string.substring(1));
+		return (string.substring( 0, 2 ).equals("11") ? 1 : 0) + count11(string.substring( 2 ));
+	}
 }
