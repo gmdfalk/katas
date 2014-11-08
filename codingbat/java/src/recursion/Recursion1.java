@@ -190,4 +190,11 @@ public class Recursion1 {
 		}
 		return result.toString();
 	}
+
+	public static Integer countPairs( final String string ) {
+		if ( string.length() < 3 ) {
+			return 0;
+		}
+		return ( string.charAt( 0 ) == string.charAt( 2 ) ? 1 : 0 ) + countPairs( string.substring( 1 ) );
+	}
 }

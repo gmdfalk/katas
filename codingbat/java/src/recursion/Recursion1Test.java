@@ -167,4 +167,11 @@ public class Recursion1Test {
 		assertThat( Recursion1.endX( "xxhixx" ), is( "hixxxx" ) );
 		assertThat( Recursion1.endX( "xhixhix" ), is( "hihixxx" ) );
 	}
+
+	@Test
+	public void testCountPairs() {
+		assertThat( Recursion1.countPairs( "axa" ), is( 1 ) );
+		assertThat( Recursion1.countPairs( "axax" ), is( 2 ) );
+		assertThat( Recursion1.countPairs( "axbx" ), is( 1 ) );
+	}
 }
