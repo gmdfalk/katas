@@ -206,11 +206,20 @@ public class Recursion1 {
 		return ( substr.equals( "abc" ) || substr.equals( "aba" ) ? 1 : 0 ) + countAbc( string.substring( 1 ) );
 	}
 
-	public static int count11( String string ) {
-		if (string.length() < 2)
+	public static int count11( final String string ) {
+		if (string.length() < 2) {
 			return 0;
-		if (string.charAt(0) != '1')
+		}
+		if (string.charAt(0) != '1') {
 			return count11(string.substring(1));
+		}
 		return (string.substring( 0, 2 ).equals("11") ? 1 : 0) + count11(string.substring( 2 ));
+	}
+
+	public static String stringClean( final String string ) {
+		if ( string.length() < 2 ) {
+			return string;
+		}
+		return string.charAt( 0 ) + stringClean( string.substring( 1 ).replace( string.substring( 0, 1 ), "" ) );
 	}
 }

@@ -181,11 +181,19 @@ public class Recursion1Test {
 		assertThat( Recursion1.countAbc( "abcxxabc" ), is( 2 ) );
 		assertThat( Recursion1.countAbc( "abaxxaba" ), is( 2 ) );
 	}
-	
+
 	@Test
 	public void testCount11() {
 		assertThat( Recursion1.count11( "11abc11" ), is( 2 ) );
 		assertThat( Recursion1.count11( "abc11x11x11" ), is( 3) );
 		assertThat( Recursion1.count11( "111" ), is( 1 ) );
+	}
+
+	@Test
+	public void testStringClean() {
+		assertThat( Recursion1.stringClean( "yyzzza" ), is( "yza" ) );
+		assertThat( Recursion1.stringClean( "abbbcdd" ), is( "abcd" ) );
+		assertThat( Recursion1.stringClean( "Hello" ), is( "Helo" ) );
+
 	}
 }
