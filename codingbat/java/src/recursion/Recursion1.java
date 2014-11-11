@@ -222,4 +222,14 @@ public class Recursion1 {
 		}
 		return string.charAt( 0 ) + stringClean( string.substring( 1 ).replace( string.substring( 0, 1 ), "" ) );
 	}
+
+	public static int countHi2( final String string ) {
+		if ( string.length() < 2 ) {
+			return 0;
+		}
+		if ( string.charAt( 0 ) == 'x' ) {
+			return 0 + countHi2( string.substring( 2 ) );
+		}
+		return ( string.substring( 0, 2 ).equals( "hi" ) ? 1 : 0 ) + countHi2( string.substring( 1 ) );
+	}
 }

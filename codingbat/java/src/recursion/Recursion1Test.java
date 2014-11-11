@@ -196,4 +196,12 @@ public class Recursion1Test {
 		assertThat( Recursion1.stringClean( "Hello" ), is( "Helo" ) );
 
 	}
+
+	@Test
+	public void testCountHi2() {
+		assertThat( Recursion1.countHi2( "ahixhi" ), is( 1 ) );
+		assertThat( Recursion1.countHi2( "ahibhi" ), is( 2 ) );
+		assertThat( Recursion1.countHi2( "xhixhi" ), is( 0 ) );
+
+	}
 }
