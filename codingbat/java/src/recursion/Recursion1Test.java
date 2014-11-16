@@ -202,6 +202,12 @@ public class Recursion1Test {
 		assertThat( Recursion1.countHi2( "ahixhi" ), is( 1 ) );
 		assertThat( Recursion1.countHi2( "ahibhi" ), is( 2 ) );
 		assertThat( Recursion1.countHi2( "xhixhi" ), is( 0 ) );
+	}
 
+	@Test
+	public void testParenBit() {
+		assertThat( Recursion1.parenBit( "xyz(abc)123" ), is( "(abc)" ) );
+		assertThat( Recursion1.parenBit( "x(hello)" ), is( "(hello)" ) );
+		assertThat( Recursion1.parenBit( "(xy)1" ), is( "(xy)" ) );
 	}
 }

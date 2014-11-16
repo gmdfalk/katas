@@ -232,4 +232,14 @@ public class Recursion1 {
 		}
 		return ( string.substring( 0, 2 ).equals( "hi" ) ? 1 : 0 ) + countHi2( string.substring( 1 ) );
 	}
+
+	public static String parenBit( final String str ) {
+		if ( !str.contains( ")" ) ) {
+			return "";
+		}
+		if ( str.contains( "(" ) && str.charAt( 0 ) != '(' ) {
+			return parenBit( str.substring( 1 ) );
+		}
+		return str.charAt( 0 ) + parenBit( str.substring( 1 ) );
+	}
 }
