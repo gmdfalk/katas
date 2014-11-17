@@ -242,4 +242,15 @@ public class Recursion1 {
 		}
 		return str.charAt( 0 ) + parenBit( str.substring( 1 ) );
 	}
+
+	public static Boolean nestParen( final String str ) {
+		final int endIndex = str.length() - 1;
+		if ( str.length() < 2 || ( str.charAt( 0 ) != '(' || str.charAt( endIndex ) != ')' ) ) {
+			return false;
+		}
+		if ( str.length() == 2 ) {
+			return true;
+		}
+		return nestParen( str.substring( 1, endIndex ) );
+	}
 }

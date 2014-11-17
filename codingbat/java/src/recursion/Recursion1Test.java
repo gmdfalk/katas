@@ -210,4 +210,11 @@ public class Recursion1Test {
 		assertThat( Recursion1.parenBit( "x(hello)" ), is( "(hello)" ) );
 		assertThat( Recursion1.parenBit( "(xy)1" ), is( "(xy)" ) );
 	}
+
+	@Test
+	public void testNestParen() {
+		assertThat( Recursion1.nestParen( "(())" ), is( true ) );
+		assertThat( Recursion1.nestParen( "((()))" ), is( true ) );
+		assertThat( Recursion1.nestParen( "(((x))" ), is( false ) );
+	}
 }
