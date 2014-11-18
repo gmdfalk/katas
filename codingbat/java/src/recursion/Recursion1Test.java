@@ -217,4 +217,11 @@ public class Recursion1Test {
 		assertThat( Recursion1.nestParen( "((()))" ), is( true ) );
 		assertThat( Recursion1.nestParen( "(((x))" ), is( false ) );
 	}
+
+	@Test
+	public void testStrCount() {
+		assertThat( Recursion1.strCount( "catcowcat", "cat" ), is( 2 ) );
+		assertThat( Recursion1.strCount( "catcowcat", "cow" ), is( 1 ) );
+		assertThat( Recursion1.strCount( "catcowcat", "dog" ), is( 0 ) );
+	}
 }

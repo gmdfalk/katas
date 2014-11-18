@@ -253,4 +253,12 @@ public class Recursion1 {
 		}
 		return nestParen( str.substring( 1, endIndex ) );
 	}
+
+	public static Integer strCount( final String s1, final String s2 ) {
+		final int len = s2.length();
+		if ( s1.length() < len ) {
+			return 0;
+		}
+		return ( s1.substring( 0, len ).equals( s2 ) ? 1 : 0 ) + strCount( s1.substring( len ), s2 );
+	}
 }
