@@ -243,7 +243,7 @@ public class Recursion1 {
 		return str.charAt( 0 ) + parenBit( str.substring( 1 ) );
 	}
 
-	public static Boolean nestParen( final String str ) {
+	public static boolean nestParen( final String str ) {
 		final int endIndex = str.length() - 1;
 		if ( str.length() < 2 || ( str.charAt( 0 ) != '(' || str.charAt( endIndex ) != ')' ) ) {
 			return false;
@@ -254,11 +254,26 @@ public class Recursion1 {
 		return nestParen( str.substring( 1, endIndex ) );
 	}
 
-	public static Integer strCount( final String s1, final String s2 ) {
+	public static int strCount( final String s1, final String s2 ) {
 		final int len = s2.length();
 		if ( s1.length() < len ) {
 			return 0;
 		}
 		return ( s1.substring( 0, len ).equals( s2 ) ? 1 : 0 ) + strCount( s1.substring( len ), s2 );
+	}
+
+	public static boolean strCopies( final String s1, final String s2, int i ) {
+		final int len = s2.length();
+		if ( i == 0 || s1.length() < len ) {
+			return false;
+		}
+		if ( s1.substring( 0, len ).equals( s2 ) ) {
+			if ( i == 1 ) {
+				return true;
+			} else {
+				i--;
+			}
+		}
+		return strCopies( s1.substring( 1 ), s2, i );
 	}
 }

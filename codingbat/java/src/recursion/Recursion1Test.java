@@ -224,4 +224,11 @@ public class Recursion1Test {
 		assertThat( Recursion1.strCount( "catcowcat", "cow" ), is( 1 ) );
 		assertThat( Recursion1.strCount( "catcowcat", "dog" ), is( 0 ) );
 	}
+
+	@Test
+	public void testStrCopies() {
+		assertThat( Recursion1.strCopies( "catcowcat", "cat", 2 ), is( true ) );
+		assertThat( Recursion1.strCopies( "catcowcat", "cow", 2 ), is( false ) );
+		assertThat( Recursion1.strCopies( "catcowcat", "cow", 1 ), is( true ) );
+	}
 }
