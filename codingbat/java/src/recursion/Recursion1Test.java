@@ -185,7 +185,7 @@ public class Recursion1Test {
 	@Test
 	public void testCount11() {
 		assertThat( Recursion1.count11( "11abc11" ), is( 2 ) );
-		assertThat( Recursion1.count11( "abc11x11x11" ), is( 3) );
+		assertThat( Recursion1.count11( "abc11x11x11" ), is( 3 ) );
 		assertThat( Recursion1.count11( "111" ), is( 1 ) );
 	}
 
@@ -230,5 +230,12 @@ public class Recursion1Test {
 		assertThat( Recursion1.strCopies( "catcowcat", "cat", 2 ), is( true ) );
 		assertThat( Recursion1.strCopies( "catcowcat", "cow", 2 ), is( false ) );
 		assertThat( Recursion1.strCopies( "catcowcat", "cow", 1 ), is( true ) );
+	}
+
+	@Test
+	public void testStrDist() {
+		assertThat( Recursion1.strDist( "catcowcat", "cat" ), is( 9 ) );
+		assertThat( Recursion1.strDist( "catcowcat", "cow" ), is( 3 ) );
+		assertThat( Recursion1.strDist( "cccatcowcatxx", "cat" ), is( 9 ) );
 	}
 }

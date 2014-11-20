@@ -276,4 +276,14 @@ public class Recursion1 {
 		}
 		return strCopies( s1.substring( 1 ), s2, i );
 	}
+
+	public static int strDist( final String s1, final String s2 ) {
+		if ( !s1.contains( s2 ) ) {
+			return 0;
+		}
+		if ( s1.substring( 0, s2.length() ).equals( s2 ) || s1.contains( s2 ) ) {
+			return 1 + strDist( s1.substring( 1 ), s2 );
+		}
+		return 0 + strDist( s1.substring( 1 ), s2 );
+	}
 }
