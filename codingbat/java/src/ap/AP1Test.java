@@ -20,4 +20,11 @@ public class AP1Test {
 		assertThat( AP1.scores100( new int[] { 1, 100, 99, 100 } ), is( false ) );
 		assertThat( AP1.scores100( new int[] { 100, 1, 100, 100 } ), is( true ) );
 	}
+
+	@Test
+	public void testScoresClump() {
+		assertThat( AP1.scoresClump( new int[] { 3, 4, 5 } ), is( true ) );
+		assertThat( AP1.scoresClump( new int[] { 3, 4, 6 } ), is( false ) );
+		assertThat( AP1.scoresClump( new int[] { 1, 3, 5, 5 } ), is( true ) );
+	}
 }

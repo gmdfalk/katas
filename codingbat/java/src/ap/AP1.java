@@ -21,4 +21,13 @@ public class AP1 {
 		return false;
 	}
 
+	public static boolean scoresClump( final int[] is ) {
+		for ( int i = 0; i < is.length - 2; i++ ) {
+			if ( is[i + 2] - is[i] <= 2 && is[i + 1] - is[i] <= 2 ) {
+				return true;
+			}
+		}
+		return false;
+	}
+
 }
