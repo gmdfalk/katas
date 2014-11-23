@@ -27,4 +27,11 @@ public class AP1Test {
 		assertThat( AP1.scoresClump( new int[] { 3, 4, 6 } ), is( false ) );
 		assertThat( AP1.scoresClump( new int[] { 1, 3, 5, 5 } ), is( true ) );
 	}
+
+	@Test
+	public void testScoresAverage() {
+		assertThat( AP1.scoresAverage( new int[] { 2, 2, 4, 4 } ), is( 4 ) );
+		assertThat( AP1.scoresAverage( new int[] { 4, 4, 4, 2, 2, 2 } ), is( 4 ) );
+		assertThat( AP1.scoresAverage( new int[] { 3, 4, 5, 1, 2, 3 } ), is( 4 ) );
+	}
 }

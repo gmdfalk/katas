@@ -30,4 +30,19 @@ public class AP1 {
 		return false;
 	}
 
+	public static int scoresAverage( final int[] is ) {
+		final int mid = is.length / 2;
+		final int avg1 = average( is, 0, mid );
+		final int avg2 = average( is, mid, is.length );
+		return Math.max( avg1, avg2 );
+	}
+
+	private static int average( final int[] scores, final int start, final int end ) {
+		int result = 0;
+		for ( int i = start; i < end; i++ ) {
+			result += scores[i];
+		}
+		return result / ( end - start );
+	}
+
 }
