@@ -45,4 +45,14 @@ public class AP1 {
 		return result / ( end - start );
 	}
 
+	public static int wordsCount( final String[] strings, final int i ) {
+		int counter = 0;
+		for ( final String s : strings ) {
+			if ( s.length() == i ) {
+				counter++;
+			}
+		}
+		return counter;
+	}
+
 }
