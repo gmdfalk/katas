@@ -40,5 +40,6 @@ public class AP1Test {
 		assertThat( AP1.wordsCount( new String[] { "a", "bb", "b", "ccc" }, 1 ), is( 2 ) );
 		assertThat( AP1.wordsCount( new String[] { "a", "bb", "b", "ccc" }, 3 ), is( 1 ) );
 		assertThat( AP1.wordsCount( new String[] { "a", "bb", "b", "ccc" }, 4 ), is( 0 ) );
+	
 	}
 }
