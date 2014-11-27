@@ -42,4 +42,11 @@ public class AP1Test {
 		assertThat( AP1.wordsCount( new String[] { "a", "bb", "b", "ccc" }, 4 ), is( 0 ) );
 	
 	}
+
+	@Test
+	public void testWordsFront() {
+		assertThat( AP1.wordsFront( new String[] { "a", "b", "c", "d" }, 1 ), is( new String[] { "a" } ) );
+		assertThat( AP1.wordsFront( new String[] { "a", "b", "c", "d" }, 2 ), is( new String[] { "a", "b" } ) );
+		assertThat( AP1.wordsFront( new String[] { "a", "b", "c", "d" }, 3 ), is( new String[] { "a", "b", "c" } ) );
+	}
 }

@@ -55,4 +55,14 @@ public class AP1 {
 		return counter;
 	}
 
+	public static String[] wordsFront( final String[] strings, final int n ) {
+		final String[] result = new String[n];
+
+		for ( int i = 0; i < n; i++ ) {
+			result[i] = strings[i];
+		}
+
+		return result;
+	}
+
 }
