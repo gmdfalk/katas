@@ -3,6 +3,8 @@ package ap;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 
+import java.util.Arrays;
+
 import org.junit.Test;
 
 public class AP1Test {
@@ -40,7 +42,7 @@ public class AP1Test {
 		assertThat( AP1.wordsCount( new String[] { "a", "bb", "b", "ccc" }, 1 ), is( 2 ) );
 		assertThat( AP1.wordsCount( new String[] { "a", "bb", "b", "ccc" }, 3 ), is( 1 ) );
 		assertThat( AP1.wordsCount( new String[] { "a", "bb", "b", "ccc" }, 4 ), is( 0 ) );
-	
+
 	}
 
 	@Test
@@ -48,5 +50,12 @@ public class AP1Test {
 		assertThat( AP1.wordsFront( new String[] { "a", "b", "c", "d" }, 1 ), is( new String[] { "a" } ) );
 		assertThat( AP1.wordsFront( new String[] { "a", "b", "c", "d" }, 2 ), is( new String[] { "a", "b" } ) );
 		assertThat( AP1.wordsFront( new String[] { "a", "b", "c", "d" }, 3 ), is( new String[] { "a", "b", "c" } ) );
+	}
+
+	@Test
+	public void testWordsWithoutList() {
+		assertThat( AP1.wordsWithoutList( new String[] { "a", "bb", "b", "ccc" }, 1 ), is( Arrays.asList( "bb", "ccc" ) ) );
+		assertThat( AP1.wordsWithoutList( new String[] { "a", "bb", "b", "ccc" }, 3 ), is( Arrays.asList( "a", "bb", "b" ) ) );
+		assertThat( AP1.wordsWithoutList( new String[] { "a", "bb", "b", "ccc" }, 4 ), is( Arrays.asList( "a", "bb", "b", "ccc" ) ) );
 	}
 }

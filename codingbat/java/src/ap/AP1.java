@@ -1,5 +1,8 @@
 package ap;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class AP1 {
 
 	public static boolean scoresIncreasing( final int[] is ) {
@@ -60,6 +63,17 @@ public class AP1 {
 
 		for ( int i = 0; i < n; i++ ) {
 			result[i] = strings[i];
+		}
+
+		return result;
+	}
+
+	public static List<String> wordsWithoutList( final String[] strings, final int n ) {
+		final List<String> result = new ArrayList<String>();
+		for ( final String s : strings ) {
+			if ( !( s.length() == n ) ) {
+				result.add( s );
+			}
 		}
 
 		return result;
