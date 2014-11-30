@@ -90,4 +90,12 @@ public class AP1 {
 		return false;
 	}
 
+	public static boolean dividesSelf(int i) {
+		while (i > 0) {
+			if (i == 0)
+				return false;
+			i /= 10;
+		}
+		return true;	}
+
 }

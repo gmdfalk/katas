@@ -77,4 +77,11 @@ public class AP1Test {
 		assertThat(AP1.hasOne(22), is(false));
 		assertThat(AP1.hasOne(220), is(false));
 	}
+	
+	@Test
+	public void testDividesSelf() {
+		assertThat(AP1.dividesSelf(128), is(true));
+		assertThat(AP1.dividesSelf(12), is(true));
+		assertThat(AP1.dividesSelf(120), is(false));
+	}
 }
