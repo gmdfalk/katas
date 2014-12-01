@@ -83,8 +83,9 @@ public class AP1 {
 
 	public static boolean hasOne(int i) {
 		while (i > 0) {
-			if (i == 1)
+			if (i == 1) {
 				return true;
+			}
 			i /= 10;
 		}
 		return false;
@@ -92,10 +93,28 @@ public class AP1 {
 
 	public static boolean dividesSelf(int i) {
 		while (i > 0) {
-			if (i == 0)
+			if ( i % 10 == 0 ) {
 				return false;
+			}
 			i /= 10;
 		}
 		return true;	}
+
+	public static int[] copyEvens( final int[] is, final int n ) {
+		final int[] result = new int[n];
+		int idx = 0;
+
+		for ( final int i : is ) {
+			if ( idx >= n ) {
+				break;
+			}
+			if ( i % 2 == 0 ) {
+				result[idx] = i;
+				idx++;
+			}
+		}
+
+		return result;
+	}
 
 }
