@@ -91,4 +91,11 @@ public class AP1Test {
 		assertThat( AP1.copyEvens( new int[] { 3, 2, 4, 5, 8 }, 3 ), is( new int[] { 2, 4, 8 } ) );
 		assertThat( AP1.copyEvens( new int[] { 6, 1, 2, 4, 5, 8 }, 3 ), is( new int[] { 6, 2, 4 } ) );
 	}
+
+	@Test
+	public void testCopyEndy() {
+		assertThat( AP1.copyEndy( new int[] { 9, 11, 90, 22, 6 }, 2 ), is( new int[] { 9, 90 } ) );
+		assertThat( AP1.copyEndy( new int[] { 9, 11, 90, 22, 6 }, 3 ), is( new int[] { 9, 90, 6 } ) );
+		assertThat( AP1.copyEndy( new int[] { 12, 1, 1, 13, 0, 20 }, 2 ), is( new int[] { 1, 1 } ) );
+	}
 }
