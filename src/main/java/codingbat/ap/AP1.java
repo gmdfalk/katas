@@ -135,4 +135,16 @@ public class AP1 {
 		return result;
 	}
 
+	public static int matchUp( final String[] strings, final String[] strings2 ) {
+		int result = 0;
+		for ( int i = 0; i < strings.length; i++ ) {
+			if ( !strings[i].isEmpty() && !strings2[i].isEmpty() ) {
+				if ( strings[i].length() != strings2[i].length() ) {
+					result++;
+				}
+			}
+		}
+		return result;
+	}
+
 }

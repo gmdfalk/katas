@@ -98,4 +98,11 @@ public class AP1Test {
 		assertThat( AP1.copyEndy( new int[] { 9, 11, 90, 22, 6 }, 3 ), is( new int[] { 9, 90, 6 } ) );
 		assertThat( AP1.copyEndy( new int[] { 12, 1, 1, 13, 0, 20 }, 2 ), is( new int[] { 1, 1 } ) );
 	}
+
+	@Test
+	public void testMatchUp() {
+		assertThat( AP1.matchUp( new String[] { "aa", "bb", "cc" }, new String[] { "aaa", "xx", "bb" } ), is( 1 ) );
+		assertThat( AP1.matchUp( new String[] { "aa", "bb", "cc" }, new String[] { "aaa", "b", "bb" } ), is( 2 ) );
+		assertThat( AP1.matchUp( new String[] { "aa", "bb", "cc" }, new String[] { "", "", "ccc" } ), is( 1 ) );
+	}
 }
