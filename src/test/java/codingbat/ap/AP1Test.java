@@ -105,4 +105,11 @@ public class AP1Test {
 		assertThat( AP1.matchUp( new String[] { "aa", "bb", "cc" }, new String[] { "aaa", "b", "bb" } ), is( 2 ) );
 		assertThat( AP1.matchUp( new String[] { "aa", "bb", "cc" }, new String[] { "", "", "ccc" } ), is( 1 ) );
 	}
+
+	@Test
+	public void testScoreUp() {
+		assertThat( AP1.scoreUp( new String[] { "a", "a", "b", "b" }, new String[] { "a", "c", "b", "c" } ), is( 6 ) );
+		assertThat( AP1.scoreUp( new String[] { "a", "a", "b", "b" }, new String[] { "a", "a", "b", "c" } ), is( 11 ) );
+		assertThat( AP1.scoreUp( new String[] { "a", "a", "b", "b" }, new String[] { "a", "a", "b", "b" } ), is( 16 ) );
+	}
 }

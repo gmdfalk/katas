@@ -147,4 +147,16 @@ public class AP1 {
 		return result;
 	}
 
+	public static int scoreUp( final String[] correctAnswers, final String[] studentAnswers ) {
+		int result = 0;
+		for ( int i = 0; i < correctAnswers.length; i++ ) {
+			if ( correctAnswers[i].equals( studentAnswers[i] ) ) {
+				result += 4;
+			} else {
+				result -= 1;
+			}
+		}
+		return result;
+	}
+
 }
