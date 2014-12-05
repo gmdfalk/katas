@@ -159,4 +159,17 @@ public class AP1 {
 		return result;
 	}
 
+	public static String[] wordsWithout( final String[] strings, final String string ) {
+		final List<String> result = new ArrayList<String>();
+
+		for ( final String s : strings ) {
+			if ( !s.equals( string ) ) {
+				result.add( s );
+			}
+		}
+
+		return result.toArray( new String[result.size()] );
+
+	}
+
 }

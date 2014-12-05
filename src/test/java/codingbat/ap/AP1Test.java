@@ -112,4 +112,11 @@ public class AP1Test {
 		assertThat( AP1.scoreUp( new String[] { "a", "a", "b", "b" }, new String[] { "a", "a", "b", "c" } ), is( 11 ) );
 		assertThat( AP1.scoreUp( new String[] { "a", "a", "b", "b" }, new String[] { "a", "a", "b", "b" } ), is( 16 ) );
 	}
+
+	@Test
+	public void testWordsWithout() {
+		assertThat( AP1.wordsWithout( new String[] { "a", "b", "c", "a" }, "a" ), is( new String[] { "b", "c" } ) );
+		assertThat( AP1.wordsWithout( new String[] { "a", "b", "c", "a" }, "b" ), is( new String[] { "a", "c", "a" } ) );
+		assertThat( AP1.wordsWithout( new String[] { "a", "b", "c", "a" }, "c" ), is( new String[] { "a", "b", "a" } ) );
+	}
 }
