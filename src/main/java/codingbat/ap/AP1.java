@@ -172,4 +172,18 @@ public class AP1 {
 
 	}
 
+	public static int scoresSpecial( final int[] is, final int[] is2 ) {
+		return findLargestScore( is ) + findLargestScore( is2 );
+	}
+
+	private static int findLargestScore( final int[] is ) {
+		int score = 0;
+		for ( final int i : is ) {
+			if ( i % 10 == 0 && i > score ) {
+				score = i;
+			}
+		}
+		return score;
+	}
+
 }
