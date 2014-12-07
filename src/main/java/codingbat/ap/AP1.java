@@ -196,4 +196,21 @@ public class AP1 {
 		return result;
 	}
 
+	public static int sumHeights2( final int[] is, final int start, final int end ) {
+		int result = 0, abs;
+		int lastHeight = is[start];
+
+		for ( int i = start + 1; i <= end; i++ ) {
+			abs = Math.abs( is[i] - lastHeight );
+			if ( lastHeight < is[i] ) {
+				result += 2 * abs;
+			} else {
+				result += abs;
+			}
+
+			lastHeight = is[i];
+		}
+		return result;
+	}
+
 }
