@@ -126,4 +126,11 @@ public class AP1Test {
 		assertThat( AP1.scoresSpecial( new int[] { 20, 10, 4 }, new int[] { 2, 20, 10 } ), is( 40 ) );
 		assertThat( AP1.scoresSpecial( new int[] { 12, 11, 4 }, new int[] { 2, 20, 31 } ), is( 20 ) );
 	}
+
+	@Test
+	public void testSumHeights() {
+		assertThat( AP1.sumHeights( new int[] { 5, 3, 6, 7, 2 }, 2, 4 ), is( 6 ) );
+		assertThat( AP1.sumHeights( new int[] { 5, 3, 6, 7, 2 }, 0, 1 ), is( 2 ) );
+		assertThat( AP1.sumHeights( new int[] { 5, 3, 6, 7, 2 }, 0, 4 ), is( 11 ) );
+	}
 }
