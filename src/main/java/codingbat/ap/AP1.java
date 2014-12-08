@@ -213,4 +213,19 @@ public class AP1 {
 		return result;
 	}
 
+	public static int bigHeights( final int[] is, final int start, final int end ) {
+		int result = 0, abs;
+		int lastHeight = is[start];
+
+		for ( int i = start + 1; i <= end; i++ ) {
+			abs = Math.abs( is[i] - lastHeight );
+			if ( abs >= 5 ) {
+				result++;
+			}
+
+			lastHeight = is[i];
+		}
+		return result;
+	}
+
 }
