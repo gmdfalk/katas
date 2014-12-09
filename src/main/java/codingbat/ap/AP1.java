@@ -228,4 +228,22 @@ public class AP1 {
 		return result;
 	}
 
+	public static int userCompare( final String s1, final int id1, final String s2, final int id2 ) {
+		int result = 0;
+		final int sCompare = s1.compareTo( s2 );
+		if ( sCompare < 0 ) {
+			result = -1;
+		} else if ( sCompare > 0 ) {
+			result = 1;
+		} else {
+			if ( id1 < id2 ) {
+				result = -1;
+			} else if ( id1 > id2 ) {
+				result = 1;
+			}
+		}
+
+		return result;
+	}
+
 }

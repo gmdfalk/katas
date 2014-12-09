@@ -147,4 +147,11 @@ public class AP1Test {
 		assertThat( AP1.bigHeights( new int[] { 5, 3, 6, 7, 2 }, 0, 1 ), is( 0 ) );
 		assertThat( AP1.bigHeights( new int[] { 5, 3, 6, 7, 2 }, 0, 4 ), is( 1 ) );
 	}
+
+	@Test
+	public void testUserCompare() {
+		assertThat( AP1.userCompare( "bb", 1, "zz", 2 ), is( -1 ) );
+		assertThat( AP1.userCompare( "bb", 1, "aa", 2 ), is( 1 ) );
+		assertThat( AP1.userCompare( "bb", 1, "bb", 1 ), is( 0 ) );
+	}
 }
