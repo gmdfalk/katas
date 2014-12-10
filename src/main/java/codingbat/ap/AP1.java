@@ -246,4 +246,36 @@ public class AP1 {
 		return result;
 	}
 
+	public static String[] mergeTwo( final String[] a, final String[] b, final int n ) {
+		final String[] result = new String[n];
+		int idx = 0;
+		String first, second;
+
+		for ( int i = 0; idx < n; i++ ) {
+			if ( a[i].compareTo( b[i] ) < 0 ) {
+				first = a[i];
+				second = b[i];
+			} else {
+				first = b[i];
+				second = a[i];
+			}
+			if ( !contains( result, first ) ) {
+				result[idx++] = first;
+			}
+			if ( !contains( result, second ) && idx < n ) {
+				result[idx++] = second;
+			}
+		}
+		return result;
+	}
+
+	private static boolean contains( final String[] array, final String target ) {
+		for ( final String s : array ) {
+			if ( target.equals( s ) ) {
+				return true;
+			}
+		}
+		return false;
+	}
+
 }

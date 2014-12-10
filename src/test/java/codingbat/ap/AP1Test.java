@@ -154,4 +154,11 @@ public class AP1Test {
 		assertThat( AP1.userCompare( "bb", 1, "aa", 2 ), is( 1 ) );
 		assertThat( AP1.userCompare( "bb", 1, "bb", 1 ), is( 0 ) );
 	}
+
+	@Test
+	public void testMergeTwo() {
+		assertThat( AP1.mergeTwo( new String[] { "a", "c", "z" }, new String[] { "b", "f", "z" }, 3 ), is( new String[] { "a", "b", "c" } ) );
+		assertThat( AP1.mergeTwo( new String[] { "a", "c", "z" }, new String[] { "c", "f", "z" }, 3 ), is( new String[] { "a", "c", "f" } ) );
+		assertThat( AP1.mergeTwo( new String[] { "f", "g", "z" }, new String[] { "c", "f", "g" }, 3 ), is( new String[] { "c", "f", "g" } ) );
+	}
 }
