@@ -278,4 +278,18 @@ public class AP1 {
 		return false;
 	}
 
+	public static int commonTwo( final String[] strings, final String[] strings2 ) {
+		String check = "";
+		int result = 0;
+		for ( final String s : strings ) {
+			check += s;
+		}
+		for ( final String s : strings2 ) {
+			if ( check.contains( s ) ) {
+				result++;
+			}
+		}
+		return result;
+	}
+
 }

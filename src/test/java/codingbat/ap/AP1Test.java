@@ -161,4 +161,12 @@ public class AP1Test {
 		assertThat( AP1.mergeTwo( new String[] { "a", "c", "z" }, new String[] { "c", "f", "z" }, 3 ), is( new String[] { "a", "c", "f" } ) );
 		assertThat( AP1.mergeTwo( new String[] { "f", "g", "z" }, new String[] { "c", "f", "g" }, 3 ), is( new String[] { "c", "f", "g" } ) );
 	}
+
+	@Test
+	public void testCommonTwo() {
+		assertThat( AP1.commonTwo( new String[] { "a", "c", "x" }, new String[] { "b", "c", "d", "x" } ), is( 2 ) );
+		assertThat( AP1.commonTwo( new String[] { "a", "c", "x" }, new String[] { "a", "b", "c", "x", "z" } ), is( 3 ) );
+		assertThat( AP1.commonTwo( new String[] { "a", "b", "c" }, new String[] { "a", "b", "c" } ), is( 3 ) );
+	}
+
 }
