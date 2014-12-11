@@ -1,4 +1,4 @@
-package codingbat.warmup2;
+package codingbat.warmup;
 
 import java.util.ArrayList;
 

@@ -35,4 +35,15 @@ public class Array2 {
 
 		return ( result - max - min ) / ( is.length - 2 );
 	}
+
+	public static int sum13( final int[] is ) {
+		int result = 0;
+		for ( final int i : is ) {
+			if ( i == 13 ) {
+				break;
+			}
+			result += i;
+		}
+		return result;
+	}
 }

@@ -1,4 +1,4 @@
-package codingbat.warmup1;
+package codingbat.warmup;
 
 // CodingBat Warump1 "Challenge"
 public final class Warmup1 {

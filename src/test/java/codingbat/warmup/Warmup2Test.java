@@ -1,9 +1,11 @@
-package codingbat.warmup2;
+package codingbat.warmup;
 
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 
 import org.junit.Test;
+
+import codingbat.warmup.Warmup2;
 
 public class Warmup2Test {
 

@@ -1,7 +1,10 @@
-package codingbat.warmup1;
+package codingbat.warmup;
 
 import static org.junit.Assert.*;
+
 import org.junit.Test;
+
+import codingbat.warmup.Warmup1;
 import static org.hamcrest.Matchers.is;
 
 public class Warmup1Test {

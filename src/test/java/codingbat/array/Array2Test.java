@@ -28,4 +28,11 @@ public class Array2Test {
 		assertThat( Array2.centeredAverage( new int[] { -10, -4, -2, -4, -2, 0 } ), is( -3 ) );
 	}
 
+	@Test
+	public void testSum13() {
+		assertThat( Array2.sum13( new int[] { 1, 2, 2, 1 } ), is( 6 ) );
+		assertThat( Array2.sum13( new int[] { 1, 1} ), is( 2 ) );
+		assertThat( Array2.sum13( new int[] { 1,2,2,1,13 } ), is( 6) );
+	}
+
 }

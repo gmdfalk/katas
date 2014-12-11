@@ -1,9 +1,11 @@
-package codingbat.string1;
+package codingbat.string;
 
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 
 import org.junit.Test;
+
+import codingbat.string.String1;
 
 public class String1Test {
 
