@@ -46,4 +46,22 @@ public class Array2 {
 		}
 		return result;
 	}
+
+	public static int sum67( final int[] is ) {
+		int result = 0;
+		boolean ignore = false;
+		for ( final int i : is ) {
+			if ( i == 6 ) {
+				ignore = true;
+			} else if ( ignore && i == 7 ) {
+				ignore = false;
+				continue;
+			}
+			if ( ignore ) {
+				continue;
+			}
+			result += i;
+		}
+		return result;
+	}
 }

@@ -35,4 +35,11 @@ public class Array2Test {
 		assertThat( Array2.sum13( new int[] { 1,2,2,1,13 } ), is( 6) );
 	}
 
+	@Test
+	public void testSum67() {
+		assertThat( Array2.sum67( new int[] { 1, 2, 2 } ), is( 5 ) );
+		assertThat( Array2.sum67( new int[] { 1, 2, 2, 6, 99, 99, 7 } ), is( 5 ) );
+		assertThat( Array2.sum67( new int[] { 1, 1, 6, 7, 2 } ), is( 4 ) );
+	}
+
 }
