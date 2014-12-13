@@ -42,4 +42,11 @@ public class Array2Test {
 		assertThat( Array2.sum67( new int[] { 1, 1, 6, 7, 2 } ), is( 4 ) );
 	}
 
+	@Test
+	public void testHas22() {
+		assertThat( Array2.has22( new int[] { 1, 2, 2 } ), is( true ) );
+		assertThat( Array2.has22( new int[] { 1, 2, 1, 2 } ), is( false ) );
+		assertThat( Array2.has22( new int[] { 2, 1, 2 } ), is( false ) );
+	}
+
 }

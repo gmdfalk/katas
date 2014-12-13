@@ -64,4 +64,13 @@ public class Array2 {
 		}
 		return result;
 	}
+
+	public static boolean has22( final int[] is ) {
+		for ( int i = 0; i < is.length - 1; i++ ) {
+			if ( is[i] == 2 && is[i + 1] == 2 ) {
+				return true;
+			}
+		}
+		return false;
+	}
 }
