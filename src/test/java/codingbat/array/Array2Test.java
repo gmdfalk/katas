@@ -48,5 +48,12 @@ public class Array2Test {
 		assertThat( Array2.has22( new int[] { 1, 2, 1, 2 } ), is( false ) );
 		assertThat( Array2.has22( new int[] { 2, 1, 2 } ), is( false ) );
 	}
+	
+	@Test
+	public void testLucky13() {
+		assertThat( Array2.lucky13( new int[] { 0,2,4 } ), is( true ) );
+		assertThat( Array2.lucky13( new int[] { 1,2,3 } ), is( false ) );
+		assertThat( Array2.lucky13( new int[] { 1,2,4 } ), is( false ) );
+	}
 
 }

@@ -73,4 +73,13 @@ public class Array2 {
 		}
 		return false;
 	}
+
+	public static boolean lucky13(int[] is) {
+		for (int i : is) {
+			if (i == 1 || i == 3) {
+				return false;
+			}
+		}
+		return true;
+	}
 }
