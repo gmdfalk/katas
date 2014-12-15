@@ -48,12 +48,19 @@ public class Array2Test {
 		assertThat( Array2.has22( new int[] { 1, 2, 1, 2 } ), is( false ) );
 		assertThat( Array2.has22( new int[] { 2, 1, 2 } ), is( false ) );
 	}
-	
+
 	@Test
 	public void testLucky13() {
 		assertThat( Array2.lucky13( new int[] { 0,2,4 } ), is( true ) );
 		assertThat( Array2.lucky13( new int[] { 1,2,3 } ), is( false ) );
 		assertThat( Array2.lucky13( new int[] { 1,2,4 } ), is( false ) );
+	}
+
+	@Test
+	public void testSum28() {
+		assertThat( Array2.sum28( new int[] { 2, 3, 2, 2, 4, 2 } ), is( true ) );
+		assertThat( Array2.sum28( new int[] { 2, 3, 2, 2, 4, 2, 2 } ), is( false ) );
+		assertThat( Array2.sum28( new int[] { 1, 2, 3, 4 } ), is( false ) );
 	}
 
 }

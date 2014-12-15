@@ -74,12 +74,22 @@ public class Array2 {
 		return false;
 	}
 
-	public static boolean lucky13(int[] is) {
-		for (int i : is) {
+	public static boolean lucky13(final int[] is) {
+		for (final int i : is) {
 			if (i == 1 || i == 3) {
 				return false;
 			}
 		}
 		return true;
+	}
+
+	public static boolean sum28( final int[] is ) {
+		int result = 0;
+		for ( final int i : is ) {
+			if ( i == 2 ) {
+				result += i;
+			}
+		}
+		return result == 8;
 	}
 }
