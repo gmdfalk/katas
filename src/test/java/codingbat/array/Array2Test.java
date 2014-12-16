@@ -63,4 +63,11 @@ public class Array2Test {
 		assertThat( Array2.sum28( new int[] { 1, 2, 3, 4 } ), is( false ) );
 	}
 
+	@Test
+	public void testMore14() {
+		assertThat( Array2.more14( new int[] { 1, 4, 1 } ), is( true ) );
+		assertThat( Array2.more14( new int[] { 1, 4, 1, 4 } ), is( false ) );
+		assertThat( Array2.more14( new int[] { 1, 1 } ), is( true ) );
+	}
+
 }

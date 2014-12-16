@@ -92,4 +92,18 @@ public class Array2 {
 		}
 		return result == 8;
 	}
+
+	public static boolean more14( final int[] is ) {
+		int ones = 0, fours = 0;
+
+		for ( final int i : is ) {
+			if ( i == 1 ) {
+				ones++;
+			} else if ( i == 4 ) {
+				fours++;
+			}
+		}
+
+		return ones > fours;
+	}
 }
