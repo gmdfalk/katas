@@ -106,4 +106,15 @@ public class Array2 {
 
 		return ones > fours;
 	}
+
+	public static int[] fizzArray( final int len ) {
+		final int[] result = new int[len];
+		int n = 0;
+
+		for ( int i = 0; i < len; i++ ) {
+			result[i] = n;
+			n++;
+		}
+		return result;
+	}
 }

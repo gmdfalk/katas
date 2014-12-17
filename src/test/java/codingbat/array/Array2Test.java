@@ -70,4 +70,11 @@ public class Array2Test {
 		assertThat( Array2.more14( new int[] { 1, 1 } ), is( true ) );
 	}
 
+	@Test
+	public void testFizzArray() {
+		assertThat( Array2.fizzArray( 4 ), is( new int[] { 0, 1, 2, 3 } ) );
+		assertThat( Array2.fizzArray( 1 ), is( new int[] { 0 } ) );
+		assertThat( Array2.fizzArray( 10 ), is( new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 } ) );
+	}
+
 }
