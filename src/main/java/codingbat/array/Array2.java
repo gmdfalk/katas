@@ -117,4 +117,13 @@ public class Array2 {
 		}
 		return result;
 	}
+
+	public static boolean only14( final int[] is ) {
+		for ( final int i : is ) {
+			if ( i != 1 && i != 4 ) {
+				return false;
+			}
+		}
+		return true;
+	}
 }

@@ -77,4 +77,10 @@ public class Array2Test {
 		assertThat( Array2.fizzArray( 10 ), is( new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 } ) );
 	}
 
+	@Test
+	public void testOnly14() {
+		assertThat( Array2.only14( new int[] { 1, 4, 1, 4 } ), is( true ) );
+		assertThat( Array2.only14( new int[] { 1, 4, 2, 4 } ), is( false ) );
+		assertThat( Array2.only14( new int[] { 1, 1 } ), is( true ) );
+	}
 }
