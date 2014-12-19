@@ -126,4 +126,14 @@ public class Array2 {
 		}
 		return true;
 	}
+
+	public static String[] fizzArray2(int len) {
+		String[] result = new String[len];
+		
+		for (int i=0; i < len; i++) {
+			result[i] = String.valueOf(i);
+		}
+		
+		return result;
+	}
 }
