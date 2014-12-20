@@ -127,13 +127,29 @@ public class Array2 {
 		return true;
 	}
 
-	public static String[] fizzArray2(int len) {
-		String[] result = new String[len];
-		
+	public static String[] fizzArray2(final int len) {
+		final String[] result = new String[len];
+
 		for (int i=0; i < len; i++) {
 			result[i] = String.valueOf(i);
 		}
-		
+
 		return result;
+	}
+
+	public static boolean no14( final int[] is ) {
+		boolean has1 = false;
+		boolean has4 = false;
+
+		for ( final int i : is ) {
+			if ( i == 1 ) {
+				has1 = true;
+			}
+			if ( i == 4 ) {
+				has4 = true;
+			}
+		}
+
+		return !has1 || !has4;
 	}
 }
