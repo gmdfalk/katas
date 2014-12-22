@@ -152,4 +152,14 @@ public class Array2 {
 
 		return !has1 || !has4;
 	}
+
+	public static boolean isEverywhere( final int[] is, final int n ) {
+		for ( int i = 0; i < is.length - 1; i++ ) {
+			if ( is[i] != n && is[i + 1] != n ) {
+				return false;
+			}
+		}
+		return true;
+	}
+
 }

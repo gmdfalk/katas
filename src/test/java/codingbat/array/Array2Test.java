@@ -97,4 +97,11 @@ public class Array2Test {
 		assertThat( Array2.no14( new int[] { 1, 2, 3, 4 } ), is( false ) );
 		assertThat( Array2.no14( new int[] { 2, 3, 4 } ), is( true ) );
 	}
+
+	@Test
+	public void testIsEverywhere() {
+		assertThat( Array2.isEverywhere( new int[] { 1, 2, 1, 3 }, 1 ), is( true ) );
+		assertThat( Array2.isEverywhere( new int[] { 1, 2, 1, 3 }, 2 ), is( false ) );
+		assertThat( Array2.isEverywhere( new int[] { 1, 2, 1, 3, 4 }, 1 ), is( false ) );
+	}
 }
