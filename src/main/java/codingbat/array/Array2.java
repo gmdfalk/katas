@@ -162,4 +162,20 @@ public class Array2 {
 		return true;
 	}
 
+	public static boolean either24( final int[] is ) {
+		boolean found2 = false;
+		boolean found4 = false;
+
+		for ( int i = 0; i < is.length - 1; i++ ) {
+			if ( is[i] == 2 && is[i + 1] == 2 ) {
+				found2 = true;
+			}
+			if ( is[i] == 4 && is[i + 1] == 4 ) {
+				found4 = true;
+			}
+		}
+
+		return found2 ^ found4;
+	}
+
 }

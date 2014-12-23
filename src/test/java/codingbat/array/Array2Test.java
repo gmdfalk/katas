@@ -104,4 +104,11 @@ public class Array2Test {
 		assertThat( Array2.isEverywhere( new int[] { 1, 2, 1, 3 }, 2 ), is( false ) );
 		assertThat( Array2.isEverywhere( new int[] { 1, 2, 1, 3, 4 }, 1 ), is( false ) );
 	}
+
+	@Test
+	public void testEither24() {
+		assertThat( Array2.either24( new int[] { 1, 2, 2 } ), is( true ) );
+		assertThat( Array2.either24( new int[] { 4, 4, 1 } ), is( true ) );
+		assertThat( Array2.either24( new int[] { 4, 4, 1, 2, 2 } ), is( false ) );
+	}
 }
