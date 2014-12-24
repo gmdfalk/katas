@@ -111,4 +111,11 @@ public class Array2Test {
 		assertThat( Array2.either24( new int[] { 4, 4, 1 } ), is( true ) );
 		assertThat( Array2.either24( new int[] { 4, 4, 1, 2, 2 } ), is( false ) );
 	}
+	
+	@Test
+	public void testMatchUp() {
+		assertThat( Array2.matchUp( new int[] { 1, 2, 3}, new int[] {2,3,10}), is( 2 ) );
+		assertThat( Array2.matchUp( new int[] { 1, 2, 3}, new int[] {2,3,5}), is( 3) );
+		assertThat( Array2.matchUp( new int[] { 1, 2, 3}, new int[] {2,3,3}), is( 2 ) );
+	}
 }

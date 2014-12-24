@@ -178,4 +178,17 @@ public class Array2 {
 		return found2 ^ found4;
 	}
 
+	public static int matchUp(int[] numsA, int[] numsB) {
+		int result = 0;
+		int a, b;
+		for (int i=0; i < numsA.length; i++) {
+			a = numsA[i];
+			b = numsB[i];
+			if (a != b && Math.abs(a-b) < 3) {
+				result++;
+			}
+		}
+		return result;
+	}
+
 }
