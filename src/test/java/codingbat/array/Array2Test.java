@@ -118,4 +118,11 @@ public class Array2Test {
 		assertThat( Array2.matchUp( new int[] { 1, 2, 3}, new int[] {2,3,5}), is( 3) );
 		assertThat( Array2.matchUp( new int[] { 1, 2, 3}, new int[] {2,3,3}), is( 2 ) );
 	}
+
+	@Test
+	public void testHas77() {
+		assertThat( Array2.has77( new int[] { 1, 7,7 } ), is( true ) );
+		assertThat( Array2.has77( new int[] { 1,7,1,7 } ), is( true ) );
+		assertThat( Array2.has77( new int[] { 1,7,1,1,7 } ), is( false ) );
+	}
 }

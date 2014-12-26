@@ -191,4 +191,17 @@ public class Array2 {
 		return result;
 	}
 
+	public static boolean has77(int[] is) {
+		boolean a, b, c;
+		for (int i=0; i < is.length-2; i++) {
+			a = is[i] == 7;
+			b = is[i+1] == 7;
+			c = is[i+2] == 7;
+			if (a && b || b && c || a && c) {
+				return true;
+			}
+		}
+		return false;
+	}
+
 }
