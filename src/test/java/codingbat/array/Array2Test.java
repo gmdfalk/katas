@@ -111,7 +111,7 @@ public class Array2Test {
 		assertThat( Array2.either24( new int[] { 4, 4, 1 } ), is( true ) );
 		assertThat( Array2.either24( new int[] { 4, 4, 1, 2, 2 } ), is( false ) );
 	}
-	
+
 	@Test
 	public void testMatchUp() {
 		assertThat( Array2.matchUp( new int[] { 1, 2, 3}, new int[] {2,3,10}), is( 2 ) );
@@ -124,5 +124,12 @@ public class Array2Test {
 		assertThat( Array2.has77( new int[] { 1, 7,7 } ), is( true ) );
 		assertThat( Array2.has77( new int[] { 1,7,1,7 } ), is( true ) );
 		assertThat( Array2.has77( new int[] { 1,7,1,1,7 } ), is( false ) );
+	}
+
+	@Test
+	public void testHas12() {
+		assertThat( Array2.has12( new int[] { 1, 3, 2 } ), is( true ) );
+		assertThat( Array2.has12( new int[] { 3, 1, 2 } ), is( true ) );
+		assertThat( Array2.has12( new int[] { 3, 1, 4, 5, 2 } ), is( true ) );
 	}
 }

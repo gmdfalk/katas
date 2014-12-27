@@ -178,7 +178,7 @@ public class Array2 {
 		return found2 ^ found4;
 	}
 
-	public static int matchUp(int[] numsA, int[] numsB) {
+	public static int matchUp(final int[] numsA, final int[] numsB) {
 		int result = 0;
 		int a, b;
 		for (int i=0; i < numsA.length; i++) {
@@ -191,13 +191,27 @@ public class Array2 {
 		return result;
 	}
 
-	public static boolean has77(int[] is) {
+	public static boolean has77(final int[] is) {
 		boolean a, b, c;
 		for (int i=0; i < is.length-2; i++) {
 			a = is[i] == 7;
 			b = is[i+1] == 7;
 			c = is[i+2] == 7;
 			if (a && b || b && c || a && c) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	public static boolean has12( final int[] is ) {
+		boolean has1 = false;
+
+		for ( final int i : is ) {
+			if ( i == 1 ) {
+				has1 = true;
+			}
+			if ( has1 && i == 2 ) {
 				return true;
 			}
 		}
