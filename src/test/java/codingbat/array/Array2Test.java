@@ -132,4 +132,11 @@ public class Array2Test {
 		assertThat( Array2.has12( new int[] { 3, 1, 2 } ), is( true ) );
 		assertThat( Array2.has12( new int[] { 3, 1, 4, 5, 2 } ), is( true ) );
 	}
+
+	@Test
+	public void testModThree() {
+		assertThat( Array2.modThree( new int[] { 2, 1, 3, 5 } ), is( true ) );
+		assertThat( Array2.modThree( new int[] { 2, 1, 2, 5 } ), is( false ) );
+		assertThat( Array2.modThree( new int[] { 2, 4, 2, 5 } ), is( true ) );
+	}
 }
