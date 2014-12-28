@@ -222,20 +222,13 @@ public class Array2 {
 		return n % 2 == 0;
 	}
 
-	private static boolean areEven( final int a, final int b, final int c ) {
-		return isEven( a ) && isEven( b ) && isEven( c );
-	}
-
-	private static boolean areOdd( final int a, final int b, final int c ) {
-		return !isEven( a ) && !isEven( b ) && !isEven( c );
-	}
-
 	public static boolean modThree( final int[] is ) {
-		boolean areEven, areOdd;
+		int a, b, c;
 		for (int i=0; i < is.length-2; i++) {
-			areEven = areEven( is[i], is[i + 1], is[i + 2] );
-			areOdd = areOdd( is[i], is[i + 1], is[i + 2] );
-			if ( areEven || areOdd ) {
+			a = is[i];
+			b = is[i + 1];
+			c = is[i + 2];
+			if ( isEven( a ) == isEven( b ) && isEven( a ) == isEven( c ) ) {
 				return true;
 			}
 		}
