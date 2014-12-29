@@ -235,4 +235,21 @@ public class Array2 {
 		return false;
 	}
 
+	public static boolean haveThree( final int[] is ) {
+		boolean isNeighbor = false;
+		int threeCount = 0;
+
+		for ( final int i : is ) {
+			if ( !isNeighbor && i == 3 ) {
+				threeCount++;
+				isNeighbor = true;
+			} else {
+				isNeighbor = false;
+			}
+
+		}
+
+		return threeCount == 3;
+	}
+
 }
