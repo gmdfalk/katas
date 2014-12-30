@@ -252,4 +252,26 @@ public class Array2 {
 		return threeCount == 3;
 	}
 
+	public static boolean twoTwo( final int[] is ) {
+
+		for ( int i = 1; i < is.length; i++ ) {
+			if ( is[i] == 2 ) {
+				if ( !nextToTwo( is, i ) ) {
+					return false;
+				}
+			}
+		}
+		return true;
+	}
+
+	private static boolean nextToTwo( final int[] is, final int i ) {
+		final boolean prev = is[i - 1] == 2;
+
+		if ( i == is.length - 1 ) {
+			return prev;
+		} else {
+			return prev || is[i + 1] == 2;
+		}
+	}
+
 }

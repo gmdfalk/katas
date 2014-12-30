@@ -146,4 +146,11 @@ public class Array2Test {
 		assertThat( Array2.haveThree( new int[] { 3, 1, 3, 3 } ), is( false ) );
 		assertThat( Array2.haveThree( new int[] { 3, 4, 3, 3, 4 } ), is( false ) );
 	}
+
+	@Test
+	public void testTwoTwo() {
+		assertThat( Array2.twoTwo( new int[] { 4, 2, 2, 3 } ), is( true ) );
+		assertThat( Array2.twoTwo( new int[] { 2, 2, 4 } ), is( true ) );
+		assertThat( Array2.twoTwo( new int[] { 2, 2, 4, 2 } ), is( false ) );
+	}
 }
