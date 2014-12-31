@@ -153,4 +153,11 @@ public class Array2Test {
 		assertThat( Array2.twoTwo( new int[] { 2, 2, 4 } ), is( true ) );
 		assertThat( Array2.twoTwo( new int[] { 2, 2, 4, 2 } ), is( false ) );
 	}
+
+	@Test
+	public void testSameEnds() {
+		assertThat( Array2.sameEnds( new int[] { 5, 6, 45, 99, 13, 5, 6 }, 1 ), is( false ) );
+		assertThat( Array2.sameEnds( new int[] { 5, 6, 45, 99, 13, 5, 6 }, 2 ), is( true ) );
+		assertThat( Array2.sameEnds( new int[] { 5, 6, 45, 99, 13, 5, 6 }, 3 ), is( false ) );
+	}
 }

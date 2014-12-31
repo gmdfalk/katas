@@ -274,4 +274,16 @@ public class Array2 {
 		}
 	}
 
+	public static boolean sameEnds( final int[] is, final int n ) {
+		final int[] p1 = new int[n], p2 = new int[n];
+		System.arraycopy( is, 0, p1, 0, n );
+		System.arraycopy( is, is.length - n, p2, 0, n );
+		for ( int i = 0; i < p1.length; i++ ) {
+			if ( p1[i] != p2[i] ) {
+				return false;
+			}
+		}
+		return true;
+	}
+
 }
