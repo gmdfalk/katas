@@ -286,4 +286,23 @@ public class Array2 {
 		return true;
 	}
 
+	public static boolean tripleUp( final int[] is ) {
+		int count = 1;
+		int n = -1;
+
+		for ( final int i : is ) {
+			if ( i == n + 1 ) {
+				count++;
+			} else {
+				count = 1;
+			}
+			if ( count == 3 ) {
+				return true;
+			} else {
+				n = i;
+			}
+		}
+		return false;
+	}
+
 }

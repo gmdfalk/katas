@@ -160,4 +160,11 @@ public class Array2Test {
 		assertThat( Array2.sameEnds( new int[] { 5, 6, 45, 99, 13, 5, 6 }, 2 ), is( true ) );
 		assertThat( Array2.sameEnds( new int[] { 5, 6, 45, 99, 13, 5, 6 }, 3 ), is( false ) );
 	}
+
+	@Test
+	public void testTripleUp() {
+		assertThat( Array2.tripleUp( new int[] { 1, 4, 5, 6, 2 } ), is( true ) );
+		assertThat( Array2.tripleUp( new int[] { 1, 2, 3 } ), is( true ) );
+		assertThat( Array2.tripleUp( new int[] { 1, 2, 4 } ), is( false ) );
+	}
 }
