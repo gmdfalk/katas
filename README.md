@@ -1,0 +1,4 @@
+katas
+=====
+
+small code exercises
