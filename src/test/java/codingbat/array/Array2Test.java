@@ -167,4 +167,12 @@ public class Array2Test {
 		assertThat( Array2.tripleUp( new int[] { 1, 2, 3 } ), is( true ) );
 		assertThat( Array2.tripleUp( new int[] { 1, 2, 4 } ), is( false ) );
 	}
+
+	@Test
+	public void testFizzArray3() {
+		assertThat( Array2.fizzArray3( 5, 10 ), is( new int[] { 5, 6, 7, 8, 9 } ) );
+		assertThat( Array2.fizzArray3( 11, 18 ), is( new int[] { 11, 12, 13, 14, 15, 16, 17 } ) );
+		assertThat( Array2.fizzArray3( 1, 3 ), is( new int[] { 1, 2 } ) );
+	}
+
 }

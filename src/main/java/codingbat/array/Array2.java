@@ -305,4 +305,8 @@ public class Array2 {
 		return false;
 	}
 
+	public static int[] fizzArray3( final int i, final int j ) {
+		return null;
+	}
+
 }
