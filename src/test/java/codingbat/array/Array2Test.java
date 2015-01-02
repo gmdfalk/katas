@@ -175,4 +175,11 @@ public class Array2Test {
 		assertThat( Array2.fizzArray3( 1, 3 ), is( new int[] { 1, 2 } ) );
 	}
 
+	@Test
+	public void testShiftLeft() {
+		assertThat( Array2.shiftLeft( new int[] { 6, 2, 5, 3 } ), is( new int[] { 2, 5, 3, 6 } ) );
+		assertThat( Array2.shiftLeft( new int[] { 1, 2 } ), is( new int[] { 2, 1 } ) );
+		assertThat( Array2.shiftLeft( new int[] { 1 } ), is( new int[] { 1 } ) );
+	}
+
 }

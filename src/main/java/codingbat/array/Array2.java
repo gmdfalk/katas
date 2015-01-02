@@ -313,4 +313,17 @@ public class Array2 {
 		return result;
 	}
 
+	public static int[] shiftLeft( final int[] is ) {
+		final int len = is.length;
+		final int[] result = new int[len];
+
+		//		for ( int i = 1; i < len; i++ ) {
+		//			result[i - 1] = is[i];
+		//		}
+		System.arraycopy( is, 1, result, 0, len - 1 );
+		result[len - 1] = is[0];
+
+		return result;
+	}
+
 }
