@@ -305,8 +305,12 @@ public class Array2 {
 		return false;
 	}
 
-	public static int[] fizzArray3( final int i, final int j ) {
-		return null;
+	public static int[] fizzArray3( int start, final int end ) {
+		final int[] result = new int[end - start];
+		for ( int i = 0; i < result.length; i++ ) {
+			result[i] = start++;
+		}
+		return result;
 	}
 
 }
