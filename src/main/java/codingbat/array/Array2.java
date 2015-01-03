@@ -326,4 +326,21 @@ public class Array2 {
 		return result;
 	}
 
+	public static int[] tenRun( final int[] is ) {
+		int multiple = 0, count = 0;
+		final int[] result = new int[is.length];
+
+		for ( int i : is ) {
+			if ( i % 10 == 0 ) {
+				multiple = i;
+			} else if ( multiple != 0 ) {
+				i = multiple;
+			}
+			result[count] = i;
+			count++;
+		}
+
+		return result;
+	}
+
 }

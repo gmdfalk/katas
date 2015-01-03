@@ -182,4 +182,11 @@ public class Array2Test {
 		assertThat( Array2.shiftLeft( new int[] { 1 } ), is( new int[] { 1 } ) );
 	}
 
+	@Test
+	public void testTenRun() {
+		assertThat( Array2.tenRun( new int[] { 2, 10, 3, 4, 20, 5 } ), is( new int[] { 2, 10, 10, 10, 20, 20 } ) );
+		assertThat( Array2.tenRun( new int[] { 10, 1, 20, 2 } ), is( new int[] { 10, 10, 20, 20 } ) );
+		assertThat( Array2.tenRun( new int[] { 10, 1, 9, 20 } ), is( new int[] { 10, 10, 10, 20 } ) );
+	}
+
 }
