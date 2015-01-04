@@ -189,4 +189,11 @@ public class Array2Test {
 		assertThat( Array2.tenRun( new int[] { 10, 1, 9, 20 } ), is( new int[] { 10, 10, 10, 20 } ) );
 	}
 
+	@Test
+	public void testPre4() {
+		assertThat( Array2.pre4( new int[] { 1, 2, 4, 1 } ), is( new int[] { 1, 2 } ) );
+		assertThat( Array2.pre4( new int[] { 3, 1, 4 } ), is( new int[] { 3, 1 } ) );
+		assertThat( Array2.pre4( new int[] { 1, 4, 4 } ), is( new int[] { 1 } ) );
+	}
+
 }

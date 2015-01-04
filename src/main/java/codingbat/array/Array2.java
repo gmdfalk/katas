@@ -1,5 +1,8 @@
 package codingbat.array;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Array2 {
 
 	public static int countEvens( final int[] is ) {
@@ -341,6 +344,19 @@ public class Array2 {
 		}
 
 		return result;
+	}
+
+	public static int[] pre4( final int[] is ) {
+		final List<Integer> result = new ArrayList<Integer>();
+
+		for ( final int i : is ) {
+			if ( i == 4 ) {
+				break;
+			}
+			result.add( i );
+		}
+
+		return result.stream().mapToInt( i -> i ).toArray();
 	}
 
 }
