@@ -361,16 +361,17 @@ public class Array2 {
 
 	public static int[] post4( final int[] is ) {
 		//		final int start = Arrays.asList( is ).lastIndexOf( 4 );
-		int start = 0;
+		int start = -1;
 		for ( int i = 0; i < is.length; i++ ) {
 			if ( is[i] == 4 ) {
 				start = i;
 			}
 		}
-		start++;
-		final int len = is.length - start;
+		final int len = is.length - ++start;
 		final int[] result = new int[len];
+
 		System.arraycopy( is, start, result, 0, len );
+
 		return result;
 	}
 
