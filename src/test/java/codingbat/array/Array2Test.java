@@ -196,4 +196,11 @@ public class Array2Test {
 		assertThat( Array2.pre4( new int[] { 1, 4, 4 } ), is( new int[] { 1 } ) );
 	}
 
+	@Test
+	public void testPost4() {
+		assertThat( Array2.post4( new int[] { 2, 4, 1, 2 } ), is( new int[] { 1, 2 } ) );
+		assertThat( Array2.post4( new int[] { 4, 1, 4, 2 } ), is( new int[] { 2 } ) );
+		assertThat( Array2.post4( new int[] { 4, 4, 1, 2, 3 } ), is( new int[] { 1, 2, 3 } ) );
+	}
+
 }
