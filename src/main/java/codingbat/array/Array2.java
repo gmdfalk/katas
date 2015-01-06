@@ -375,4 +375,17 @@ public class Array2 {
 		return result;
 	}
 
+	public static int[] notAlone( final int[] is, final int n ) {
+		for ( int i = 1; i < is.length - 1; i++ ) {
+			if ( is[i] == n && is[i] != is[i + 1] && is[i] != is[i - 1] ) {
+				if ( is[i - 1] > is[i + 1] ) {
+					is[i] = is[i - 1];
+				} else {
+					is[i] = is[i + 1];
+				}
+			}
+		}
+		return is;
+	}
+
 }

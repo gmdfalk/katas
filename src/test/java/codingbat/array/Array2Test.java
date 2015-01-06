@@ -203,4 +203,11 @@ public class Array2Test {
 		assertThat( Array2.post4( new int[] { 4, 4, 1, 2, 3 } ), is( new int[] { 1, 2, 3 } ) );
 	}
 
+	@Test
+	public void testNotAlone() {
+		assertThat( Array2.notAlone( new int[] { 1, 2, 3 }, 2 ), is( new int[] { 1, 3, 3 } ) );
+		assertThat( Array2.notAlone( new int[] { 1, 2, 3, 2, 5, 2 }, 2 ), is( new int[] { 1, 3, 3, 5, 5, 2 } ) );
+		assertThat( Array2.notAlone( new int[] { 3, 4 }, 3 ), is( new int[] { 3, 4 } ) );
+	}
+
 }
