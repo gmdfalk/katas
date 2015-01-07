@@ -388,4 +388,21 @@ public class Array2 {
 		return is;
 	}
 
+	public static int[] zeroFront( final int[] is ) {
+		final int[] result = new int[is.length];
+		int idx = 0;
+		for ( final int i : is ) {
+			if ( i == 0 ) {
+				result[idx++] = 0;
+			}
+		}
+		for ( final int i : is ) {
+			if ( i != 0 ) {
+				result[idx++] = i;
+			}
+		}
+
+		return result;
+	}
+
 }

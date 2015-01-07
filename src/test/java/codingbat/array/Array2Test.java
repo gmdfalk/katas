@@ -210,4 +210,11 @@ public class Array2Test {
 		assertThat( Array2.notAlone( new int[] { 3, 4 }, 3 ), is( new int[] { 3, 4 } ) );
 	}
 
+	@Test
+	public void testZeroFront() {
+		assertThat( Array2.zeroFront( new int[] { 1, 0, 0, 1 } ), is( new int[] { 0, 0, 1, 1 } ) );
+		assertThat( Array2.zeroFront( new int[] { 0, 1, 1, 0, 1 } ), is( new int[] { 0, 0, 1, 1, 1 } ) );
+		assertThat( Array2.zeroFront( new int[] { 1, 0 } ), is( new int[] { 0, 1 } ) );
+	}
+
 }
