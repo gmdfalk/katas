@@ -217,4 +217,11 @@ public class Array2Test {
 		assertThat( Array2.zeroFront( new int[] { 1, 0 } ), is( new int[] { 0, 1 } ) );
 	}
 
+	@Test
+	public void testWithoutTen() {
+		assertThat( Array2.withoutTen( new int[] { 1, 10, 10, 2 } ), is( new int[] { 1, 2, 0, 0 } ) );
+		assertThat( Array2.withoutTen( new int[] { 10, 2, 10 } ), is( new int[] { 2, 0, 0 } ) );
+		assertThat( Array2.withoutTen( new int[] { 1, 99, 10 } ), is( new int[] { 1, 99, 0 } ) );
+	}
+
 }

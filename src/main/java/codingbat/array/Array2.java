@@ -405,4 +405,15 @@ public class Array2 {
 		return result;
 	}
 
+	public static int[] withoutTen( final int[] is ) {
+		final int[] result = new int[is.length];
+		int idx = 0;
+		for ( final int i : is ) {
+			if ( i != 10 ) {
+				result[idx++] = i;
+			}
+		}
+		return result;
+	}
+
 }
