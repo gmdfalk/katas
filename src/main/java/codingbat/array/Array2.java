@@ -416,4 +416,28 @@ public class Array2 {
 		return result;
 	}
 
+	public static int[] zeroMax( final int[] is ) {
+
+		for ( int i = 0; i < is.length - 1; i++ ) {
+			if ( is[i] == 0 ) {
+				is[i] = getLargestOddValue( i, is );
+			}
+		}
+
+		return is;
+	}
+
+	private static int getLargestOddValue( final int idx, final int[] is ) {
+		int result = 0;
+		for ( int i = idx + 1; i < is.length; i++ ) {
+			if ( is[i] % 2 != 0 && is[i] > result ) {
+				result = is[i];
+			}
+		}
+		if ( result == 0 ) {
+			result = idx;
+		}
+		return result;
+	}
+
 }

@@ -224,4 +224,11 @@ public class Array2Test {
 		assertThat( Array2.withoutTen( new int[] { 1, 99, 10 } ), is( new int[] { 1, 99, 0 } ) );
 	}
 
+	@Test
+	public void testZeroMax() {
+		assertThat( Array2.zeroMax( new int[] { 0, 5, 0, 3 } ), is( new int[] { 5, 5, 3, 3 } ) );
+		assertThat( Array2.zeroMax( new int[] { 0, 4, 0, 3 } ), is( new int[] { 3, 4, 3, 3 } ) );
+		assertThat( Array2.zeroMax( new int[] { 0, 1, 0 } ), is( new int[] { 1, 1, 0 } ) );
+	}
+
 }
