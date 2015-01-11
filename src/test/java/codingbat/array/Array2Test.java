@@ -231,4 +231,11 @@ public class Array2Test {
 		assertThat( Array2.zeroMax( new int[] { 0, 1, 0 } ), is( new int[] { 1, 1, 0 } ) );
 	}
 
+	@Test
+	public void testEvenOdd() {
+		assertThat( Array2.evenOdd( new int[] { 1, 0, 1, 0, 0, 1, 1 } ), is( new int[] { 0, 0, 0, 1, 1, 1, 1 } ) );
+		assertThat( Array2.evenOdd( new int[] { 3, 3, 2 } ), is( new int[] { 2, 3, 3 } ) );
+		assertThat( Array2.evenOdd( new int[] { 2, 2, 2 } ), is( new int[] { 2, 2, 2 } ) );
+	}
+
 }

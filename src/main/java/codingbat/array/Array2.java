@@ -440,4 +440,21 @@ public class Array2 {
 		return result;
 	}
 
+	public static int[] evenOdd( final int[] is ) {
+		final List<Integer> result = new ArrayList<Integer>();
+
+		for ( final int i : is ) {
+			if ( i % 2 == 0 ) {
+				result.add( i );
+			}
+		}
+		for ( final int i : is ) {
+			if ( i % 2 != 0 ) {
+				result.add( i );
+			}
+		}
+
+		return result.stream().mapToInt( i -> i ).toArray();
+	}
+
 }
