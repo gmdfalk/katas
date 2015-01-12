@@ -238,4 +238,11 @@ public class Array2Test {
 		assertThat( Array2.evenOdd( new int[] { 2, 2, 2 } ), is( new int[] { 2, 2, 2 } ) );
 	}
 
+	@Test
+	public void testFizzBuzz() {
+		assertThat( Array2.fizzBuzz( 1, 6 ), is( new String[] { "1", "2", "Fizz", "4", "Buzz" } ) );
+		assertThat( Array2.fizzBuzz( 1, 8 ), is( new String[] { "1", "2", "Fizz", "4", "Buzz", "Fizz", "7" } ) );
+		assertThat( Array2.fizzBuzz( 1, 11 ), is( new String[] { "1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz" } ) );
+	}
+
 }

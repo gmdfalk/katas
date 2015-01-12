@@ -457,4 +457,26 @@ public class Array2 {
 		return result.stream().mapToInt( i -> i ).toArray();
 	}
 
+	public static String[] fizzBuzz( final int start, final int end ) {
+		final String[] result = new String[end - start];
+		int idx = 0;
+
+		for ( int i = start; i < end; i++ ) {
+			if ( i % 3 == 0 && i % 5 == 0 ) {
+				result[idx] = "FizzBuzz";
+			}
+			else if ( i % 3 == 0 ) {
+				result[idx] = "Fizz";
+			}
+			else if ( i % 5 == 0 ) {
+				result[idx] = "Buzz";
+			} else {
+				result[idx] = String.valueOf( i );
+			}
+			idx++;
+		}
+
+		return result;
+	}
+
 }
