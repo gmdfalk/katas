@@ -14,4 +14,11 @@ public class Logic2Test {
 		assertThat( Logic2.makeBricks( 3, 2, 10 ), is( true ) );
 	}
 
+	@Test
+	public void testLoneSum() {
+		assertThat( Logic2.loneSum( 1, 2, 3 ), is( 6 ) );
+		assertThat( Logic2.loneSum( 3, 2, 3 ), is( 2 ) );
+		assertThat( Logic2.loneSum( 3, 3, 3 ), is( 0 ) );
+	}
+
 }
