@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-
 public class Logic2 {
 	public static Boolean makeBricks( final int small, final int big, final int goal ) {
 		for ( int i = 1; i <= small; i++ ) {
@@ -23,10 +22,10 @@ public class Logic2 {
 
 	public static int loneSum( final int a, final int b, final int c ) {
 		// Trying out Java 8, horribly.
-		final List<Integer> list = Arrays.asList( a, b, c );
-		final List<Integer> uniques = new ArrayList<Integer>();
-		list.stream().filter( i -> isUnique( i, list ) ).forEach( ( i ) -> uniques.add( i ) );
-		return uniques.stream().mapToInt( i -> i ).sum();
+		final List<Integer> baseList = Arrays.asList( a, b, c );
+		final List<Integer> uniqueList = new ArrayList<Integer>();
+		baseList.stream().filter( i -> isUnique( i, baseList ) ).forEach( ( i ) -> uniqueList.add( i ) );
+		return uniqueList.stream().mapToInt( i -> i ).sum();
 	}
 
 	private static boolean isUnique( final int n, final List<Integer> is ) {
@@ -36,7 +35,17 @@ public class Logic2 {
 				count++;
 			}
 		}
-
 		return count < 2;
+	}
+
+	public static int luckySum( final int a, final int b, final int c ) {
+		int result = 0;
+		for ( final int i : new int[] { a, b, c } ) {
+			if ( i == 13 ) {
+				break;
+			}
+			result += i;
+		}
+		return result;
 	}
 }

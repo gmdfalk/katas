@@ -21,4 +21,11 @@ public class Logic2Test {
 		assertThat( Logic2.loneSum( 3, 3, 3 ), is( 0 ) );
 	}
 
+	@Test
+	public void testLuckySum() {
+		assertThat( Logic2.luckySum( 1, 2, 3 ), is( 6 ) );
+		assertThat( Logic2.luckySum( 1, 2, 13 ), is( 3 ) );
+		assertThat( Logic2.luckySum( 1, 13, 3 ), is( 1 ) );
+	}
+
 }
