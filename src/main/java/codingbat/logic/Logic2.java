@@ -48,4 +48,16 @@ public class Logic2 {
 		}
 		return result;
 	}
+
+	public static int noTeenSum( int a, int b, int c ) {
+		int result = 0;
+		result += fixTeen( a );
+		result += fixTeen( b );
+		result += fixTeen( c );
+		return result;
+	}
+
+	private static int fixTeen( int c ) {
+		return Arrays.asList( 13, 14, 17, 18, 19 ).contains( c ) ? 0 : c;
+	}
 }

@@ -28,4 +28,11 @@ public class Logic2Test {
 		assertThat( Logic2.luckySum( 1, 13, 3 ), is( 1 ) );
 	}
 
+	@Test
+	public void testNoTeenSum() {
+		assertThat( Logic2.noTeenSum( 1, 2, 3 ), is( 6 ) );
+		assertThat( Logic2.noTeenSum( 2, 13, 1 ), is( 3 ) );
+		assertThat( Logic2.noTeenSum( 2, 1, 14 ), is( 3 ) );
+	}
+
 }
