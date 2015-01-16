@@ -35,4 +35,12 @@ public class Logic2Test {
 		assertThat( Logic2.noTeenSum( 2, 1, 14 ), is( 3 ) );
 	}
 
+	@Test
+	public void testRoundSum() {
+		assertThat( Logic2.roundSum( 16, 17, 18 ), is( 60 ) );
+		assertThat( Logic2.roundSum( 12, 13, 14 ), is( 30 ) );
+		assertThat( Logic2.roundSum( 6, 4, 4 ), is( 10 ) );
+		assertThat( Logic2.roundSum( 212, 213, 216 ), is( 640 ) );
+	}
+
 }

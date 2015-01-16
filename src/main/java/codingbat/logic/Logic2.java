@@ -60,4 +60,23 @@ public class Logic2 {
 	private static int fixTeen( int c ) {
 		return Arrays.asList( 13, 14, 17, 18, 19 ).contains( c ) ? 0 : c;
 	}
+
+	public static int roundSum( int a, int b, int c ) {
+		int sum = 0;
+		sum += round10( a );
+		sum += round10( b );
+		sum += round10( c );
+
+		return sum;
+	}
+
+	private static int round10( int n ) {
+		int rest = n % 10;
+		if ( rest <= 5 ) {
+			rest = 0;
+		} else {
+			rest = 10;
+		}
+		return ( n / 10 ) * 10 + rest;
+	}
 }
