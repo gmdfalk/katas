@@ -43,4 +43,11 @@ public class Logic2Test {
 		assertThat( Logic2.roundSum( 212, 213, 216 ), is( 640 ) );
 	}
 
+	@Test
+	public void testCloseFar() {
+		assertThat( Logic2.closeFar( 1, 2, 10 ), is( true ) );
+		assertThat( Logic2.closeFar( 1, 2, 3 ), is( false ) );
+		assertThat( Logic2.closeFar( 4, 1, 3 ), is( true ) );
+	}
+
 }

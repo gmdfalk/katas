@@ -79,4 +79,22 @@ public class Logic2 {
 		}
 		return ( n / 10 ) * 10 + rest;
 	}
+
+	public static boolean closeFar( int a, int b, int c ) {
+		if ( isClose( a, b ) ) {
+			return isFar( c, a, b );
+		}
+		if ( isClose( a, c ) ) {
+			return isFar( b, a, c );
+		}
+		return false;
+	}
+
+	private static boolean isClose( int n, int j ) {
+		return Math.abs( j - n ) < 2;
+	}
+
+	private static boolean isFar( int n, int j, int k ) {
+		return Math.abs( j - n ) > 1 && Math.abs( k - n ) > 1;
+	}
 }
