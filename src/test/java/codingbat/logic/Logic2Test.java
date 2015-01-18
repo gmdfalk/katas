@@ -50,4 +50,11 @@ public class Logic2Test {
 		assertThat( Logic2.closeFar( 4, 1, 3 ), is( true ) );
 	}
 
+	@Test
+	public void testBlackjack() {
+		assertThat( Logic2.blackjack( 19, 21 ), is( 21 ) );
+		assertThat( Logic2.blackjack( 21, 19 ), is( 21 ) );
+		assertThat( Logic2.blackjack( 19, 22 ), is( 19 ) );
+	}
+
 }

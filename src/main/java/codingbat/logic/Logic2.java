@@ -97,4 +97,10 @@ public class Logic2 {
 	private static boolean isFar( int n, int j, int k ) {
 		return Math.abs( j - n ) > 1 && Math.abs( k - n ) > 1;
 	}
+
+	public static int blackjack( int i, int j ) {
+		final int max = Math.max( i, j );
+		final int min = Math.min( i, j );
+		return max <= 21 ? max : min <= 21 ? min : 0;
+	}
 }
