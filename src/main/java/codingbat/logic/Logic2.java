@@ -103,4 +103,10 @@ public class Logic2 {
 		final int min = Math.min( i, j );
 		return max <= 21 ? max : min <= 21 ? min : 0;
 	}
+
+	public static boolean evenlySpaced( int a, int b, int c ) {
+		final int[] arr = new int[] { a, b, c };
+		Arrays.sort( arr );
+		return ( arr[1] - arr[0] ) == ( arr[2] - arr[1] );
+	}
 }

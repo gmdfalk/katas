@@ -57,4 +57,11 @@ public class Logic2Test {
 		assertThat( Logic2.blackjack( 19, 22 ), is( 19 ) );
 	}
 
+	@Test
+	public void testEvenlySpaced() {
+		assertThat( Logic2.evenlySpaced( 2, 4, 6 ), is( true ) );
+		assertThat( Logic2.evenlySpaced( 4, 6, 2 ), is( true ) );
+		assertThat( Logic2.evenlySpaced( 4, 6, 3 ), is( false ) );
+	}
+
 }
