@@ -64,4 +64,11 @@ public class Logic2Test {
 		assertThat( Logic2.evenlySpaced( 4, 6, 3 ), is( false ) );
 	}
 
+	@Test
+	public void testMakeChocolate() {
+		assertThat( Logic2.makeChocolate( 4, 1, 9 ), is( 4 ) );
+		assertThat( Logic2.makeChocolate( 4, 1, 10 ), is( -1 ) );
+		assertThat( Logic2.makeChocolate( 4, 1, 7 ), is( 2 ) );
+	}
+
 }

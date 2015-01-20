@@ -109,4 +109,18 @@ public class Logic2 {
 		Arrays.sort( arr );
 		return ( arr[1] - arr[0] ) == ( arr[2] - arr[1] );
 	}
+
+	public static int makeChocolate( int small, int big, int goal ) {
+		int sum = big * 5;
+		int added = 0;
+		for ( int i = 0; i < small; i++ ) {
+			sum++;
+			added++;
+			if ( sum == goal ) {
+				return added;
+			}
+		}
+		return -1;
+
+	}
 }
