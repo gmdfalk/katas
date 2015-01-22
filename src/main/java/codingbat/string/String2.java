@@ -11,4 +11,14 @@ public class String2 {
 		return result;
 	}
 
+	public static int countHi( String string ) {
+		System.out.println( string );
+		if ( string.length() < 2 ) {
+			return 0;
+		}
+
+		final boolean containsHi = string.substring( 0, 2 ).equals( "hi" );
+		return ( containsHi ? 1 : 0 ) + countHi( string.substring( 1 ) );
+	}
+
 }

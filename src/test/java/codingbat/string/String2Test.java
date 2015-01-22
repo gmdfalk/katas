@@ -14,4 +14,11 @@ public class String2Test {
 		assertThat( String2.doubleChar( "Hi-There" ), is( "HHii--TThheerree" ) );
 	}
 
+	@Test
+	public void testCountHi() {
+		assertThat( String2.countHi( "abc hi ho" ), is( 1 ) );
+		assertThat( String2.countHi( "ABChi hi" ), is( 2 ) );
+		assertThat( String2.countHi( "hihi" ), is( 2 ) );
+	}
+
 }
