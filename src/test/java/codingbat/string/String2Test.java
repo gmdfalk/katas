@@ -21,4 +21,11 @@ public class String2Test {
 		assertThat( String2.countHi( "hihi" ), is( 2 ) );
 	}
 
+	@Test
+	public void testCatDog() {
+		assertThat( String2.catDog( "catdog" ), is( true ) );
+		assertThat( String2.catDog( "catcat" ), is( false ) );
+		assertThat( String2.catDog( "1cat1cadodog" ), is( true ) );
+	}
+
 }
