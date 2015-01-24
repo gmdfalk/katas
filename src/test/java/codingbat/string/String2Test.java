@@ -28,4 +28,11 @@ public class String2Test {
 		assertThat( String2.catDog( "1cat1cadodog" ), is( true ) );
 	}
 
+	@Test
+	public void testCountCode() {
+		assertThat( String2.countCode( "aaacodebbb" ), is( 1 ) );
+		assertThat( String2.countCode( "codexxcode" ), is( 2 ) );
+		assertThat( String2.countCode( "cozexxcope" ), is( 2 ) );
+	}
+
 }

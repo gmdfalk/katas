@@ -1,5 +1,8 @@
 package codingbat.string;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class String2 {
 
 	public static String doubleChar( final String string ) {
@@ -24,7 +27,6 @@ public class String2 {
 	public static boolean catDog( final String string ) {
 		final int catCount = countOccurrence( "cat", string );
 		final int dogCount = countOccurrence( "dog", string );
-		System.out.println( catCount + " " + dogCount );
 		return catCount == dogCount;
 	}
 
@@ -34,6 +36,15 @@ public class String2 {
 			if ( source.substring( i, ( i + sub.length() ) ).equals( sub ) ) {
 				count++;
 			}
+		}
+		return count;
+	}
+
+	public static int countCode( final String string ) {
+		final Matcher matcher = Pattern.compile( "co.e" ).matcher( string );
+		int count = 0;
+		while ( matcher.find() ) {
+			count++;
 		}
 		return count;
 	}
