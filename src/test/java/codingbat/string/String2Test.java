@@ -35,4 +35,11 @@ public class String2Test {
 		assertThat( String2.countCode( "cozexxcope" ), is( 2 ) );
 	}
 
+	@Test
+	public void testEndOther() {
+		assertThat( String2.endOther( "Hiabc", "abc" ), is( true ) );
+		assertThat( String2.endOther( "AbC", "HiaBc" ), is( true ) );
+		assertThat( String2.endOther( "abc", "abXabc" ), is( true ) );
+	}
+
 }

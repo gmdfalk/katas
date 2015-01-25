@@ -49,4 +49,10 @@ public class String2 {
 		return count;
 	}
 
+	public static boolean endOther( String s1, String s2 ) {
+		s1 = s1.toLowerCase();
+		s2 = s2.toLowerCase();
+		return s1.endsWith( s2 ) || s2.endsWith( s1 );
+	}
+
 }

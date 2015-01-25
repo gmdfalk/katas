@@ -77,9 +77,9 @@ public class Array2 {
 		return false;
 	}
 
-	public static boolean lucky13(final int[] is) {
-		for (final int i : is) {
-			if (i == 1 || i == 3) {
+	public static boolean lucky13( final int[] is ) {
+		for ( final int i : is ) {
+			if ( i == 1 || i == 3 ) {
 				return false;
 			}
 		}
@@ -130,11 +130,11 @@ public class Array2 {
 		return true;
 	}
 
-	public static String[] fizzArray2(final int len) {
+	public static String[] fizzArray2( final int len ) {
 		final String[] result = new String[len];
 
-		for (int i=0; i < len; i++) {
-			result[i] = String.valueOf(i);
+		for ( int i = 0; i < len; i++ ) {
+			result[i] = String.valueOf( i );
 		}
 
 		return result;
@@ -181,26 +181,26 @@ public class Array2 {
 		return found2 ^ found4;
 	}
 
-	public static int matchUp(final int[] numsA, final int[] numsB) {
+	public static int matchUp( final int[] numsA, final int[] numsB ) {
 		int result = 0;
 		int a, b;
-		for (int i=0; i < numsA.length; i++) {
+		for ( int i = 0; i < numsA.length; i++ ) {
 			a = numsA[i];
 			b = numsB[i];
-			if (a != b && Math.abs(a-b) < 3) {
+			if ( a != b && Math.abs( a - b ) < 3 ) {
 				result++;
 			}
 		}
 		return result;
 	}
 
-	public static boolean has77(final int[] is) {
+	public static boolean has77( final int[] is ) {
 		boolean a, b, c;
-		for (int i=0; i < is.length-2; i++) {
+		for ( int i = 0; i < is.length - 2; i++ ) {
 			a = is[i] == 7;
-			b = is[i+1] == 7;
-			c = is[i+2] == 7;
-			if (a && b || b && c || a && c) {
+			b = is[i + 1] == 7;
+			c = is[i + 2] == 7;
+			if ( a && b || b && c || a && c ) {
 				return true;
 			}
 		}
@@ -227,7 +227,7 @@ public class Array2 {
 
 	public static boolean modThree( final int[] is ) {
 		int a, b, c;
-		for (int i=0; i < is.length-2; i++) {
+		for ( int i = 0; i < is.length - 2; i++ ) {
 			a = is[i];
 			b = is[i + 1];
 			c = is[i + 2];
@@ -355,6 +355,7 @@ public class Array2 {
 			}
 			result.add( i );
 		}
+		result.forEach( System.out::println );
 
 		return result.stream().mapToInt( i -> i ).toArray();
 	}
