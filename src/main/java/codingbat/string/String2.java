@@ -55,4 +55,11 @@ public class String2 {
 		return s1.endsWith( s2 ) || s2.endsWith( s1 );
 	}
 
+	public static boolean xyzThere( final String string ) {
+		if ( string.contains( "xyz" ) ) {
+			return !string.contains( ".xyz" );
+		}
+		return false;
+	}
+
 }

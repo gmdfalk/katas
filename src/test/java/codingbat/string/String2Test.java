@@ -42,4 +42,11 @@ public class String2Test {
 		assertThat( String2.endOther( "abc", "abXabc" ), is( true ) );
 	}
 
+	@Test
+	public void testXyzThere() {
+		assertThat( String2.xyzThere( "abcxyz" ), is( true ) );
+		assertThat( String2.xyzThere( "abc.xyz" ), is( false ) );
+		assertThat( String2.xyzThere( "xyz.abc" ), is( true ) );
+	}
+
 }
