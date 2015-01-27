@@ -62,4 +62,8 @@ public class String2 {
 		return false;
 	}
 
+	public static boolean bobThere( final String string ) {
+		return string.matches( ".*b.b.*" );
+	}
+
 }

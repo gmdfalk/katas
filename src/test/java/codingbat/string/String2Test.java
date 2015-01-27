@@ -49,4 +49,11 @@ public class String2Test {
 		assertThat( String2.xyzThere( "xyz.abc" ), is( true ) );
 	}
 
+	@Test
+	public void testBobThere() {
+		assertThat( String2.bobThere( "abcbob" ), is( true ) );
+		assertThat( String2.bobThere( "b9b" ), is( true ) );
+		assertThat( String2.bobThere( "bac" ), is( false ) );
+	}
+
 }
