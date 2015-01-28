@@ -66,4 +66,17 @@ public class String2 {
 		return string.matches( ".*b.b.*" );
 	}
 
+	public static boolean xyBalance( final String string ) {
+		boolean balanced = true;
+		for ( int i = 0; i < string.length(); i++ ) {
+			if ( string.charAt( i ) == 'x' ) {
+				balanced = false;
+			}
+			else if ( string.charAt( i ) == 'y' ) {
+				balanced = true;
+			}
+		}
+		return balanced;
+	}
+
 }

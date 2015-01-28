@@ -56,4 +56,11 @@ public class String2Test {
 		assertThat( String2.bobThere( "bac" ), is( false ) );
 	}
 
+	@Test
+	public void testXyBalance() {
+		assertThat( String2.xyBalance( "aaxbby" ), is( true ) );
+		assertThat( String2.xyBalance( "aaxbb" ), is( false ) );
+		assertThat( String2.xyBalance( "yaaxbb" ), is( false ) );
+	}
+
 }
