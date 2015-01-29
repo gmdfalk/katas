@@ -63,4 +63,11 @@ public class String2Test {
 		assertThat( String2.xyBalance( "yaaxbb" ), is( false ) );
 	}
 
+	@Test
+	public void testMixString() {
+		assertThat( String2.mixString( "abc", "xyz" ), is( "axbycz" ) );
+		assertThat( String2.mixString( "Hi", "There" ), is( "HTihere" ) );
+		assertThat( String2.mixString( "xxxx", "There" ), is( "xTxhxexre" ) );
+	}
+
 }

@@ -79,4 +79,15 @@ public class String2 {
 		return balanced;
 	}
 
+	public static String mixString( final String s1, final String s2 ) {
+		String mixedString = "";
+		for ( int i = 0; i < s2.length(); i++ ) {
+			if ( i < s1.length() ) {
+				mixedString += s1.charAt( i );
+			}
+			mixedString += s2.charAt( i );
+		}
+		return mixedString;
+	}
+
 }
