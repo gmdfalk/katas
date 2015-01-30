@@ -70,4 +70,10 @@ public class String2Test {
 		assertThat( String2.mixString( "xxxx", "There" ), is( "xTxhxexre" ) );
 	}
 
+	@Test
+	public void testRepeatEnd() {
+		assertThat( String2.repeatEnd( "Hello", 3 ), is( "llollollo" ) );
+		assertThat( String2.repeatEnd( "Hello", 2 ), is( "lolo" ) );
+		assertThat( String2.repeatEnd( "Hello", 1 ), is( "o" ) );
+	}
 }

@@ -90,4 +90,12 @@ public class String2 {
 		return mixedString;
 	}
 
+	public static String repeatEnd( final String s, final int n ) {
+		String result = "";
+		for ( int i = 0; i < n; i++ ) {
+			result += s.substring( s.length() - n );
+		}
+		return result;
+	}
+
 }
