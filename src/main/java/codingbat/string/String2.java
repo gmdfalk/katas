@@ -98,4 +98,13 @@ public class String2 {
 		return result;
 	}
 
+	public static String repeatFront( final String s, int n ) {
+		String result = "";
+		while ( n > 0 ) {
+			result += s.substring( 0, n );
+			n--;
+		}
+		return result;
+	}
+
 }

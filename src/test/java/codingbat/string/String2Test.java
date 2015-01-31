@@ -76,4 +76,11 @@ public class String2Test {
 		assertThat( String2.repeatEnd( "Hello", 2 ), is( "lolo" ) );
 		assertThat( String2.repeatEnd( "Hello", 1 ), is( "o" ) );
 	}
+
+	@Test
+	public void testRepeatFront() {
+		assertThat( String2.repeatFront( "Chocolate", 4 ), is( "ChocChoChC" ) );
+		assertThat( String2.repeatFront( "Chocolate", 3 ), is( "ChoChC" ) );
+		assertThat( String2.repeatFront( "Ice Cream", 2 ), is( "IcI" ) );
+	}
 }
