@@ -83,4 +83,11 @@ public class String2Test {
 		assertThat( String2.repeatFront( "Chocolate", 3 ), is( "ChoChC" ) );
 		assertThat( String2.repeatFront( "Ice Cream", 2 ), is( "IcI" ) );
 	}
+
+	@Test
+	public void testRepeatSeparator() {
+		assertThat( String2.repeatSeparator( "Word", "X", 3 ), is( "WordXWordXWord" ) );
+		assertThat( String2.repeatSeparator( "This", "And", 2 ), is( "ThisAndThis" ) );
+		assertThat( String2.repeatSeparator( "This", "And", 1 ), is( "This" ) );
+	}
 }

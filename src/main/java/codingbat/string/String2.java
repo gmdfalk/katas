@@ -107,4 +107,15 @@ public class String2 {
 		return result;
 	}
 
+	public static String repeatSeparator( final String word, final String separator, final int count ) {
+		final StringBuilder builder = new StringBuilder( 30 );
+		for ( int i = 0; i < count; i++ ) {
+			builder.append( word );
+			if ( i < count - 1 ) {
+				builder.append( separator );
+			}
+		}
+		return builder.toString();
+	}
+
 }
