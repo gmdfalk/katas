@@ -90,4 +90,11 @@ public class String2Test {
 		assertThat( String2.repeatSeparator( "This", "And", 2 ), is( "ThisAndThis" ) );
 		assertThat( String2.repeatSeparator( "This", "And", 1 ), is( "This" ) );
 	}
+
+	@Test
+	public void testPrefixAgain() {
+		assertThat( String2.prefixAgain( "abXYabc", 1 ), is( true ) );
+		assertThat( String2.prefixAgain( "abXYabc", 2 ), is( true ) );
+		assertThat( String2.prefixAgain( "abXYabc", 3 ), is( false ) );
+	}
 }

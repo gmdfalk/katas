@@ -118,4 +118,9 @@ public class String2 {
 		return builder.toString();
 	}
 
+	public static boolean prefixAgain( final String string, final int n ) {
+		final String prefix = string.substring( 0, n );
+		return string.substring( n ).contains( prefix );
+	}
+
 }
