@@ -97,4 +97,11 @@ public class String2Test {
 		assertThat( String2.prefixAgain( "abXYabc", 2 ), is( true ) );
 		assertThat( String2.prefixAgain( "abXYabc", 3 ), is( false ) );
 	}
+
+	@Test
+	public void testXyzMiddle() {
+		assertThat( String2.xyzMiddle( "AAxyzBB", 1 ), is( true ) );
+		assertThat( String2.xyzMiddle( "AxyzBB", 2 ), is( true ) );
+		assertThat( String2.xyzMiddle( "AxyzBBB", 3 ), is( false ) );
+	}
 }

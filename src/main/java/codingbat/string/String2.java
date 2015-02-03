@@ -123,4 +123,11 @@ public class String2 {
 		return string.substring( n ).contains( prefix );
 	}
 
+	public static boolean xyzMiddle( final String string, final int n ) {
+		final int idx = string.indexOf( "xyz" );
+		final int lenLeft = string.substring( 0, idx ).length();
+		final int lenRight = string.substring( idx + 3 ).length();
+		return Math.abs( lenLeft - lenRight ) < 2;
+	}
+
 }
