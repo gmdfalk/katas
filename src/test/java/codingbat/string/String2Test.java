@@ -104,4 +104,11 @@ public class String2Test {
 		assertThat( String2.xyzMiddle( "AxyzBB", 2 ), is( true ) );
 		assertThat( String2.xyzMiddle( "AxyzBBB", 3 ), is( false ) );
 	}
+
+	@Test
+	public void testGetSandwich() {
+		assertThat( String2.getSandwich( "breadjambread" ), is( "jam" ) );
+		assertThat( String2.getSandwich( "xxbreadjambreadyy" ), is( "jam" ) );
+		assertThat( String2.getSandwich( "xxbreadyy" ), is( "" ) );
+	}
 }

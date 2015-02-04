@@ -15,7 +15,6 @@ public class String2 {
 	}
 
 	public static int countHi( final String string ) {
-		System.out.println( string );
 		if ( string.length() < 2 ) {
 			return 0;
 		}
@@ -128,6 +127,15 @@ public class String2 {
 		final int lenLeft = string.substring( 0, idx ).length();
 		final int lenRight = string.substring( idx + 3 ).length();
 		return Math.abs( lenLeft - lenRight ) < 2;
+	}
+
+	public static String getSandwich( final String string ) {
+		final int start = string.indexOf( "bread" ) + 5;
+		final int end = string.lastIndexOf( "bread" );
+		if ( end < start ) {
+			return "";
+		}
+		return string.substring( start, end );
 	}
 
 }
