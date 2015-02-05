@@ -138,4 +138,15 @@ public class String2 {
 		return string.substring( start, end );
 	}
 
+	public static boolean sameStarChar( final String string ) {
+		for ( int i = 1; i < string.length() - 1; i++ ) {
+			if ( string.charAt( i ) == '*' ) {
+				if ( string.charAt( i - 1 ) != string.charAt( i + 1 ) ) {
+					return false;
+				}
+			}
+		}
+		return true;
+	}
+
 }

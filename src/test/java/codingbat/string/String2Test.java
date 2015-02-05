@@ -111,4 +111,11 @@ public class String2Test {
 		assertThat( String2.getSandwich( "xxbreadjambreadyy" ), is( "jam" ) );
 		assertThat( String2.getSandwich( "xxbreadyy" ), is( "" ) );
 	}
+
+	@Test
+	public void testSameStarChar() {
+		assertThat( String2.sameStarChar( "xy*yzz" ), is( true ) );
+		assertThat( String2.sameStarChar( "xy*zzz" ), is( false ) );
+		assertThat( String2.sameStarChar( "*xa*az" ), is( true ) );
+	}
 }
