@@ -118,4 +118,11 @@ public class String2Test {
 		assertThat( String2.sameStarChar( "xy*zzz" ), is( false ) );
 		assertThat( String2.sameStarChar( "*xa*az" ), is( true ) );
 	}
+
+	@Test
+	public void testZipZap() {
+		assertThat( String2.zipZap( "zipXzap" ), is( "zpXzp" ) );
+		assertThat( String2.zipZap( "zipXzap" ), is( "zpXzp" ) );
+		assertThat( String2.zipZap( "zipXzap" ), is( "zpXzp" ) );
+	}
 }

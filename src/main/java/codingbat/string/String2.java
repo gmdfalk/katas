@@ -149,4 +149,8 @@ public class String2 {
 		return true;
 	}
 
+	public static String zipZap( final String string ) {
+		return string.replaceAll( "z.p", "zp" );
+	}
+
 }
