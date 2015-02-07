@@ -131,5 +131,17 @@ public class String2Test {
 		assertThat( String2.starOut( "ab*cd" ), is( "ad" ) );
 		assertThat( String2.starOut( "ab**cd" ), is( "ad" ) );
 		assertThat( String2.starOut( "sm*eilly" ), is( "silly" ) );
+		assertThat( String2.starOut( "sm*eil*ly" ), is( "siy" ) );
+		assertThat( String2.starOut( "sm**eil*ly" ), is( "siy" ) );
+		assertThat( String2.starOut( "sm***eil*ly" ), is( "siy" ) );
+		assertThat( String2.starOut( "stringy*" ), is( "string" ) );
+		assertThat( String2.starOut( "*stringy" ), is( "tringy" ) );
+		assertThat( String2.starOut( "*str*in*gy" ), is( "ty" ) );
+		assertThat( String2.starOut( "abc" ), is( "abc" ) );
+		assertThat( String2.starOut( "a*bc" ), is( "c" ) );
+		assertThat( String2.starOut( "ab" ), is( "ab" ) );
+		assertThat( String2.starOut( "a*b" ), is( "" ) );
+		assertThat( String2.starOut( "a" ), is( "a" ) );
+		assertThat( String2.starOut( "a*" ), is( "" ) );
 	}
 }
