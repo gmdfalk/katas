@@ -125,4 +125,11 @@ public class String2Test {
 		assertThat( String2.zipZap( "zipXzap" ), is( "zpXzp" ) );
 		assertThat( String2.zipZap( "zipXzap" ), is( "zpXzp" ) );
 	}
+
+	@Test
+	public void testStarOut() {
+		assertThat( String2.starOut( "ab*cd" ), is( "ad" ) );
+		assertThat( String2.starOut( "ab**cd" ), is( "ad" ) );
+		assertThat( String2.starOut( "sm*eilly" ), is( "silly" ) );
+	}
 }

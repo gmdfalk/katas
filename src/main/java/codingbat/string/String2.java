@@ -153,4 +153,8 @@ public class String2 {
 		return string.replaceAll( "z.p", "zp" );
 	}
 
+	public static String starOut( final String string ) {
+		return string.replaceAll( "\\w?\\*\\w?", "" );
+	}
+
 }
