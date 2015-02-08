@@ -157,4 +157,18 @@ public class String2 {
 		return string.replaceAll( "\\w?\\*\\w?", "" );
 	}
 
+	public static String plusOut( final String str, final String word ) {
+		String result = "";
+		for ( int i = 0; i < str.length(); ) {
+			if ( str.substring( i, i + word.length() ).equals( word ) ) {
+				result += word;
+				i += word.length();
+			} else {
+				result += "+";
+				i++;
+			}
+		}
+		return result;
+	}
+
 }
