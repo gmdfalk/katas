@@ -159,16 +159,19 @@ public class String2 {
 
 	public static String plusOut( final String str, final String word ) {
 		String result = "";
-		for ( int i = 0; i < str.length(); ) {
-			if ( str.substring( i, i + word.length() ).equals( word ) ) {
+		for ( int i = 0; i < str.length(); i++ ) {
+			if ( i == str.indexOf( word, i ) ) {
 				result += word;
-				i += word.length();
+				i += word.length() - 1;
 			} else {
 				result += "+";
-				i++;
 			}
 		}
 		return result;
+	}
+
+	public static String repeat( final int count, final String str ) {
+		return new String( new char[count] ).replace( "\0", str );
 	}
 
 }

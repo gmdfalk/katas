@@ -147,8 +147,8 @@ public class String2Test {
 
 	@Test
 	public void testPlusOut() {
-		//		assertThat( String2.plusOut( "12xy34", "xy" ), is( "++xy++" ) );
-		//		assertThat( String2.plusOut( "12xy34", "1" ), is( "1++++++" ) );
+		assertThat( String2.plusOut( "12xy34", "xy" ), is( "++xy++" ) );
+		assertThat( String2.plusOut( "12xy34", "1" ), is( "1+++++" ) );
 		assertThat( String2.plusOut( "12xy34xyabcxy", "xy" ), is( "++xy++xy+++xy" ) );
 	}
 }
