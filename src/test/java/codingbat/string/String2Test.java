@@ -151,4 +151,11 @@ public class String2Test {
 		assertThat( String2.plusOut( "12xy34", "1" ), is( "1+++++" ) );
 		assertThat( String2.plusOut( "12xy34xyabcxy", "xy" ), is( "++xy++xy+++xy" ) );
 	}
+
+	@Test
+	public void testWordEnds() {
+		assertThat( String2.wordEnds( "abcXY123XYijk", "XY" ), is( "c13i" ) );
+		assertThat( String2.wordEnds( "XY123XY", "XY" ), is( "13" ) );
+		assertThat( String2.wordEnds( "XY1XY", "XY" ), is( "11" ) );
+	}
 }

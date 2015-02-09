@@ -174,4 +174,19 @@ public class String2 {
 		return new String( new char[count] ).replace( "\0", str );
 	}
 
+	public static String wordEnds( final String str, final String word ) {
+		String result = "";
+		for ( int i = 0; i < str.length(); i++ ) {
+			if ( i == str.indexOf( word, i ) ) {
+				if ( i > 0 ) {
+					result += str.charAt( i - 1 );
+				}
+				if ( i < str.length() - 2 ) {
+					result += str.charAt( i + word.length() );
+				}
+			}
+		}
+		return result;
+	}
+
 }
