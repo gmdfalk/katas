@@ -13,4 +13,9 @@ public class String3 {
 		return count;
 	}
 
+	public static String withoutString( final String base, final String del ) {
+		// ?i adds case insensitivity.
+		return base.replaceAll( "(?i)" + del, "" );
+	}
+
 }
