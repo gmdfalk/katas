@@ -20,12 +20,19 @@ public class String3Test {
 		assertThat( String3.withoutString( "Hello there", "e" ), is( "Hllo thr" ) );
 		assertThat( String3.withoutString( "Hello there", "x" ), is( "Hello there" ) );
 	}
-	
+
 	@Test
 	public void testEqualIsNot() {
-		assertThat( String3.equalIsNot( "This is not" ), is( false));
-		assertThat( String3.equalIsNot( "This is notnot" ), is( true));
-		assertThat( String3.equalIsNot( "noisxxnotyynotxisi" ), is(  true));
+		assertThat( String3.equalIsNot( "This is not" ), is( false ) );
+		assertThat( String3.equalIsNot( "This is notnot" ), is( true ) );
+		assertThat( String3.equalIsNot( "noisxxnotyynotxisi" ), is( true ) );
 	}
-	
+
+	@Test
+	public void testGHappy() {
+		assertThat( String3.gHappy( "yyggyy" ), is( true ) );
+		assertThat( String3.gHappy( "yygyy" ), is( false ) );
+		assertThat( String3.gHappy( "xxggyygxx" ), is( false ) );
+	}
+
 }

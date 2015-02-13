@@ -21,17 +21,27 @@ public class String3 {
 		return base.replaceAll( "(?i)" + del, "" );
 	}
 
-	public static boolean equalIsNot(String string) {
-		Matcher isMatcher = Pattern.compile("is").matcher(string);
-		Matcher notMatcher = Pattern.compile("not").matcher(string);
+	public static boolean equalIsNot( final String string ) {
+		final Matcher isMatcher = Pattern.compile( "is" ).matcher( string );
+		final Matcher notMatcher = Pattern.compile( "not" ).matcher( string );
 		int isCount = 0, notCount = 0;
-		while (isMatcher.find()) {
+		while ( isMatcher.find() ) {
 			isCount++;
 		}
-		while (notMatcher.find()) {
+		while ( notMatcher.find() ) {
 			notCount++;
 		}
 		return isCount == notCount;
 	}
 
+	public static boolean gHappy( final String string ) {
+		for ( int i = 0; i < string.length(); i++ ) {
+			if ( string.charAt( i ) == 'g' ) {
+				if ( string.charAt( i - 1 ) != 'g' && string.charAt( i + 1 ) != 'g' ) {
+					return false;
+				}
+			}
+		}
+		return true;
+	}
 }
