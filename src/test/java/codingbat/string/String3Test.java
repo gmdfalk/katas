@@ -35,4 +35,12 @@ public class String3Test {
 		assertThat( String3.gHappy( "xxggyygxx" ), is( false ) );
 	}
 
+	@Test
+	public void testCountTriple() {
+		assertThat( String3.countTriple( "abcXXXabc" ), is( 1 ) );
+		assertThat( String3.countTriple( "xxxabyyyycd" ), is( 3 ) );
+		assertThat( String3.countTriple( "a" ), is( 0 ) );
+		assertThat( String3.countTriple( "aaabbccc" ), is( 2 ) );
+	}
+
 }

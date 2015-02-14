@@ -44,4 +44,14 @@ public class String3 {
 		}
 		return true;
 	}
+
+	public static int countTriple( final String string ) {
+		int count = 0;
+		for ( int i = 0; i < string.length() - 2; i++ ) {
+			if ( string.charAt( i ) == string.charAt( i + 1 ) && string.charAt( i ) == string.charAt( i + 2 ) ) {
+				count++;
+			}
+		}
+		return count;
+	}
 }
