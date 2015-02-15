@@ -54,4 +54,13 @@ public class String3 {
 		}
 		return count;
 	}
+
+	public static int sumDigits( String string ) {
+		int sum = 0;
+		string = string.replaceAll( "[^\\d]", "" );
+		for ( int i = 0; i < string.length(); i++ ) {
+			sum += Integer.parseInt( string.substring( i, i + 1 ) );
+		}
+		return sum;
+	}
 }

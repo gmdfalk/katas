@@ -43,4 +43,11 @@ public class String3Test {
 		assertThat( String3.countTriple( "aaabbccc" ), is( 2 ) );
 	}
 
+	@Test
+	public void testSumDigits() {
+		assertThat( String3.sumDigits( "aa1bc2d3" ), is( 6 ) );
+		assertThat( String3.sumDigits( "aa11b33" ), is( 8 ) );
+		assertThat( String3.sumDigits( "Chocolate" ), is( 0 ) );
+	}
+
 }
