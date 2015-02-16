@@ -63,4 +63,15 @@ public class String3 {
 		}
 		return sum;
 	}
+
+	public static String sameEnds( final String string ) {
+		String sub = "";
+		final int len = string.length();
+		for ( int i = 0; i < len / 2; i++ ) {
+			if ( string.charAt( i ) == string.charAt( ( len - 1 ) - i ) ) {
+				sub += string.charAt( i );
+			}
+		}
+		return sub;
+	}
 }

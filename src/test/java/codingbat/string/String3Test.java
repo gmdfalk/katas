@@ -50,4 +50,11 @@ public class String3Test {
 		assertThat( String3.sumDigits( "Chocolate" ), is( 0 ) );
 	}
 
+	@Test
+	public void testSameEnds() {
+		assertThat( String3.sameEnds( "abXYab" ), is( "ab" ) );
+		assertThat( String3.sameEnds( "xx" ), is( "x" ) );
+		assertThat( String3.sameEnds( "xxx" ), is( "x" ) );
+	}
+
 }
