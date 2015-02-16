@@ -65,13 +65,25 @@ public class String3 {
 	}
 
 	public static String sameEnds( final String string ) {
-		String sub = "";
+		final String sub = "";
 		final int len = string.length();
-		for ( int i = 0; i < len / 2; i++ ) {
-			if ( string.charAt( i ) == string.charAt( ( len - 1 ) - i ) ) {
-				sub += string.charAt( i );
+		final int halfLen = len / 2;
+		//		if ( len % 2 != 0 ) {
+		//			halfLen -= 1;
+		//		}
+
+		String left, right;
+		for ( int i = 0; i < halfLen; i++ ) {
+			left = string.substring( 0, halfLen - i );
+			if ( string.length() % 2 == 0 ) {
+				right = string.substring( halfLen + i, len );
+			} else {
+				right = string.substring( halfLen + 1 + i, len );
+			}
+			if ( left.equals( right ) ) {
+				return left;
 			}
 		}
-		return sub;
+		return "";
 	}
 }
