@@ -68,9 +68,6 @@ public class String3 {
 		final String sub = "";
 		final int len = string.length();
 		final int halfLen = len / 2;
-		//		if ( len % 2 != 0 ) {
-		//			halfLen -= 1;
-		//		}
 
 		String left, right;
 		for ( int i = 0; i < halfLen; i++ ) {
@@ -85,5 +82,22 @@ public class String3 {
 			}
 		}
 		return "";
+	}
+
+	public static String mirrorEnds( final String string ) {
+		String result = "";
+		final int len = string.length();
+		for ( int i = 0, j = len - 1; i < len; i++, j-- ) {
+			if ( string.charAt( i ) == string.charAt( j ) ) {
+				result += string.charAt( i );
+			} else {
+				break;
+			}
+		}
+		return result;
+	}
+
+	private static boolean isOdd( final int i ) {
+		return i % 2 != 0;
 	}
 }

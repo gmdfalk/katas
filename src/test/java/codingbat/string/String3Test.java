@@ -57,4 +57,11 @@ public class String3Test {
 		assertThat( String3.sameEnds( "xxx" ), is( "x" ) );
 	}
 
+	@Test
+	public void testMirrorEnds() {
+		assertThat( String3.mirrorEnds( "abXYZba" ), is( "ab" ) );
+		assertThat( String3.mirrorEnds( "abca" ), is( "a" ) );
+		assertThat( String3.mirrorEnds( "aba" ), is( "aba" ) );
+	}
+
 }
