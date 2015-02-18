@@ -100,4 +100,22 @@ public class String3 {
 	private static boolean isOdd( final int i ) {
 		return i % 2 != 0;
 	}
+
+	public static int maxBlock( final String string ) {
+		int max = 1;
+		int count = 1;
+		for ( int i = 1; i < string.length(); i++ ) {
+			if ( string.charAt( i ) == string.charAt( i - 1 ) ) {
+				count++;
+			} else {
+				max = setMax( count, max );
+				count = 1;
+			}
+		}
+		return string.length() == 0 ? 0 : setMax( max, count );
+	}
+
+	private static int setMax( final int count, final int max ) {
+		return Math.max( count, max );
+	}
 }

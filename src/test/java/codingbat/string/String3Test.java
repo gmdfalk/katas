@@ -64,4 +64,10 @@ public class String3Test {
 		assertThat( String3.mirrorEnds( "aba" ), is( "aba" ) );
 	}
 
+	@Test
+	public void testMaxBlock() {
+		assertThat( String3.maxBlock( "hoopla" ), is( 2 ) );
+		assertThat( String3.maxBlock( "abbCCCddBBBxx" ), is( 3 ) );
+		assertThat( String3.maxBlock( "" ), is( 0 ) );
+	}
 }
