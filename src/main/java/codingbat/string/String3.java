@@ -118,4 +118,15 @@ public class String3 {
 	private static int setMax( final int count, final int max ) {
 		return Math.max( count, max );
 	}
+
+	public static int sumNumbers( String string ) {
+		int sum = 0;
+		string = string.replaceAll( "[^\\d]", " " );
+		for ( final String s : string.split( "\\s" ) ) {
+			if ( !s.isEmpty() ) {
+				sum += Integer.parseInt( s );
+			}
+		}
+		return sum;
+	}
 }

@@ -70,4 +70,11 @@ public class String3Test {
 		assertThat( String3.maxBlock( "abbCCCddBBBxx" ), is( 3 ) );
 		assertThat( String3.maxBlock( "" ), is( 0 ) );
 	}
+
+	@Test
+	public void testSumNumbers() {
+		assertThat( String3.sumNumbers( "abc123xyz" ), is( 123 ) );
+		assertThat( String3.sumNumbers( "aa11b33" ), is( 44 ) );
+		assertThat( String3.sumNumbers( "7 11" ), is( 18 ) );
+	}
 }
