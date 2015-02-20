@@ -129,4 +129,8 @@ public class String3 {
 		}
 		return sum;
 	}
+
+	public static String notReplace( final String string ) {
+		return string.replaceAll( "\\bis\\b", "is not" );
+	}
 }

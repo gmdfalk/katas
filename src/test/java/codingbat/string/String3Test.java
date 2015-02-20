@@ -77,4 +77,11 @@ public class String3Test {
 		assertThat( String3.sumNumbers( "aa11b33" ), is( 44 ) );
 		assertThat( String3.sumNumbers( "7 11" ), is( 18 ) );
 	}
+
+	@Test
+	public void testNotReplace() {
+		assertThat( String3.notReplace( "is test" ), is( "is not test" ) );
+		assertThat( String3.notReplace( "is-is" ), is( "is not-is not" ) );
+		assertThat( String3.notReplace( "This is right" ), is( "This is not right" ) );
+	}
 }
