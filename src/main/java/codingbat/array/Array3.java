@@ -18,17 +18,17 @@ public class Array3 {
 	public static int[] fix34( final int[] nums ) {
 		int swap;
 		int indexOfThree = 0, indexOfFour = 0;
-		final int[] result = new int[nums.length];
-		System.arraycopy( nums, 0, result, 0, nums.length );
-		while ( ( indexOfThree = findIndexOf( 3, nums, indexOfThree ) ) != -1 ) {
-			indexOfFour = findIndexOf( 4, nums, indexOfFour );
+		final int[] numsCopy = new int[nums.length];
+		System.arraycopy( nums, 0, numsCopy, 0, nums.length );
+		while ( ( indexOfThree = findIndexOf( 3, numsCopy, indexOfThree ) ) != -1 ) {
+			indexOfFour = findIndexOf( 4, numsCopy, indexOfFour );
 			swap = nums[indexOfThree + 1];
-			result[indexOfThree + 1] = nums[indexOfFour];
-			result[indexOfFour] = swap;
+			nums[indexOfThree + 1] = nums[indexOfFour];
+			nums[indexOfFour] = swap;
 			indexOfThree++;
 			indexOfFour++;
 		}
-		return result;
+		return nums;
 	}
 
 	private static int findIndexOf( final int n, final int[] is, final int start ) {
