@@ -15,19 +15,18 @@ public class Array3 {
 		return span;
 	}
 
-	public static int[] fix34( final int[] is ) {
-		int threeStart = 0, fourStart = 0;
-		int indexOfThree, indexOfFour;
+	public static int[] fix34( final int[] nums ) {
 		int swap;
-		final int[] result = new int[is.length];
-		System.arraycopy( is, 0, result, 0, is.length );
-		while ( ( indexOfThree = findIndexOf( 3, is, threeStart ) ) != -1 ) {
-			indexOfFour = findIndexOf( 4, is, fourStart );
-			swap = is[indexOfThree + 1];
-			result[indexOfThree + 1] = is[indexOfFour];
+		int indexOfThree = 0, indexOfFour = 0;
+		final int[] result = new int[nums.length];
+		System.arraycopy( nums, 0, result, 0, nums.length );
+		while ( ( indexOfThree = findIndexOf( 3, nums, indexOfThree ) ) != -1 ) {
+			indexOfFour = findIndexOf( 4, nums, indexOfFour );
+			swap = nums[indexOfThree + 1];
+			result[indexOfThree + 1] = nums[indexOfFour];
 			result[indexOfFour] = swap;
-			threeStart = indexOfThree + 1;
-			fourStart = indexOfFour + 1;
+			indexOfThree++;
+			indexOfFour++;
 		}
 		return result;
 	}
