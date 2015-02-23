@@ -39,4 +39,20 @@ public class Array3 {
 		}
 		return -1;
 	}
+
+	public static int[] fix45( final int[] nums ) {
+		int swap;
+		int indexOfFour = 0, indexOfFive = 0;
+		final int[] numsCopy = new int[nums.length];
+		System.arraycopy( nums, 0, numsCopy, 0, nums.length );
+		while ( ( indexOfFour = findIndexOf( 4, numsCopy, indexOfFour ) ) != -1 ) {
+			indexOfFive = findIndexOf( 5, numsCopy, indexOfFive );
+			swap = nums[indexOfFour + 1];
+			nums[indexOfFour + 1] = nums[indexOfFive];
+			nums[indexOfFive] = swap;
+			indexOfFour++;
+			indexOfFive++;
+		}
+		return nums;
+	}
 }
