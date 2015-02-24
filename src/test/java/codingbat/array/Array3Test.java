@@ -30,4 +30,11 @@ public class Array3Test {
 		assertThat( Array3.fix45( new int[] { 1, 4, 1, 5, 5, 4, 1 } ), is( new int[] { 1, 4, 5, 1, 1, 4, 5 } ) );
 		assertThat( Array3.fix45( new int[] { 5, 4, 5, 4, 1 } ), is( new int[] { 1, 4, 5, 4, 5 } ) );
 	}
+
+	@Test
+	public void testCanBalance() {
+		assertThat( Array3.canBalance( new int[] { 1, 1, 1, 2, 1 } ), is( true ) );
+		assertThat( Array3.canBalance( new int[] { 2, 1, 1, 2, 1 } ), is( false ) );
+		assertThat( Array3.canBalance( new int[] { 10, 10 } ), is( true ) );
+	}
 }

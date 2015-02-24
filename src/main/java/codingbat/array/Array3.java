@@ -55,4 +55,21 @@ public class Array3 {
 		}
 		return nums;
 	}
+
+	public static boolean canBalance( final int[] array ) {
+		for ( int i = 0; i < array.length; i++ ) {
+			if ( sumArray( 0, i, array ) == sumArray( i + 1, array.length, array ) ) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	private static int sumArray( final int start, final int end, final int[] array ) {
+		int sum = 0;
+		for ( int i = start; i < end; i++ ) {
+			sum += array[i];
+		}
+		return sum;
+	}
 }
