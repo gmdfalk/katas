@@ -58,7 +58,7 @@ public class Array3 {
 
 	public static boolean canBalance( final int[] array ) {
 		for ( int i = 0; i < array.length; i++ ) {
-			if ( sumArray( 0, i, array ) == sumArray( i + 1, array.length, array ) ) {
+			if ( sumArray( 0, i, array ) == sumArray( i, array.length, array ) ) {
 				return true;
 			}
 		}
