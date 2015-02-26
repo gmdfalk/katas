@@ -72,4 +72,8 @@ public class Array3 {
 		}
 		return sum;
 	}
+
+	public static boolean linearIn( final int[] is, final int[] is2 ) {
+		return false;
+	}
 }

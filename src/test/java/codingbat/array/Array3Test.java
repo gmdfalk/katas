@@ -36,4 +36,11 @@ public class Array3Test {
 		assertThat( Array3.canBalance( new int[] { 2, 1, 1, 2, 1 } ), is( false ) );
 		assertThat( Array3.canBalance( new int[] { 10, 10 } ), is( true ) );
 	}
+
+	@Test
+	public void testLinearIn() {
+		assertThat( Array3.linearIn( new int[] { 1, 2, 4, 6 }, new int[] { 2, 4 } ), is( true ) );
+		assertThat( Array3.linearIn( new int[] { 1, 2, 4, 6 }, new int[] { 2, 3, 4 } ), is( false ) );
+		assertThat( Array3.linearIn( new int[] { 1, 2, 4, 4, 6 }, new int[] { 2, 4 } ), is( true ) );
+	}
 }
