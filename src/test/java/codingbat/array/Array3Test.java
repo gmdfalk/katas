@@ -43,4 +43,11 @@ public class Array3Test {
 		assertThat( Array3.linearIn( new int[] { 1, 2, 4, 6 }, new int[] { 2, 3, 4 } ), is( false ) );
 		assertThat( Array3.linearIn( new int[] { 1, 2, 4, 4, 6 }, new int[] { 2, 4 } ), is( true ) );
 	}
+
+	@Test
+	public void testSquareUp() {
+		assertThat( Array3.squareUp( 3 ), is( new int[] { 0, 0, 1, 0, 2, 1, 3, 2, 1 } ) );
+		assertThat( Array3.squareUp( 2 ), is( new int[] { 0, 1, 2, 1 } ) );
+		assertThat( Array3.squareUp( 4 ), is( new int[] { 0, 0, 0, 1, 0, 0, 2, 1, 0, 3, 2, 1, 4, 3, 2, 1 } ) );
+	}
 }

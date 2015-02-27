@@ -76,4 +76,8 @@ public class Array3 {
 	public static boolean linearIn( final int[] is, final int[] is2 ) {
 		return false;
 	}
+
+	public static int[] squareUp( final int i ) {
+		return null;
+	}
 }
