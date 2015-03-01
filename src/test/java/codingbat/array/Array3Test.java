@@ -47,7 +47,7 @@ public class Array3Test {
 	@Test
 	public void testSquareUp() {
 		assertThat( Array3.squareUp( 3 ), is( new int[] { 0, 0, 1, 0, 2, 1, 3, 2, 1 } ) );
-		assertThat( Array3.squareUp( 2 ), is( new int[] { 0, 1, 2, 1 } ) ); // 1, 2, 3
-		assertThat( Array3.squareUp( 4 ), is( new int[] { 0, 0, 0, 1, 0, 0, 2, 1, 0, 3, 2, 1, 4, 3, 2, 1 } ) ); // 3, 6, 7, 9, 10, 11, 12, 13, 14, 15
+		assertThat( Array3.squareUp( 2 ), is( new int[] { 0, 1, 2, 1 } ) );
+		assertThat( Array3.squareUp( 4 ), is( new int[] { 0, 0, 0, 1, 0, 0, 2, 1, 0, 3, 2, 1, 4, 3, 2, 1 } ) );
 	}
 }

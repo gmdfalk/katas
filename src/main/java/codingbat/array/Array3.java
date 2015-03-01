@@ -90,14 +90,15 @@ public class Array3 {
 	public static int[] squareUp( final int n ) {
 		final int[] result = new int[n * n];
 		final int[] pool = new int[n];
-		for ( int i = n - 1; i >= 0; i-- ) {
+		final int start = n - 1;
+		for ( int i = start; i >= 0; i-- ) {
 			pool[i] = n - i;
 		}
-		int start = n - 1, end = 0;
-		for ( int i = n - 1; i >= 0; i-- ) {
-			System.arraycopy( pool, i, result, start, end + 1 );
-			start += n - 1;
-			end++;
+		int destPos = start, len = 1;
+		for ( int srcPos = start; srcPos >= 0; srcPos-- ) {
+			System.arraycopy( pool, srcPos, result, destPos, len );
+			destPos += start;
+			len++;
 		}
 		return result;
 	}
