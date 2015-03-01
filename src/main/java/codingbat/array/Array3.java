@@ -87,7 +87,18 @@ public class Array3 {
 		return innerIndex == inner.length;
 	}
 
-	public static int[] squareUp( final int i ) {
-		return null;
+	public static int[] squareUp( final int n ) {
+		final int[] result = new int[n * n];
+		final int[] pool = new int[n];
+		for ( int i = n - 1; i >= 0; i-- ) {
+			pool[i] = n - i;
+		}
+		int start = n - 1, end = 0;
+		for ( int i = n - 1; i >= 0; i-- ) {
+			System.arraycopy( pool, i, result, start, end + 1 );
+			start += n - 1;
+			end++;
+		}
+		return result;
 	}
 }
