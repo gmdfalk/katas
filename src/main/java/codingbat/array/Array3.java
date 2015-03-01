@@ -73,8 +73,18 @@ public class Array3 {
 		return sum;
 	}
 
-	public static boolean linearIn( final int[] is, final int[] is2 ) {
-		return false;
+	public static boolean linearIn( final int[] outer, final int[] inner ) {
+		int innerIndex = 0;
+		int outerIndex = 0;
+		while ( innerIndex < inner.length && outerIndex < outer.length ) {
+			if ( outer[outerIndex] == inner[innerIndex] ) {
+				outerIndex++;
+				innerIndex++;
+			} else {
+				outerIndex++;
+			}
+		}
+		return innerIndex == inner.length;
 	}
 
 	public static int[] squareUp( final int i ) {
