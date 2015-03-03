@@ -102,4 +102,17 @@ public class Array3 {
 		}
 		return result;
 	}
+
+	public static int[] seriesUp(int n) {
+		int[] result = new int[n*(n+1)/2];
+		int[] pool = new int[n];
+		
+		int destPos= 0;
+		for (int i=1; i <= n; i++) {
+			pool[i-1] = i;
+			System.arraycopy(pool, 0, result, destPos, i);
+			destPos += i;
+		}
+		return result;
+	}
 }

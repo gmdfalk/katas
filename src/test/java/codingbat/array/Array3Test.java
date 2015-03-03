@@ -50,4 +50,11 @@ public class Array3Test {
 		assertThat( Array3.squareUp( 2 ), is( new int[] { 0, 1, 2, 1 } ) );
 		assertThat( Array3.squareUp( 4 ), is( new int[] { 0, 0, 0, 1, 0, 0, 2, 1, 0, 3, 2, 1, 4, 3, 2, 1 } ) );
 	}
+	
+	@Test
+	public void testSeriesUp() {
+		assertThat( Array3.seriesUp( 3 ), is( new int[] { 1,1,2,1,2,3 } ) );
+		assertThat( Array3.seriesUp( 4 ), is( new int[] {1,1,2,1,2,3,1,2,3,4 } ) );
+		assertThat( Array3.seriesUp( 2 ), is( new int[] { 1,1,2 } ) );
+	}
 }
