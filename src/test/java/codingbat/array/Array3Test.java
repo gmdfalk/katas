@@ -57,4 +57,11 @@ public class Array3Test {
 		assertThat( Array3.seriesUp( 4 ), is( new int[] {1,1,2,1,2,3,1,2,3,4 } ) );
 		assertThat( Array3.seriesUp( 2 ), is( new int[] { 1,1,2 } ) );
 	}
+	
+	@Test
+	public void testMaxMirror() {
+		assertThat( Array3.maxMirror( new int[] {1,2,3,8,9,3,2,1}), is(3));
+		assertThat( Array3.maxMirror( new int[] {1,2,1,4}), is(3));
+		assertThat( Array3.maxMirror( new int[] {7,1,2,9,7,2,1}), is(2));
+	}
 }
