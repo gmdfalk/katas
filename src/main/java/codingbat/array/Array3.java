@@ -119,5 +119,6 @@ public class Array3 {
 
 	public static int maxMirror(int[] nums) {
 		return 0;
+		
 	}
 }
