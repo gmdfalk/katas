@@ -5,12 +5,10 @@ import static org.junit.Assert.assertThat;
 
 import org.junit.Test;
 
-public class ATMTest {
+public class EnourmousInputTest {
 
 	@Test
 	public void test() {
-		assertThat(ATM.main(30, 120.00), is(89.50));
-		assertThat(ATM.main(42, 120.00), is(120.00));
-		assertThat(ATM.main(300, 120.00), is(120.00));
+		assertThat(EnourmousInput.main(7, 3, new int[] {1, 51, 966369, 7, 9, 999996, 11}), is(4));
 	}
 }
