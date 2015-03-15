@@ -1,39 +1,26 @@
 package codechef.easy;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
 public class Factorial {
 
-	public static int[] main(int t, int[] is) {
-		int[] result = new int[is.length];
-		for (int i = 0; i < is.length; i++) {
-			result[i] = countZeroes(createFactorial(is[i]));
-		}
-		return result;
-	}
-
-	public static void main(String[] args) throws IOException {
-		BufferedReader input = new BufferedReader(new InputStreamReader(
-				System.in));
-
-		int T = Integer.parseInt(input.readLine());
-		for (int t = 0; t < T; t++) {
-			long N = Long.parseLong(input.readLine());
-
-			int zeroes = 0;
-			int divisor = 5;
-			for (int i = 0; i < N; i++) {
-				if (N / divisor > 0)
-					zeroes += N / divisor;
-				else
+	public static int[] main(int T, int[] nums) {
+		int[] result = new int[nums.length];
+		int zeroes, divisor, quotient, n;
+		for (int i = 0; i < nums.length; i++) {
+			zeroes = 0;
+			divisor = 5;
+			n = nums[i];
+			for (int j = 0; j < n; j++) {
+				quotient = n / divisor;
+				if (quotient > 0) {
+					zeroes += quotient;
+				} else {
 					break;
+				}
 				divisor *= 5;
 			}
-			System.out.println(zeroes);
-
+			result[i] = zeroes;
 		}
+		return result;
 	}
 
 	public static long createFactorial(int n) {
