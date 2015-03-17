@@ -23,14 +23,6 @@ public class Factorial {
 		return result;
 	}
 
-	public static long createFactorial(int n) {
-		long factorial = 1L;
-		for (int i = 1; i <= n; i++) {
-			factorial *= i;
-		}
-		return factorial;
-	}
-
 	public static int countZeroes(long factorial) {
 		int count = 0;
 
