@@ -3,8 +3,6 @@ package codechef.easy;
 public class TheLeadGame {
 
 	public static int[] main(int[] is) {
-
-		// 140, 82, 89, 134, 90, 110, 112, 106, 88, 90
 		int player1Score = 0, player2Score = 0;
 		int maxLead = -1;
 		int leader = -1;
