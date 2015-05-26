@@ -9,6 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import <XCTest/XCTest.h>
 #import "AmbiguousPermutations.h"
+#import "CoolingPies.h"
 
 @interface CodechefTests : XCTestCase
 
@@ -24,10 +25,18 @@
     [super tearDown];
 }
 
-- (void)testExample {
+- (void)testAmbiguousPermutations {
     XCTAssertTrue([[AmbiguousPermutations main:4 withInput:@"1 4 3 2"] isEqualToString:@"ambiguous"]);
     XCTAssertTrue([[AmbiguousPermutations main:5 withInput:@"2 3 4 5 1"] isEqualToString:@"unambiguous"]);
     XCTAssertTrue([[AmbiguousPermutations main:1 withInput:@"1"] isEqualToString:@"ambiguous"]);
+}
+
+- (void)testCoolingPies {
+//    XCTAssertEqual([CoolingPies main:3 withWeights:@[@10, @30, @20] andMaxWeights:@[@30, @10, @20]], @3);
+    NSInteger result = [CoolingPies main:3 withWeights:@[@10, @30, @20] andMaxWeights:@[@30, @10, @20]];
+    XCTAssertEqual(result, 3);
+    result = [CoolingPies main:5 withWeights:@[@9, @7, @16, @4, @8] andMaxWeights:@[@8, @3, @14, @10, @10]];
+    XCTAssertEqual(result, 4);
 }
 
 @end
