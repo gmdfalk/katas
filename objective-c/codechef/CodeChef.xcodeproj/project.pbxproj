@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		FF38DD8C1B14CE6B00668C1E /* CoolingPies.m in Sources */ = {isa = PBXBuildFile; fileRef = FF38DD8B1B14CE6B00668C1E /* CoolingPies.m */; };
 		FF38DD8D1B14CE6B00668C1E /* CoolingPies.m in Sources */ = {isa = PBXBuildFile; fileRef = FF38DD8B1B14CE6B00668C1E /* CoolingPies.m */; };
+		FF38DD901B15F15D00668C1E /* TransformTheExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = FF38DD8F1B15F15D00668C1E /* TransformTheExpression.m */; };
+		FF38DD911B15F15D00668C1E /* TransformTheExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = FF38DD8F1B15F15D00668C1E /* TransformTheExpression.m */; };
 		FF5C47541B10D2DE008AAFE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5C47531B10D2DE008AAFE2 /* main.m */; };
 		FF5C477D1B10D407008AAFE2 /* CodechefTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5C477C1B10D407008AAFE2 /* CodechefTests.m */; };
 		FF5C47831B10D54B008AAFE2 /* AmbiguousPermutations.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5C47821B10D54B008AAFE2 /* AmbiguousPermutations.m */; };
@@ -30,6 +32,8 @@
 /* Begin PBXFileReference section */
 		FF38DD8A1B14CE6B00668C1E /* CoolingPies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoolingPies.h; sourceTree = "<group>"; };
 		FF38DD8B1B14CE6B00668C1E /* CoolingPies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoolingPies.m; sourceTree = "<group>"; };
+		FF38DD8E1B15F15D00668C1E /* TransformTheExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransformTheExpression.h; sourceTree = "<group>"; };
+		FF38DD8F1B15F15D00668C1E /* TransformTheExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransformTheExpression.m; sourceTree = "<group>"; };
 		FF5C47501B10D2DE008AAFE2 /* codechef */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = codechef; path = CodeChef; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF5C47531B10D2DE008AAFE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FF5C47781B10D407008AAFE2 /* CodechefTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = CodechefTests.xctest; path = CodeChefTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +87,8 @@
 				FF5C47821B10D54B008AAFE2 /* AmbiguousPermutations.m */,
 				FF38DD8A1B14CE6B00668C1E /* CoolingPies.h */,
 				FF38DD8B1B14CE6B00668C1E /* CoolingPies.m */,
+				FF38DD8E1B15F15D00668C1E /* TransformTheExpression.h */,
+				FF38DD8F1B15F15D00668C1E /* TransformTheExpression.m */,
 			);
 			name = CodeChef;
 			path = codechef;
@@ -192,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF38DD901B15F15D00668C1E /* TransformTheExpression.m in Sources */,
 				FF5C47541B10D2DE008AAFE2 /* main.m in Sources */,
 				FF38DD8C1B14CE6B00668C1E /* CoolingPies.m in Sources */,
 				FF5C47831B10D54B008AAFE2 /* AmbiguousPermutations.m in Sources */,
@@ -202,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF38DD911B15F15D00668C1E /* TransformTheExpression.m in Sources */,
 				FF5C477D1B10D407008AAFE2 /* CodechefTests.m in Sources */,
 				FF38DD8D1B14CE6B00668C1E /* CoolingPies.m in Sources */,
 				FF5C47841B10D54B008AAFE2 /* AmbiguousPermutations.m in Sources */,

@@ -10,6 +10,7 @@
 #import <XCTest/XCTest.h>
 #import "AmbiguousPermutations.h"
 #import "CoolingPies.h"
+#import "TransformTheExpression.h"
 
 @interface CodechefTests : XCTestCase
 
@@ -37,6 +38,12 @@
     XCTAssertEqual(result, 3);
     result = [CoolingPies main:5 withWeights:@[@9, @7, @16, @4, @8] andMaxWeights:@[@8, @3, @14, @10, @10]];
     XCTAssertEqual(result, 4);
+}
+
+- (void)testTransformTheExpression {
+    XCTAssertEqual([TransformTheExpression main:@"(a+(b*c))"], @"abc*+");
+    XCTAssertEqual([TransformTheExpression main:@"((a+b)*(z+x))"], @"ab+zx+*");
+    XCTAssertEqual([TransformTheExpression main:@"((a+t)*((b+(a+c))^(c+d)))"], @"at+bac++cd+^*");
 }
 
 @end
