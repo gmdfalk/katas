@@ -11,7 +11,20 @@
 @implementation TransformTheExpression
 
 + (NSString *)main:(NSString *)input {
-    NSMutableString *result;
+    NSArray *operators = @[@"+", @"-", @"/", @"*", @"^"];
+    NSArray *parens = @[@"(", @")"];
+    NSMutableString *result = [NSMutableString string];
+    NSInteger operandPosition = result.length - 1;
+
+    for (int i = 0; i < input.length; i++) {
+        NSString *ch = [input substringWithRange:NSMakeRange(i, 1)];
+        if ([operators containsObject:ch]) {
+            [result appendString:ch];
+        } else if (![parens containsObject:ch]) {
+            operandPosition = i;
+            [result insertString:ch atIndex:0];
+        }
+    }
 
     return result;
 }
