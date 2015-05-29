@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		FF38DDD81B1A048B00668C1E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF38DDD71B1A048B00668C1E /* main.swift */; };
+		FF38DDE71B1A04D600668C1E /* CodeChefTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF38DDE61B1A04D600668C1E /* CodeChefTests.swift */; };
+		FF38DDEE1B1A058600668C1E /* TransformTheExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF38DDED1B1A058600668C1E /* TransformTheExpression.swift */; };
+		FF38DDEF1B1A058600668C1E /* TransformTheExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF38DDED1B1A058600668C1E /* TransformTheExpression.swift */; };
+		FF38DDF01B1A06EC00668C1E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF38DDD71B1A048B00668C1E /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +29,21 @@
 /* Begin PBXFileReference section */
 		FF38DDD41B1A048B00668C1E /* CodeChef */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeChef; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF38DDD71B1A048B00668C1E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		FF38DDE21B1A04D600668C1E /* CodeChefTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeChefTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF38DDE51B1A04D600668C1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF38DDE61B1A04D600668C1E /* CodeChefTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeChefTests.swift; sourceTree = "<group>"; };
+		FF38DDED1B1A058600668C1E /* TransformTheExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformTheExpression.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FF38DDD11B1A048B00668C1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF38DDDF1B1A04D600668C1E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				FF38DDD61B1A048B00668C1E /* CodeChef */,
+				FF38DDE31B1A04D600668C1E /* CodeChefTests */,
 				FF38DDD51B1A048B00668C1E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				FF38DDD41B1A048B00668C1E /* CodeChef */,
+				FF38DDE21B1A04D600668C1E /* CodeChefTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +75,26 @@
 			isa = PBXGroup;
 			children = (
 				FF38DDD71B1A048B00668C1E /* main.swift */,
+				FF38DDED1B1A058600668C1E /* TransformTheExpression.swift */,
 			);
 			path = CodeChef;
+			sourceTree = "<group>";
+		};
+		FF38DDE31B1A04D600668C1E /* CodeChefTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF38DDE61B1A04D600668C1E /* CodeChefTests.swift */,
+				FF38DDE41B1A04D600668C1E /* Supporting Files */,
+			);
+			path = CodeChefTests;
+			sourceTree = "<group>";
+		};
+		FF38DDE41B1A04D600668C1E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF38DDE51B1A04D600668C1E /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +117,23 @@
 			productReference = FF38DDD41B1A048B00668C1E /* CodeChef */;
 			productType = "com.apple.product-type.tool";
 		};
+		FF38DDE11B1A04D600668C1E /* CodeChefTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF38DDE81B1A04D600668C1E /* Build configuration list for PBXNativeTarget "CodeChefTests" */;
+			buildPhases = (
+				FF38DDDE1B1A04D600668C1E /* Sources */,
+				FF38DDDF1B1A04D600668C1E /* Frameworks */,
+				FF38DDE01B1A04D600668C1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodeChefTests;
+			productName = CodeChefTests;
+			productReference = FF38DDE21B1A04D600668C1E /* CodeChefTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +144,9 @@
 				ORGANIZATIONNAME = Max;
 				TargetAttributes = {
 					FF38DDD31B1A048B00668C1E = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					FF38DDE11B1A04D600668C1E = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
 				};
@@ -109,16 +164,38 @@
 			projectRoot = "";
 			targets = (
 				FF38DDD31B1A048B00668C1E /* CodeChef */,
+				FF38DDE11B1A04D600668C1E /* CodeChefTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF38DDE01B1A04D600668C1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FF38DDD01B1A048B00668C1E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF38DDEE1B1A058600668C1E /* TransformTheExpression.swift in Sources */,
 				FF38DDD81B1A048B00668C1E /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF38DDDE1B1A04D600668C1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF38DDEF1B1A058600668C1E /* TransformTheExpression.swift in Sources */,
+				FF38DDE71B1A04D600668C1E /* CodeChefTests.swift in Sources */,
+				FF38DDF01B1A06EC00668C1E /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +294,38 @@
 			};
 			name = Release;
 		};
+		FF38DDE91B1A04D600668C1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CodeChefTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FF38DDEA1B1A04D600668C1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CodeChefTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -234,6 +343,14 @@
 			buildConfigurations = (
 				FF38DDDC1B1A048B00668C1E /* Debug */,
 				FF38DDDD1B1A048B00668C1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FF38DDE81B1A04D600668C1E /* Build configuration list for PBXNativeTarget "CodeChefTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF38DDE91B1A04D600668C1E /* Debug */,
+				FF38DDEA1B1A04D600668C1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
