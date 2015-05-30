@@ -20,8 +20,14 @@ class CodeChefTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testSayHello() {
         XCTAssert(sayHello("Max") == "Hello, Max!")
+    }
+    
+    func testTransformTheExpression() {
+        XCTAssertEqual(TransformTheExpression.main("(a+(b*c))"), "abc*+");
+        XCTAssertEqual(TransformTheExpression.main("((a+b)*(z+x))"), "ab+zx+*");
+        XCTAssertEqual(TransformTheExpression.main("((a+t)*((b+(a+c))^(c+d)))"), "at+bac++cd+^*");
     }
     
     func testPerformanceExample() {
