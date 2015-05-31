@@ -33,12 +33,8 @@ class TransformTheExpression {
             var str = String(char)
             if contains(operators, str) {
                 if (str == operators[0]) {
-                    do {
-                        var topItem = stack.pop()
-                        if (topItem != operators[1]) {
-                            postfix += topItem
-                        }
-                    } while stack.last != operators[1]
+                    addStackToPostfix(&stack, postfix: &postfix)
+//                    (stack, postfix) = reduceStackAndPostfix(stack, postfix: postfix)
                 } else {
                     stack.push(str)
                 }
@@ -48,6 +44,29 @@ class TransformTheExpression {
         }
         
         return postfix
+    }
+    
+    class func reduceStackAndPostfix(stack : [String], postfix : String) -> ([String], String) {
+        var stackCopy = stack
+        var postfixCopy = postfix
+        var topItem = stackCopy.pop()
+        while (!operators.isEmpty && topItem != operators[1]) {
+            if (topItem != operators[1]) {
+                postfixCopy += topItem
+            }
+            topItem = stackCopy.pop()
+        }
+        return (stackCopy, postfixCopy)
+    }
+    
+    class func addStackToPostfix(inout stack : [String], inout postfix : String) {
+        var topItem = stack.pop()
+        while (!operators.isEmpty && topItem != operators[1]) {
+            if (topItem != operators[1]) {
+                postfix += topItem
+            }
+            topItem = stack.pop()
+        }
     }
     
 }
