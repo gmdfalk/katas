@@ -30,6 +30,31 @@ class CodeChefTests: XCTestCase {
         XCTAssertEqual(TransformTheExpression.main("((a+t)*((b+(a+c))^(c+d)))"), "at+bac++cd+^*");
     }
     
+    func testPackagingCupcakes() {
+        XCTAssertEqual(PackagingCupcakes.main(2), 2)
+        XCTAssertEqual(PackagingCupcakes.main(5), 3)
+    }
+    
+    func testCielAndAMinusBProblem() {
+        XCTAssertEqual(CielAndAMinusBProblem.main(5858, b: 1238), 4621)
+        XCTAssertEqual(CielAndAMinusBProblem.main(5858, b: 1234), 4623)
+        XCTAssertEqual(CielAndAMinusBProblem.main(5859, b: 1230), 4628)
+    }
+    
+    func testCielAndReceipt() {
+        XCTAssertEqual(CielAndReceipt.main(10), 2)
+        XCTAssertEqual(CielAndReceipt.main(256), 1)
+        XCTAssertEqual(CielAndReceipt.main(255), 8)
+        XCTAssertEqual(CielAndReceipt.main(4096), 2)
+    }
+    
+    func testPrimePalindromes() {
+        XCTAssertEqual(PrimePalindromes.main(31), 101)
+        XCTAssertEqual(PrimePalindromes.main(102), 131)
+        XCTAssertEqual(PrimePalindromes.main(150), 151)
+        XCTAssertEqual(PrimePalindromes.main(250), 313)
+    }
+    
     func testPerformanceExample() {
         self.measureBlock() {
         }
