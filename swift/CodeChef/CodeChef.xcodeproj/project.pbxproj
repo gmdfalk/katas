@@ -12,6 +12,14 @@
 		FF38DDEE1B1A058600668C1E /* TransformTheExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF38DDED1B1A058600668C1E /* TransformTheExpression.swift */; };
 		FF38DDEF1B1A058600668C1E /* TransformTheExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF38DDED1B1A058600668C1E /* TransformTheExpression.swift */; };
 		FF38DDF01B1A06EC00668C1E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF38DDD71B1A048B00668C1E /* main.swift */; };
+		FF38DDF21B1B4D2500668C1E /* PackagingCupcakes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF38DDF11B1B4D2500668C1E /* PackagingCupcakes.swift */; };
+		FF38DDF31B1B4D2500668C1E /* PackagingCupcakes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF38DDF11B1B4D2500668C1E /* PackagingCupcakes.swift */; };
+		FF38DDF51B1B4E1900668C1E /* CielAndAMinusBProblem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF38DDF41B1B4E1900668C1E /* CielAndAMinusBProblem.swift */; };
+		FF38DDF61B1B4E1900668C1E /* CielAndAMinusBProblem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF38DDF41B1B4E1900668C1E /* CielAndAMinusBProblem.swift */; };
+		FF38DDF81B1B517000668C1E /* CielAndReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF38DDF71B1B517000668C1E /* CielAndReceipt.swift */; };
+		FF38DDF91B1B517000668C1E /* CielAndReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF38DDF71B1B517000668C1E /* CielAndReceipt.swift */; };
+		FF38DDFB1B1BA45600668C1E /* PrimePalindromes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF38DDFA1B1BA45600668C1E /* PrimePalindromes.swift */; };
+		FF38DDFC1B1BA45600668C1E /* PrimePalindromes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF38DDFA1B1BA45600668C1E /* PrimePalindromes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +41,10 @@
 		FF38DDE51B1A04D600668C1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF38DDE61B1A04D600668C1E /* CodeChefTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeChefTests.swift; sourceTree = "<group>"; };
 		FF38DDED1B1A058600668C1E /* TransformTheExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformTheExpression.swift; sourceTree = "<group>"; };
+		FF38DDF11B1B4D2500668C1E /* PackagingCupcakes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackagingCupcakes.swift; sourceTree = "<group>"; };
+		FF38DDF41B1B4E1900668C1E /* CielAndAMinusBProblem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CielAndAMinusBProblem.swift; sourceTree = "<group>"; };
+		FF38DDF71B1B517000668C1E /* CielAndReceipt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CielAndReceipt.swift; sourceTree = "<group>"; };
+		FF38DDFA1B1BA45600668C1E /* PrimePalindromes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimePalindromes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +88,10 @@
 			children = (
 				FF38DDD71B1A048B00668C1E /* main.swift */,
 				FF38DDED1B1A058600668C1E /* TransformTheExpression.swift */,
+				FF38DDF11B1B4D2500668C1E /* PackagingCupcakes.swift */,
+				FF38DDF41B1B4E1900668C1E /* CielAndAMinusBProblem.swift */,
+				FF38DDF71B1B517000668C1E /* CielAndReceipt.swift */,
+				FF38DDFA1B1BA45600668C1E /* PrimePalindromes.swift */,
 			);
 			path = CodeChef;
 			sourceTree = "<group>";
@@ -185,7 +201,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF38DDEE1B1A058600668C1E /* TransformTheExpression.swift in Sources */,
+				FF38DDF21B1B4D2500668C1E /* PackagingCupcakes.swift in Sources */,
 				FF38DDD81B1A048B00668C1E /* main.swift in Sources */,
+				FF38DDF81B1B517000668C1E /* CielAndReceipt.swift in Sources */,
+				FF38DDFB1B1BA45600668C1E /* PrimePalindromes.swift in Sources */,
+				FF38DDF51B1B4E1900668C1E /* CielAndAMinusBProblem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +214,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF38DDEF1B1A058600668C1E /* TransformTheExpression.swift in Sources */,
+				FF38DDFC1B1BA45600668C1E /* PrimePalindromes.swift in Sources */,
 				FF38DDE71B1A04D600668C1E /* CodeChefTests.swift in Sources */,
+				FF38DDF31B1B4D2500668C1E /* PackagingCupcakes.swift in Sources */,
+				FF38DDF91B1B517000668C1E /* CielAndReceipt.swift in Sources */,
+				FF38DDF61B1B4E1900668C1E /* CielAndAMinusBProblem.swift in Sources */,
 				FF38DDF01B1A06EC00668C1E /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
