@@ -26,7 +26,6 @@ class PrimePalindromes {
     
     class func isPalindrome(num : Int) -> Bool {
         var numString = Array(String(num))
-        var reversed = reverse(numString)
         return reverse(numString) == numString
     }
     
