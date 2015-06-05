@@ -1,6 +1,7 @@
 //
 //  CuttingRecipes.swift
 //  CodeChef
+// http://www.codechef.com/problems/RECIPE
 //
 //  Created by Max on 05/06/15.
 //  Copyright (c) 2015 Max. All rights reserved.
