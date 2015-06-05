@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		FF46DEBE1B220B9700D33112 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF46DEBD1B220B9700D33112 /* main.swift */; };
 		FF46DECD1B220BE900D33112 /* topcoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF46DECC1B220BE900D33112 /* topcoderTests.swift */; };
+		FF46DED21B220C6A00D33112 /* AdvertisingAgency.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF46DED11B220C6A00D33112 /* AdvertisingAgency.swift */; };
+		FF46DED31B220C6A00D33112 /* AdvertisingAgency.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF46DED11B220C6A00D33112 /* AdvertisingAgency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +31,7 @@
 		FF46DEC81B220BE900D33112 /* topcoderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = topcoderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF46DECB1B220BE900D33112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF46DECC1B220BE900D33112 /* topcoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topcoderTests.swift; sourceTree = "<group>"; };
+		FF46DED11B220C6A00D33112 /* AdvertisingAgency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvertisingAgency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				FF46DEBD1B220B9700D33112 /* main.swift */,
+				FF46DED11B220C6A00D33112 /* AdvertisingAgency.swift */,
 			);
 			path = topcoder;
 			sourceTree = "<group>";
@@ -180,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF46DEBE1B220B9700D33112 /* main.swift in Sources */,
+				FF46DED21B220C6A00D33112 /* AdvertisingAgency.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF46DECD1B220BE900D33112 /* topcoderTests.swift in Sources */,
+				FF46DED31B220C6A00D33112 /* AdvertisingAgency.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
