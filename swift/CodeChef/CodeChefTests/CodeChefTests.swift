@@ -55,6 +55,12 @@ class CodeChefTests: XCTestCase {
         XCTAssertEqual(PrimePalindromes.main(250), 313)
     }
     
+    func testCuttingRecipes() {
+        XCTAssertEqual(CuttingRecipes.main(2, ingredients: [4, 4]), [1, 1])
+        XCTAssertEqual(CuttingRecipes.main(3, ingredients: [2, 3, 4]), [2, 3, 4])
+        XCTAssertEqual(CuttingRecipes.main(4, ingredients: [3, 15, 9, 6]), [1, 5, 3, 2])
+    }
+    
     func testPerformanceExample() {
         self.measureBlock() {
         }

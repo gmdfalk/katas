@@ -20,6 +20,8 @@
 		FF38DDF91B1B517000668C1E /* CielAndReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF38DDF71B1B517000668C1E /* CielAndReceipt.swift */; };
 		FF38DDFB1B1BA45600668C1E /* PrimePalindromes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF38DDFA1B1BA45600668C1E /* PrimePalindromes.swift */; };
 		FF38DDFC1B1BA45600668C1E /* PrimePalindromes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF38DDFA1B1BA45600668C1E /* PrimePalindromes.swift */; };
+		FF46DEAF1B21FD7500D33112 /* CuttingRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF46DEAE1B21FD7500D33112 /* CuttingRecipes.swift */; };
+		FF46DEB01B21FD8B00D33112 /* CuttingRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF46DEAE1B21FD7500D33112 /* CuttingRecipes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +47,7 @@
 		FF38DDF41B1B4E1900668C1E /* CielAndAMinusBProblem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CielAndAMinusBProblem.swift; sourceTree = "<group>"; };
 		FF38DDF71B1B517000668C1E /* CielAndReceipt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CielAndReceipt.swift; sourceTree = "<group>"; };
 		FF38DDFA1B1BA45600668C1E /* PrimePalindromes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimePalindromes.swift; sourceTree = "<group>"; };
+		FF46DEAE1B21FD7500D33112 /* CuttingRecipes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CuttingRecipes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,7 @@
 				FF38DDF41B1B4E1900668C1E /* CielAndAMinusBProblem.swift */,
 				FF38DDF71B1B517000668C1E /* CielAndReceipt.swift */,
 				FF38DDFA1B1BA45600668C1E /* PrimePalindromes.swift */,
+				FF46DEAE1B21FD7500D33112 /* CuttingRecipes.swift */,
 			);
 			path = CodeChef;
 			sourceTree = "<group>";
@@ -205,6 +209,7 @@
 				FF38DDD81B1A048B00668C1E /* main.swift in Sources */,
 				FF38DDF81B1B517000668C1E /* CielAndReceipt.swift in Sources */,
 				FF38DDFB1B1BA45600668C1E /* PrimePalindromes.swift in Sources */,
+				FF46DEAF1B21FD7500D33112 /* CuttingRecipes.swift in Sources */,
 				FF38DDF51B1B4E1900668C1E /* CielAndAMinusBProblem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF46DEB01B21FD8B00D33112 /* CuttingRecipes.swift in Sources */,
 				FF38DDEF1B1A058600668C1E /* TransformTheExpression.swift in Sources */,
 				FF38DDFC1B1BA45600668C1E /* PrimePalindromes.swift in Sources */,
 				FF38DDE71B1A04D600668C1E /* CodeChefTests.swift in Sources */,
@@ -369,6 +375,7 @@
 				FF38DDDD1B1A048B00668C1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF38DDE81B1A04D600668C1E /* Build configuration list for PBXNativeTarget "CodeChefTests" */ = {
 			isa = XCConfigurationList;
@@ -377,6 +384,7 @@
 				FF38DDEA1B1A04D600668C1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
