@@ -1,0 +1,353 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF46DEBE1B220B9700D33112 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF46DEBD1B220B9700D33112 /* main.swift */; };
+		FF46DECD1B220BE900D33112 /* topcoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF46DECC1B220BE900D33112 /* topcoderTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FF46DEB81B220B9700D33112 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FF46DEBA1B220B9700D33112 /* topcoder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = topcoder; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF46DEBD1B220B9700D33112 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		FF46DEC81B220BE900D33112 /* topcoderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = topcoderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF46DECB1B220BE900D33112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF46DECC1B220BE900D33112 /* topcoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topcoderTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF46DEB71B220B9700D33112 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF46DEC51B220BE900D33112 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF46DEB11B220B9700D33112 = {
+			isa = PBXGroup;
+			children = (
+				FF46DEBC1B220B9700D33112 /* topcoder */,
+				FF46DEC91B220BE900D33112 /* topcoderTests */,
+				FF46DEBB1B220B9700D33112 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF46DEBB1B220B9700D33112 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF46DEBA1B220B9700D33112 /* topcoder */,
+				FF46DEC81B220BE900D33112 /* topcoderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF46DEBC1B220B9700D33112 /* topcoder */ = {
+			isa = PBXGroup;
+			children = (
+				FF46DEBD1B220B9700D33112 /* main.swift */,
+			);
+			path = topcoder;
+			sourceTree = "<group>";
+		};
+		FF46DEC91B220BE900D33112 /* topcoderTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF46DECC1B220BE900D33112 /* topcoderTests.swift */,
+				FF46DECA1B220BE900D33112 /* Supporting Files */,
+			);
+			path = topcoderTests;
+			sourceTree = "<group>";
+		};
+		FF46DECA1B220BE900D33112 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF46DECB1B220BE900D33112 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF46DEB91B220B9700D33112 /* topcoder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF46DEC11B220B9700D33112 /* Build configuration list for PBXNativeTarget "topcoder" */;
+			buildPhases = (
+				FF46DEB61B220B9700D33112 /* Sources */,
+				FF46DEB71B220B9700D33112 /* Frameworks */,
+				FF46DEB81B220B9700D33112 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = topcoder;
+			productName = topcoder;
+			productReference = FF46DEBA1B220B9700D33112 /* topcoder */;
+			productType = "com.apple.product-type.tool";
+		};
+		FF46DEC71B220BE900D33112 /* topcoderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF46DED01B220BE900D33112 /* Build configuration list for PBXNativeTarget "topcoderTests" */;
+			buildPhases = (
+				FF46DEC41B220BE900D33112 /* Sources */,
+				FF46DEC51B220BE900D33112 /* Frameworks */,
+				FF46DEC61B220BE900D33112 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = topcoderTests;
+			productName = topcoderTests;
+			productReference = FF46DEC81B220BE900D33112 /* topcoderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF46DEB21B220B9700D33112 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Max;
+				TargetAttributes = {
+					FF46DEB91B220B9700D33112 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					FF46DEC71B220BE900D33112 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = FF46DEB51B220B9700D33112 /* Build configuration list for PBXProject "topcoder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FF46DEB11B220B9700D33112;
+			productRefGroup = FF46DEBB1B220B9700D33112 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF46DEB91B220B9700D33112 /* topcoder */,
+				FF46DEC71B220BE900D33112 /* topcoderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF46DEC61B220BE900D33112 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF46DEB61B220B9700D33112 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF46DEBE1B220B9700D33112 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF46DEC41B220BE900D33112 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF46DECD1B220BE900D33112 /* topcoderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FF46DEBF1B220B9700D33112 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF46DEC01B220B9700D33112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FF46DEC21B220B9700D33112 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FF46DEC31B220B9700D33112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FF46DECE1B220BE900D33112 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = topcoderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FF46DECF1B220BE900D33112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = topcoderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF46DEB51B220B9700D33112 /* Build configuration list for PBXProject "topcoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF46DEBF1B220B9700D33112 /* Debug */,
+				FF46DEC01B220B9700D33112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF46DEC11B220B9700D33112 /* Build configuration list for PBXNativeTarget "topcoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF46DEC21B220B9700D33112 /* Debug */,
+				FF46DEC31B220B9700D33112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF46DED01B220BE900D33112 /* Build configuration list for PBXNativeTarget "topcoderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF46DECE1B220BE900D33112 /* Debug */,
+				FF46DECF1B220BE900D33112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF46DEB21B220B9700D33112 /* Project object */;
+}
