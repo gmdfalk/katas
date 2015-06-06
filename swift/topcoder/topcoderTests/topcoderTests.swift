@@ -33,8 +33,28 @@ class topcoderTests: XCTestCase {
             ]), 49)
     }
     
-    func testPerformanceExample() {
+    func testSmartAdvertisingAgency() {
+        XCTAssertEqual(AdvertisingAgency.smartNumberOfRejections([1,2,3]), 0)
+        XCTAssertEqual(AdvertisingAgency.smartNumberOfRejections([1,1,1]), 2)
+        XCTAssertEqual(AdvertisingAgency.smartNumberOfRejections([1,2,1,2]), 2)
+        XCTAssertEqual(AdvertisingAgency.smartNumberOfRejections([
+            100, 100, 100, 100, 100, 100, 100, 100, 100, 100,
+            100, 100, 100, 100, 100, 100, 100, 100, 100, 100,
+            100, 100, 100, 100, 100, 100, 100, 100, 100, 100,
+            100, 100, 100, 100, 100, 100, 100, 100, 100, 100,
+            100, 100, 100, 100, 100, 100, 100, 100, 100, 100
+            ]), 49)
+    }
+    
+    func testPerformanceAdvertisingAgency() {
         self.measureBlock() {
+            XCTAssertEqual(AdvertisingAgency.numberOfRejections([1,2,3]), 0)
+        }
+    }
+    
+    func testPerformanceSmartAdvertisingAgency() {
+        self.measureBlock() {
+            XCTAssertEqual(AdvertisingAgency.smartNumberOfRejections([1,2,3]), 0)
         }
     }
     

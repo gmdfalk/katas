@@ -12,7 +12,32 @@ import Foundation
 class AdvertisingAgency {
     
     class func numberOfRejections(requests : [Int]) -> Int {
-        
-        return 0;
+        var rejects = 0
+        var cache = [Int]()
+        for request in requests {
+            if !contains(cache, request) {
+                cache.append(request)
+            } else {
+                rejects++
+            }
+        }
+        return rejects
     }
+    
+    class func smartNumberOfRejections(requests : [Int]) -> Int {
+        var rejects = 0
+        var used = Array(count:100, repeatedValue:
+            false)
+        
+        for request in requests {
+            if !used[request-1] {
+                used[request-1] = true
+            } else {
+                rejects++
+            }
+        }
+        
+        return rejects
+    }
+ 
 }
