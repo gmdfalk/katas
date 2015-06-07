@@ -61,9 +61,12 @@ class CodeChefTests: XCTestCase {
         XCTAssertEqual(CuttingRecipes.main(4, ingredients: [3, 15, 9, 6]), [1, 5, 3, 2])
     }
     
-    func testPerformanceExample() {
-        self.measureBlock() {
-        }
+    func testPayingUp() {
+        XCTAssertEqual(PayingUp.main(3, banknotes: [1,1,1]), true)
+        XCTAssertEqual(PayingUp.main(11, banknotes: [1,2,4,8,16]), true)
+        XCTAssertEqual(PayingUp.main(23, banknotes: [1,2,4,8,16]), true)
+        XCTAssertEqual(PayingUp.main(13, banknotes: [1,5,5,10,10]), false)
+        XCTAssertEqual(PayingUp.main(132, banknotes: [17,6,4,998,254,137,259,153,154,3,28,19,123,542,857,23,687,35,99,999]), true)
     }
     
 }

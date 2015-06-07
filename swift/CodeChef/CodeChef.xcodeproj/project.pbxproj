@@ -22,6 +22,8 @@
 		FF38DDFC1B1BA45600668C1E /* PrimePalindromes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF38DDFA1B1BA45600668C1E /* PrimePalindromes.swift */; };
 		FF46DEAF1B21FD7500D33112 /* CuttingRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF46DEAE1B21FD7500D33112 /* CuttingRecipes.swift */; };
 		FF46DEB01B21FD8B00D33112 /* CuttingRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF46DEAE1B21FD7500D33112 /* CuttingRecipes.swift */; };
+		FF46DED51B23657F00D33112 /* PayingUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF46DED41B23657F00D33112 /* PayingUp.swift */; };
+		FF46DED61B2366A500D33112 /* PayingUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF46DED41B23657F00D33112 /* PayingUp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -48,6 +50,7 @@
 		FF38DDF71B1B517000668C1E /* CielAndReceipt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CielAndReceipt.swift; sourceTree = "<group>"; };
 		FF38DDFA1B1BA45600668C1E /* PrimePalindromes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimePalindromes.swift; sourceTree = "<group>"; };
 		FF46DEAE1B21FD7500D33112 /* CuttingRecipes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CuttingRecipes.swift; sourceTree = "<group>"; };
+		FF46DED41B23657F00D33112 /* PayingUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayingUp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +99,7 @@
 				FF38DDF71B1B517000668C1E /* CielAndReceipt.swift */,
 				FF38DDFA1B1BA45600668C1E /* PrimePalindromes.swift */,
 				FF46DEAE1B21FD7500D33112 /* CuttingRecipes.swift */,
+				FF46DED41B23657F00D33112 /* PayingUp.swift */,
 			);
 			path = CodeChef;
 			sourceTree = "<group>";
@@ -210,6 +214,7 @@
 				FF38DDF81B1B517000668C1E /* CielAndReceipt.swift in Sources */,
 				FF38DDFB1B1BA45600668C1E /* PrimePalindromes.swift in Sources */,
 				FF46DEAF1B21FD7500D33112 /* CuttingRecipes.swift in Sources */,
+				FF46DED51B23657F00D33112 /* PayingUp.swift in Sources */,
 				FF38DDF51B1B4E1900668C1E /* CielAndAMinusBProblem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,6 +228,7 @@
 				FF38DDFC1B1BA45600668C1E /* PrimePalindromes.swift in Sources */,
 				FF38DDE71B1A04D600668C1E /* CodeChefTests.swift in Sources */,
 				FF38DDF31B1B4D2500668C1E /* PackagingCupcakes.swift in Sources */,
+				FF46DED61B2366A500D33112 /* PayingUp.swift in Sources */,
 				FF38DDF91B1B517000668C1E /* CielAndReceipt.swift in Sources */,
 				FF38DDF61B1B4E1900668C1E /* CielAndAMinusBProblem.swift in Sources */,
 				FF38DDF01B1A06EC00668C1E /* main.swift in Sources */,
