@@ -1,6 +1,8 @@
 //
 //  PayingUp.swift
 //  CodeChef
+// http://www.codechef.com/problems/MARCHA1
+// http://en.wikipedia.org/wiki/Subset_sum_problem#Pseudo-polynomial_time_dynamic_programming_solution
 //
 //  Created by Max on 06/06/15.
 //  Copyright (c) 2015 Max. All rights reserved.
