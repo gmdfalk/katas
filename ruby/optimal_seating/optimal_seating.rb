@@ -17,3 +17,4 @@ end
 
 puts distance_sort(available_seats)
 
+
