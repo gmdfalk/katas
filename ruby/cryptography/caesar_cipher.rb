@@ -1,19 +1,21 @@
 #!/usr/bin/env ruby
 
 
+
+def create_alphabet_map
+    count = 0
+    alphabet = {}
+    [*('a'..'z')].map { |c| alphabet[c] = count; alphabet[c.upcase] = count; alphabet[count] = c; count += 1 }
+    alphabet
+end
+
 def codepoint_cipher(message, operator, offset)
-    result = ''
-    message.each_codepoint {|c| result += c.send(operator, offset).chr }
-    result
+    message.codepoints.map { |c| c.send(operator, offset).chr }.join
 end
 
 def classic_cipher(message, operator, offset, max=26)
-    count = 0
-    alphabet = {}
-    result = ''
-    [*('a'..'z')].map { |c| alphabet[c] = count; alphabet[c.upcase] = count; alphabet[count] = c; count += 1 }
-    message.each_char { |c| result += alphabet[(alphabet[c].send(operator, offset) % max)] if alphabet.key?(c) }
-    result
+    alphabet = create_alphabet_map
+    message.chars.map { |c| alphabet[(alphabet[c].send(operator, offset) % max)] if alphabet.key?(c) }.join
 end
 
 message = 'Flee at once! We are discovered.'
